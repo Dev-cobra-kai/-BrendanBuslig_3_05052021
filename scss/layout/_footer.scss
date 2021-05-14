@@ -1,0 +1,49 @@
+footer 
+{
+    padding: 10px;
+    background-color: $footer;
+    color: $white;
+
+    & .logo img 
+    {
+        height: 20px;
+        color: $white;
+        filter: brightness(20);
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    & .couverts 
+    {
+        display: flex;
+        align-items: center;
+    }
+    & .double-mains
+    {
+        display: flex;
+        align-items: center;
+    }
+        
+    & .fa-utensils 
+    {
+        margin-right: 15px;
+    }
+    & .fa-hands-helping 
+    {
+        margin-right: 10px;
+    }
+
+    & ul 
+    {
+        padding: 10px;
+    }
+    & li 
+    {
+        list-style-type: none;
+        padding: 5px;
+    }
+    & a
+    {
+        color: $white;
+    }
+}

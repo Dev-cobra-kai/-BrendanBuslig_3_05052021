@@ -1,12 +1,66 @@
+@charset "UTF-8";
+/* couleur */
+/* Définition des polices personnalisées */
 body {
-  background-color: aqua;
+  font-family: 'Roboto', sans-serif;
 }
 
-header {
-  background-color: red;
+h2, h3 {
+  font-family: 'Shrikhand', cursive;
 }
 
+/* Taille des polices */
 footer {
-  background-color: green;
+  padding: 10px;
+  background-color: #353535;
+  color: white;
+}
+
+footer .logo img {
+  height: 20px;
+  color: white;
+  -webkit-filter: brightness(20);
+          filter: brightness(20);
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+footer .couverts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .double-mains {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .fa-utensils {
+  margin-right: 15px;
+}
+
+footer .fa-hands-helping {
+  margin-right: 10px;
+}
+
+footer ul {
+  padding: 10px;
+}
+
+footer li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+footer a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

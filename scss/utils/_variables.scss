@@ -1,0 +1,26 @@
+/* couleur */
+
+$primary-color : #9356DC;
+$secondary-color : #FF79DA;
+$tertiary-color : #99E2D0;
+$background-color : #F2F2F2;
+$white : white;
+$black : black;
+$footer : #353535;
+
+/* Définition des polices personnalisées */
+
+body 
+{
+    font-family: 'Roboto', sans-serif;
+} 
+h2, h3
+{
+    font-family: 'Shrikhand', cursive;
+}
+
+/* Taille des polices */
+
+$size: auto;
+$font-size: medium;
+$font-weight: normal;

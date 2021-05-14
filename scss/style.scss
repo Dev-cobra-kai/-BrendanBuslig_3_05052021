@@ -1,12 +1,14 @@
-body 
-{
-    background-color: aqua;
-} 
-header
-{
-    background-color: red;
-}
-footer
-{
-    background-color: green;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./components/bouton";
+@import "./components/icon";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/accueil";
+@import "./pages/menu";
+
+
+
