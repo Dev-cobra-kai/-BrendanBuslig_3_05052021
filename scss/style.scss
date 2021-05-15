@@ -1,7 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
-@import "./components/bouton";
+@import "./components/boutons";
 @import "./components/icon";
 
 @import "./layout/header";
@@ -10,5 +10,5 @@
 @import "./pages/accueil";
 @import "./pages/menu";
 
-
+@import "./base/base";
 

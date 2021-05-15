@@ -7,8 +7,7 @@ footer
     & .logo img 
     {
         height: 20px;
-        color: $white;
-        filter: brightness(20);
+        filter: invert(100%); 
         padding-left: 15px;
         padding-top: 15px;
     }
@@ -45,5 +44,6 @@ footer
     & a
     {
         color: $white;
+        text-decoration:none; 
     }
 }

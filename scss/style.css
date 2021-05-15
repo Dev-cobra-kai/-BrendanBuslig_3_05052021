@@ -1,15 +1,35 @@
 @charset "UTF-8";
 /* couleur */
-/* Définition des polices personnalisées */
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-h2, h3 {
-  font-family: 'Shrikhand', cursive;
-}
-
 /* Taille des polices */
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  background: #9356DC;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+header {
+  padding: 10px;
+}
+
+header .logo img {
+  justify-items: center;
+}
+
 footer {
   padding: 10px;
   background-color: #353535;
@@ -18,9 +38,8 @@ footer {
 
 footer .logo img {
   height: 20px;
-  color: white;
-  -webkit-filter: brightness(20);
-          filter: brightness(20);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
   padding-left: 15px;
   padding-top: 15px;
 }
@@ -62,5 +81,20 @@ footer li {
 
 footer a {
   color: white;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Définition des polices personnalisées */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Shrikhand', cursive;
 }
 /*# sourceMappingURL=style.css.map */

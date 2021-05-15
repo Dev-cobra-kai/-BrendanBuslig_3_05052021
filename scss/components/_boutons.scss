@@ -1,0 +1,15 @@
+.btn 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background: $primary-color;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+  
+    &:hover {
+        cursor: pointer;
+    }
+} 
