@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/* couleur */
-/* Taille des polices */
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,11 +10,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
+  width: 50%;
   background: #9356DC;
   border-radius: 20px;
   padding: 20px;
   margin: 20px auto;
+  font-size: 1.2em;
 }
 
 .btn:hover {
@@ -23,11 +23,85 @@
 }
 
 header {
-  padding: 10px;
+  padding: 0;
+  margin: 0;
 }
 
-header .logo img {
-  justify-items: center;
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+header .fa-arrow-left {
+  color: black;
+  font-size: 2.2em;
+  position: absolute;
+  top: 1.2em;
+  left: 9em;
+}
+
+header .lieu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #DCDCDC;
+  margin-top: 2em;
+  height: 8em;
+  width: 100%;
+  -webkit-box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+header .fa-map-marker-alt {
+  margin-right: 1.2em;
+}
+
+header .lieu p {
+  font-size: 1.5em;
+}
+
+header .reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F2F2F2;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 5em;
+}
+
+header .reservation h2 {
+  font-size: 2em;
+  padding-bottom: 0.7em;
+  width: 50%;
+}
+
+header .reservation p {
+  font-size: 1.2em;
+  padding-bottom: 0.7em;
 }
 
 footer {
@@ -89,7 +163,6 @@ footer a {
   padding: 0;
 }
 
-/* Définition des polices personnalisées */
 body {
   font-family: 'Roboto', sans-serif;
 }

@@ -1,15 +1,19 @@
+/* Boutons */
+
 .btn 
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 50%;
     background: $primary-color;
     border-radius: 20px;
     padding: 20px;
     margin: 20px auto;
+    font-size: 1.2em;
   
-    &:hover {
+    &:hover 
+    {
         cursor: pointer;
     }
 } 
