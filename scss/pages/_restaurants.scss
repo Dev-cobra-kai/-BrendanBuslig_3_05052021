@@ -1,0 +1,112 @@
+.restaurants
+{
+    display: flex;
+    flex-direction: column;
+    background: $background-color;
+    padding-bottom: 3em;
+    padding-top: 1em;
+
+    & h2
+    {
+        padding-top: 1em;
+        padding-left: 0.8em;
+        padding-bottom: 2em;
+    }
+    & .divers-menu
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    & .menu-la-palette-du-gout a
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-decoration: none;
+        color: $black;
+        margin-bottom: 3em;
+    }
+    & .menu-la-palette-du-gout img
+    {
+        display: flex;
+        width: 80em;
+        border-radius: 1em 1em 0 0;
+        object-fit:cover;
+    }
+    & .menu-la-note-enchantee a
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-decoration: none;
+        color: $black;
+        margin-bottom: 3em;
+    }
+    & .menu-la-note-enchantee img
+    {
+        display: flex;
+        width: 80em;
+        border-radius: 1em 1em 0 0;
+        object-fit:cover;
+    }
+    & .menu-a-la-francaise a
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-decoration: none;
+        color: $black;
+        margin-bottom: 3em;
+    }
+    & .menu-a-la-francaise img
+    {
+        display: flex;
+        width: 80em;
+        border-radius: 1em 1em 0 0;
+        object-fit:cover;
+    }
+    & .menu-le-delice-des-sens a
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-decoration: none;
+        color: $black;
+        margin-bottom: 3em;
+    }
+    & .menu-le-delice-des-sens img
+    {
+        display: flex;
+        width: 80em;
+        border-radius: 1em 1em 0 0;
+        object-fit:cover;
+    }
+    & img
+    {
+        object-fit:cover;
+        width: 100%;
+        height: 15em;       
+    }
+    & .texte-coeur
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        background-color: $white;
+        border-radius: 0 0 1em 1em;
+        box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+    }
+    & .nouveau
+    {
+    background-color: $tertiary-color;
+    font-weight: bold;
+    color: darken($tertiary-color, 40%);
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    padding: 0.7em;
+    border-radius: 5px;    
+    }
+}

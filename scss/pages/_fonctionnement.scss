@@ -1,1 +1,81 @@
-/* Fonctionnement */
+.fonctionnement
+{    
+    margin-top: 2em;
+    margin-bottom: 2em;
+    & h2
+    {
+        padding-top: 1em;
+        padding-left: 0.8em;
+    }
+    & .contenu-fct
+    {
+        display: flex;
+        justify-content: space-around;    
+        align-items: center;  
+        padding-top: 2em;
+    }
+    & .choisir
+    {
+        display:flex;
+        align-items: center;
+        background: $background-color;
+        border-radius: 1.4em;
+        margin-bottom: 1.5em;
+        box-shadow: 0 0 0.6em 0.2em $grey;
+        padding: 1.5em 5em 1.5em 0.2em;
+    }
+    & .composer
+    {
+        display:flex;
+        align-items: center;
+        background: $background-color;
+        border-radius: 1.4em;
+        margin-bottom: 1.5em;
+        box-shadow: 0 0 0.6em 0.2em $grey;
+        padding: 1.5em 5.5em 1.5em 1.5em;
+    }
+    & .deguster
+    {
+        display:flex;
+        align-items: center;
+        background: $background-color;
+        border-radius: 1.4em;
+        margin-bottom: 1.5em;
+        box-shadow: 0 0 0.6em 0.2em $grey;
+        padding: 1.5em 5em 1.5em 0.2em;
+    }
+    & .contenu-fct p
+    {
+        font-weight: bold;
+    }
+    & .fas
+    {
+        padding: 0 1em 0 1em;
+    }
+    & .nombre
+    {
+        background: $primary-color;
+        border-radius: 50%;
+        padding: 0.5em 0.7em ;
+        margin-right: 0.8em;
+        margin-left: -1rem;
+        color:$white;
+    }
+    & .composer .nombre
+    {
+        margin-left: -2.5em;
+    }
+    .fa-mobile-alt
+    {
+        color:gray;
+    }
+    .fa-list-ul
+    {
+        color:gray;
+    }
+    .fa-store
+    {
+        color:$primary-color;
+    }
+}
+
