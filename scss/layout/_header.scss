@@ -3,7 +3,7 @@ header
     padding: 0;
     margin: 0;
 
-    /* logo */
+/* logo */
 
     & .logo
     {
@@ -11,21 +11,25 @@ header
         justify-content: center;
         align-items: center;
         padding-top: 1.5em;
-        margin-bottom: 0.5em;   
+        margin-bottom: 0.5em;          
+    }
+    & .logo img
+    {
+        height: 45px;
     }
 
-    /* Flèche retour */
+/* Flèche retour */
 
     & .fa-arrow-left
     {
         color:$black;
-        font-size: 2.2em;
+        font-size: 2em;
         position: absolute;
-        top: 1.2em;
+        top: 1em;
         left: 9em;
     }
 
-    /* Lieu */
+/* Lieu */
 
     & .lieu
     {
@@ -39,21 +43,21 @@ header
         box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
     }
 
-    /* Icone lieu */
+/* Icone lieu */
 
     & .fa-map-marker-alt
     {
         margin-right: 1.2em;
     }
 
-    /* Paragraphe lieu */
+/* Paragraphe lieu */
 
     & .lieu p
     {
         font-size: 1.5em;
     }
 
-    /* Réservation */
+/* Réservation */
 
     & .reservation
     {
@@ -67,7 +71,7 @@ header
         padding-bottom: 3em;
     }
     
-    /* Réservation titre */
+/* Réservation titre */
 
     & .reservation h2
     {
@@ -76,7 +80,7 @@ header
         width: 50%;
     }
     
-    /* Réservation paragraphe */
+/* Réservation paragraphe */
 
     & .reservation p
     {
@@ -84,4 +88,14 @@ header
         padding-bottom: 0.7em;
     }
 
+/* Image menu */
+    
+    & .image img
+    {
+        object-fit: cover;
+        padding-top: 1em;
+        height: 18em;
+        width: 100%;      
+    }  
+   
 }

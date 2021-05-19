@@ -12,7 +12,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  width: 15em;
   background: #9356DC;
   border-radius: 20px;
   padding: 20px;
@@ -35,6 +35,7 @@ header {
   /* Réservation */
   /* Réservation titre */
   /* Réservation paragraphe */
+  /* Image menu */
 }
 
 header .logo {
@@ -51,11 +52,15 @@ header .logo {
   margin-bottom: 0.5em;
 }
 
+header .logo img {
+  height: 45px;
+}
+
 header .fa-arrow-left {
   color: black;
-  font-size: 2.2em;
+  font-size: 2em;
   position: absolute;
-  top: 1.2em;
+  top: 1em;
   left: 9em;
 }
 
@@ -114,6 +119,14 @@ header .reservation p {
   padding-bottom: 0.7em;
 }
 
+header .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 1em;
+  height: 18em;
+  width: 100%;
+}
+
 footer {
   padding: 10px;
   background-color: #353535;
@@ -166,6 +179,221 @@ footer li {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+/*Menu */
+.menu {
+  background-color: #DCDCDC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.menu .titre {
+  width: 100%;
+  position: absolute;
+  top: 21em;
+}
+
+.menu .titre h1 {
+  background-color: #DCDCDC;
+  padding: 0.7em;
+  border-radius: 2em 2em 0 0;
+  padding-left: 18em;
+}
+
+.menu .titre .coeur {
+  position: absolute;
+  top: 2em;
+  right: 30em;
+}
+
+.menu .les-entrees {
+  padding: 0;
+}
+
+.menu .les-entrees h2 {
+  margin-left: 1em;
+  padding-bottom: 1em;
+}
+
+.menu .les-entrees .entree {
+  margin-left: 1.2em;
+  background-color: white;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+          box-shadow: 0 0.3em 0.8em 0.1em black;
+  cursor: pointer;
+}
+
+.menu .les-entrees .entree .contenu-entree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .les-entrees .entree .contenu-entree .texte {
+  padding-right: 5em;
+}
+
+.menu .les-entrees .entree .contenu-entree .texte h3 {
+  margin-bottom: 0.3rem;
+}
+
+.menu .les-entrees .entree .contenu-entree .texte p {
+  font-size: 0.9rem;
+}
+
+.menu .les-entrees .entree .contenu-entree .texte .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu .les-entrees .entree .choix {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu .les-entrees .entree .choix .fas {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu .les-plats {
+  padding: 0;
+}
+
+.menu .les-plats h2 {
+  margin-left: 1em;
+  padding-bottom: 1em;
+}
+
+.menu .les-plats .plat {
+  margin-left: 1.2em;
+  background-color: white;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+          box-shadow: 0 0.3em 0.8em 0.1em black;
+  cursor: pointer;
+}
+
+.menu .les-plats .plat .contenu-plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .les-plats .plat .contenu-plat .texte {
+  padding-right: 5em;
+}
+
+.menu .les-plats .plat .contenu-plat .texte h3 {
+  margin-bottom: 0.3rem;
+}
+
+.menu .les-plats .plat .contenu-plat .texte p {
+  font-size: 0.9rem;
+}
+
+.menu .les-plats .plat .contenu-plat .texte .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu .les-plats .plat .choix {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu .les-plats .plat .choix .fas {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu .les-desserts {
+  padding: 0;
+}
+
+.menu .les-desserts h2 {
+  margin-left: 1em;
+  padding-bottom: 1em;
+}
+
+.menu .les-desserts .dessert {
+  margin-left: 1.2em;
+  background-color: white;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+          box-shadow: 0 0.3em 0.8em 0.1em black;
+  cursor: pointer;
+}
+
+.menu .les-desserts .dessert .contenu-dessert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .les-desserts .dessert .contenu-dessert .texte {
+  padding-right: 5em;
+}
+
+.menu .les-desserts .dessert .contenu-dessert .texte h3 {
+  margin-bottom: 0.3rem;
+}
+
+.menu .les-desserts .dessert .contenu-dessert .texte p {
+  font-size: 0.9rem;
+}
+
+.menu .les-desserts .dessert .contenu-dessert .texte .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu .les-desserts .dessert .choix {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu .les-desserts .dessert .choix .fas {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .fonctionnement {
@@ -441,7 +669,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h2, h3 {
+h1 {
   font-family: 'Shrikhand', cursive;
+  font-size: 1.8em;
 }
 /*# sourceMappingURL=style.css.map */
