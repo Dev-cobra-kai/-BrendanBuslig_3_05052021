@@ -5,7 +5,8 @@
     background-color: $grey;
     display: flex;
     padding-top: 2em;
-    padding-bottom: 5em;
+    padding-bottom: 9em;
+    
     & .titre 
     {             
         width: 100%;
@@ -30,37 +31,41 @@
         padding: 0;
         & h2
         {
-            margin-left: 1em;
+            margin-left: 1.5em;
             padding-bottom: 1em;  
         }
         & .entree
         {    
-            margin-left: 1.2em;                  
+            width: 22em;
+            margin-left: 2em;                  
             background-color: $white;
             margin-bottom: 1em;
-            padding: 0.8em;
+            padding: 1em;
             border-radius: 1em;
             box-shadow: 0 0.3em 0.8em 0.1em $black;      
             cursor: pointer;
+
             & .contenu-entree
             {
             display: flex;
+            width: 24em;            
+
                 & .texte
                 {
                     padding-right: 5em;
                     
                     & h3
                     {
-                        margin-bottom: 0.3rem;                            
+                        margin-bottom: 0.5em;                            
                     }
                     & p
                     {
-                    font-size: 0.9rem;
+                        font-size: 1em;
                     }
-                    & .prix
+                    & .prix 
                     {
                         display: flex;
-                        justify-content: flex-end;
+                        justify-content: flex-end;                        
                     }
                 }
             }
@@ -69,6 +74,7 @@
                 background-color:$tertiary-color;
                 display: flex;      
                 justify-content: flex-end;  
+
                 & .fas
                 {
                     transform: rotate(0deg);
@@ -79,6 +85,7 @@
     & .les-plats
     {              
         padding: 0;
+
         & h2
         {
             margin-left: 1em;
@@ -86,6 +93,7 @@
         }
         & .plat
         {    
+            width: 24em;
             margin-left: 1.2em;                  
             background-color: $white;
             margin-bottom: 1em;
@@ -93,20 +101,23 @@
             border-radius: 1em;
             box-shadow: 0 0.3em 0.8em 0.1em $black;      
             cursor: pointer;
+
             & .contenu-plat
             {
             display: flex;
+            width: 26em;  
+
                 & .texte
                 {
                     padding-right: 5em;
                     
                     & h3
                     {
-                        margin-bottom: 0.3rem;                            
+                        margin-bottom: 0.5em;                            
                     }
                     & p
                     {
-                    font-size: 0.9rem;
+                        font-size: 1em;
                     }
                     & .prix
                     {
@@ -119,7 +130,8 @@
             {
                 background-color:$tertiary-color;
                 display: flex;      
-                justify-content: flex-end;  
+                justify-content: flex-end; 
+
                 & .fas
                 {
                     transform: rotate(0deg);
@@ -130,6 +142,7 @@
     & .les-desserts
     {              
         padding: 0;
+
         & h2
         {
             margin-left: 1em;
@@ -137,6 +150,7 @@
         }
         & .dessert
         {    
+            width: 25em;
             margin-left: 1.2em;                  
             background-color: $white;
             margin-bottom: 1em;
@@ -144,20 +158,23 @@
             border-radius: 1em;
             box-shadow: 0 0.3em 0.8em 0.1em $black;      
             cursor: pointer;
+
             & .contenu-dessert
             {
             display: flex;
+            width: 26em; 
+
                 & .texte
                 {
                     padding-right: 5em;
                     
                     & h3
                     {
-                        margin-bottom: 0.3rem;                            
+                        margin-bottom: 0.5em;                            
                     }
                     & p
                     {
-                    font-size: 0.9rem;
+                    font-size: 1em;
                     }
                     & .prix
                     {
@@ -170,7 +187,8 @@
             {
                 background-color:$tertiary-color;
                 display: flex;      
-                justify-content: flex-end;  
+                justify-content: flex-end; 
+                 
                 & .fas
                 {
                     transform: rotate(0deg);

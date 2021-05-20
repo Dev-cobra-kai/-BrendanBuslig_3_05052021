@@ -1,16 +1,35 @@
-/* Boutons */
+/* Bouton Explorer nos restaurants */
 
-.btn 
+.btn-explorer
 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 15em;
     background: $primary-color;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 20px;
     margin: 20px auto;
     font-size: 1.2em;
+  
+    &:hover 
+    {
+        cursor: pointer;
+    }
+} 
+
+/* Bouton commander */
+
+.btn-commander
+{
+    background: $primary-color;
+    border-radius: 50px; 
+    font-size: 1.2em;
+    position: relative;
+    top: 24em;
+    right: 42em;
+    height: 3.5em;
+    padding: 1em 5em 1em 5em;
   
     &:hover 
     {

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* couleur */
 /* Taille des polices */
-/* Boutons */
-.btn {
+/* Bouton Explorer nos restaurants */
+.btn-explorer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,13 +14,29 @@
           justify-content: center;
   width: 15em;
   background: #9356DC;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 20px;
   margin: 20px auto;
   font-size: 1.2em;
 }
 
-.btn:hover {
+.btn-explorer:hover {
+  cursor: pointer;
+}
+
+/* Bouton commander */
+.btn-commander {
+  background: #9356DC;
+  border-radius: 50px;
+  font-size: 1.2em;
+  position: relative;
+  top: 24em;
+  right: 42em;
+  height: 3.5em;
+  padding: 1em 5em 1em 5em;
+}
+
+.btn-commander:hover {
   cursor: pointer;
 }
 
@@ -188,7 +204,7 @@ footer a {
   display: -ms-flexbox;
   display: flex;
   padding-top: 2em;
-  padding-bottom: 5em;
+  padding-bottom: 9em;
 }
 
 .menu .titre {
@@ -215,15 +231,16 @@ footer a {
 }
 
 .menu .les-entrees h2 {
-  margin-left: 1em;
+  margin-left: 1.5em;
   padding-bottom: 1em;
 }
 
 .menu .les-entrees .entree {
-  margin-left: 1.2em;
+  width: 22em;
+  margin-left: 2em;
   background-color: white;
   margin-bottom: 1em;
-  padding: 0.8em;
+  padding: 1em;
   border-radius: 1em;
   -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
           box-shadow: 0 0.3em 0.8em 0.1em black;
@@ -234,6 +251,7 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 24em;
 }
 
 .menu .les-entrees .entree .contenu-entree .texte {
@@ -241,11 +259,11 @@ footer a {
 }
 
 .menu .les-entrees .entree .contenu-entree .texte h3 {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5em;
 }
 
 .menu .les-entrees .entree .contenu-entree .texte p {
-  font-size: 0.9rem;
+  font-size: 1em;
 }
 
 .menu .les-entrees .entree .contenu-entree .texte .prix {
@@ -282,6 +300,7 @@ footer a {
 }
 
 .menu .les-plats .plat {
+  width: 24em;
   margin-left: 1.2em;
   background-color: white;
   margin-bottom: 1em;
@@ -296,6 +315,7 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 26em;
 }
 
 .menu .les-plats .plat .contenu-plat .texte {
@@ -303,11 +323,11 @@ footer a {
 }
 
 .menu .les-plats .plat .contenu-plat .texte h3 {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5em;
 }
 
 .menu .les-plats .plat .contenu-plat .texte p {
-  font-size: 0.9rem;
+  font-size: 1em;
 }
 
 .menu .les-plats .plat .contenu-plat .texte .prix {
@@ -344,6 +364,7 @@ footer a {
 }
 
 .menu .les-desserts .dessert {
+  width: 25em;
   margin-left: 1.2em;
   background-color: white;
   margin-bottom: 1em;
@@ -358,6 +379,7 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 26em;
 }
 
 .menu .les-desserts .dessert .contenu-dessert .texte {
@@ -365,11 +387,11 @@ footer a {
 }
 
 .menu .les-desserts .dessert .contenu-dessert .texte h3 {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5em;
 }
 
 .menu .les-desserts .dessert .contenu-dessert .texte p {
-  font-size: 0.9rem;
+  font-size: 1em;
 }
 
 .menu .les-desserts .dessert .contenu-dessert .texte .prix {
