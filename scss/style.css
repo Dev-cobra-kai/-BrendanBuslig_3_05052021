@@ -231,13 +231,13 @@ footer a {
 }
 
 .menu .les-entrees h2 {
-  margin-left: 1.5em;
+  margin-left: 1.7em;
   padding-bottom: 1em;
 }
 
 .menu .les-entrees .entree {
   width: 22em;
-  margin-left: 2em;
+  margin-left: 2.3em;
   background-color: white;
   margin-bottom: 1em;
   padding: 1em;
@@ -418,6 +418,13 @@ footer a {
           transform: rotate(0deg);
 }
 
+/* Média Queries */
+/* Desktop */
+/* Ecrans au-dessus de 1025 px */
+/* Tablette */
+/* Ecrans entre 769 px et 1025 px */
+/* Mobile */
+/* Ecrans en-dessous de 768 px */
 .fonctionnement {
   margin-top: 2em;
   margin-bottom: 2em;
