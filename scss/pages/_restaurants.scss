@@ -1,3 +1,5 @@
+/* Partie Restaurants */ 
+
 .restaurants
 {
     display: flex;
@@ -6,18 +8,26 @@
     padding-bottom: 3em;
     padding-top: 1em;
 
+/* Titre Restaurants */ 
+
     & h2
     {
         padding-top: 1em;
         padding-left: 0.8em;
         padding-bottom: 2em;
     }
+
+/* Les Divers Menus */ 
+
     & .divers-menu
     {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+/* Ancre du Menu La Palette du goût */ 
+
     & .menu-la-palette-du-gout a
     {
         display: flex;
@@ -27,6 +37,9 @@
         color: $black;
         margin-bottom: 3em;
     }
+
+/* Image du Menu La Palette du Goût */
+
     & .menu-la-palette-du-gout img
     {
         display: flex;
@@ -34,6 +47,9 @@
         border-radius: 1em 1em 0 0;
         object-fit:cover;
     }
+
+/* Ancre du Menu La Note Enchantée */
+
     & .menu-la-note-enchantee a
     {
         display: flex;
@@ -43,6 +59,9 @@
         color: $black;
         margin-bottom: 3em;
     }
+
+/* Image du Menu La Note Enchantée */
+
     & .menu-la-note-enchantee img
     {
         display: flex;
@@ -50,6 +69,9 @@
         border-radius: 1em 1em 0 0;
         object-fit:cover;
     }
+
+/* Ancre du Menu A la Française */
+
     & .menu-a-la-francaise a
     {
         display: flex;
@@ -59,6 +81,9 @@
         color: $black;
         margin-bottom: 3em;
     }
+
+/* Image du Menu A la Française */
+
     & .menu-a-la-francaise img
     {
         display: flex;
@@ -66,6 +91,9 @@
         border-radius: 1em 1em 0 0;
         object-fit:cover;
     }
+
+/* Ancre du Menu Le Délice des Sens */
+
     & .menu-le-delice-des-sens a
     {
         display: flex;
@@ -75,6 +103,9 @@
         color: $black;
         margin-bottom: 3em;
     }
+
+/* Image du Menu Le Délice des Sens */
+
     & .menu-le-delice-des-sens img
     {
         display: flex;
@@ -82,12 +113,18 @@
         border-radius: 1em 1em 0 0;
         object-fit:cover;
     }
+
+/* Image des Menus */
+
     & img
     {
         object-fit:cover;
         width: 100%;
         height: 15em;       
     }
+
+/* Texte + Coeur */
+
     & .texte-coeur
     {
         display: flex;
@@ -98,6 +135,9 @@
         border-radius: 0 0 1em 1em;
         box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
     }
+
+/* Paragraphe Nouveau */
+
     & .nouveau
     {
     background-color: $tertiary-color;

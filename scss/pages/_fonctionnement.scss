@@ -1,3 +1,5 @@
+/* Partie Fonctionnement */
+
 .fonctionnement
 {    
     margin-top: 2em;
@@ -7,6 +9,9 @@
         padding-top: 1em;
         padding-left: 0.8em;
     }
+
+/* Fonctionnement Menu */    
+
     & .contenu-fct
     {
         display: flex;
@@ -14,6 +19,9 @@
         align-items: center;  
         padding-top: 2em;
     }
+
+/* Menu Choisir */    
+
     & .choisir
     {
         display:flex;
@@ -24,6 +32,9 @@
         box-shadow: 0 0 0.6em 0.2em $grey;
         padding: 1.5em 5em 1.5em 0.2em;
     }
+
+/* Menu Composer */  
+
     & .composer
     {
         display:flex;
@@ -34,6 +45,9 @@
         box-shadow: 0 0 0.6em 0.2em $grey;
         padding: 1.5em 5.5em 1.5em 1.5em;
     }
+
+/* Menu choisir */  
+
     & .deguster
     {
         display:flex;
@@ -44,14 +58,23 @@
         box-shadow: 0 0 0.6em 0.2em $grey;
         padding: 1.5em 5em 1.5em 0.2em;
     }
+
+/* Paragraghe Menu */ 
+
     & .contenu-fct p
     {
         font-weight: bold;
     }
+
+/* Logo Menu */ 
+
     & .fas
     {
         padding: 0 1em 0 1em;
     }
+
+/* Nombre Menu */ 
+
     & .nombre
     {
         background: $primary-color;
@@ -61,18 +84,30 @@
         margin-left: -1rem;
         color:$white;
     }
+
+/* Nombre Composer */ 
+
     & .composer .nombre
     {
         margin-left: -2.5em;
     }
+
+/* Logo Mobile */ 
+    
     .fa-mobile-alt
     {
         color:gray;
     }
+
+/* Logo Triple Traits */ 
+
     .fa-list-ul
     {
         color:gray;
     }
+
+/* Logo boutique */ 
+
     .fa-store
     {
         color:$primary-color;

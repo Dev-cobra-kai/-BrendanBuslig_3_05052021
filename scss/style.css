@@ -420,14 +420,392 @@ footer a {
 
 /* Média Queries */
 /* Desktop */
-/* Ecrans au-dessus de 1025 px */
+/* Ecrans entre 1025 px et 1300 px */
+/* En-tête */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  header {
+    padding: 0;
+    margin: 0;
+    /* logo */
+    /* Flèche retour */
+    /* Lieu */
+    /* Icone lieu */
+    /* Paragraphe lieu */
+    /* Réservation */
+    /* Réservation titre */
+    /* Réservation paragraphe */
+    /* Image menu */
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  header .logo img {
+    height: 45px;
+  }
+  header .fa-arrow-left {
+    color: black;
+    font-size: 2em;
+    position: absolute;
+    top: 1em;
+    left: 9em;
+  }
+  header .lieu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #DCDCDC;
+    margin-top: 2em;
+    height: 4em;
+    width: 100%;
+    -webkit-box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+  }
+  header .fa-map-marker-alt {
+    margin-right: 1.2em;
+  }
+  header .lieu p {
+    font-size: 1.5em;
+  }
+  header .reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+  }
+  header .reservation h2 {
+    font-size: 1.8em;
+    padding-bottom: 0.7em;
+    width: 50%;
+  }
+  header .reservation p {
+    font-size: 1.1em;
+    padding-bottom: 0.7em;
+  }
+  header .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-top: 1em;
+    height: 18em;
+    width: 100%;
+  }
+}
+
+/* Partie Fonctionnement */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .fonctionnement {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* Fonctionnement Menu */
+    /* Menu Choisir */
+    /* Menu Composer */
+    /* Menu choisir */
+    /* Paragraghe Menu */
+    /* Logo Menu */
+    /* Nombre Menu */
+    /* Nombre Composer */
+    /* Logo Mobile */
+    /* Logo Triple Traits */
+    /* Logo Boutique */
+  }
+  .fonctionnement h2 {
+    padding-top: 1em;
+    padding-left: 0.8em;
+  }
+  .fonctionnement .contenu-fct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1em;
+  }
+  .fonctionnement .choisir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 5.5em 1.5em 1.5em;
+  }
+  .fonctionnement .composer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 5.5em 1.5em 1.5em;
+  }
+  .fonctionnement .deguster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 5em 1.5em 0.2em;
+  }
+  .fonctionnement .contenu-fct p {
+    font-weight: normal;
+  }
+  .fonctionnement .fas {
+    padding: 0 1em 0 1em;
+  }
+  .fonctionnement .nombre {
+    background: #9356DC;
+    border-radius: 50%;
+    padding: 0.5em 0.7em;
+    margin-right: 0.8em;
+    margin-left: -1rem;
+    color: white;
+  }
+  .fonctionnement .composer .nombre {
+    margin-left: -2.5em;
+  }
+  .fonctionnement .fa-mobile-alt {
+    color: gray;
+  }
+  .fonctionnement .fa-list-ul {
+    color: gray;
+  }
+  .fonctionnement .fa-store {
+    color: #9356DC;
+  }
+}
+
+/* Partie Restaurants */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    /* Titre Restaurants */
+    /* Les Divers Menus */
+    /* Ancre du Menu La Palette du goût */
+    /* Image du Menu La Palette du Goût */
+    /* Ancre du Menu La Note Enchantée */
+    /* Image du Menu La Note Enchantée */
+    /* Ancre du Menu A la Française */
+    /* Image du Menu A la Française */
+    /* Ancre du Menu Le Délice des Sens */
+    /* Image du Menu Le Délice des Sens */
+    /* Image des Menus */
+    /* Texte + Coeur */
+    /* Paragraphe Nouveau */
+  }
+  .restaurants h2 {
+    padding-top: 1em;
+    padding-left: 0.8em;
+    padding-bottom: 2em;
+  }
+  .restaurants .divers-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurants .menu-la-palette-du-gout a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-la-palette-du-gout img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-la-note-enchantee a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-la-note-enchantee img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-a-la-francaise a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-a-la-francaise img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-le-delice-des-sens a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-le-delice-des-sens img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 15em;
+  }
+  .restaurants .texte-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0 0 1em 1em;
+    -webkit-box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+  }
+  .restaurants .nouveau {
+    background-color: #99E2D0;
+    font-weight: bold;
+    color: #278870;
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    padding: 0.7em;
+    border-radius: 5px;
+  }
+}
+
+/* Média Queries */
 /* Tablette */
 /* Ecrans entre 769 px et 1024 px */
+/* Média Queries */
 /* Mobile */
 /* Ecrans en-dessous de 768 px */
+/* Partie Fonctionnement */
 .fonctionnement {
   margin-top: 2em;
   margin-bottom: 2em;
+  /* Fonctionnement Menu */
+  /* Menu Choisir */
+  /* Menu Composer */
+  /* Menu choisir */
+  /* Paragraghe Menu */
+  /* Logo Menu */
+  /* Nombre Menu */
+  /* Nombre Composer */
+  /* Logo Mobile */
+  /* Logo Triple Traits */
+  /* Logo boutique */
 }
 
 .fonctionnement h2 {
@@ -525,6 +903,7 @@ footer a {
   color: #9356DC;
 }
 
+/* Partie Restaurants */
 .restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,6 +915,19 @@ footer a {
   background: #F2F2F2;
   padding-bottom: 3em;
   padding-top: 1em;
+  /* Titre Restaurants */
+  /* Les Divers Menus */
+  /* Ancre du Menu La Palette du goût */
+  /* Image du Menu La Palette du Goût */
+  /* Ancre du Menu La Note Enchantée */
+  /* Image du Menu La Note Enchantée */
+  /* Ancre du Menu A la Française */
+  /* Image du Menu A la Française */
+  /* Ancre du Menu Le Délice des Sens */
+  /* Image du Menu Le Délice des Sens */
+  /* Image des Menus */
+  /* Texte + Coeur */
+  /* Paragraphe Nouveau */
 }
 
 .restaurants h2 {
