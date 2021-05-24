@@ -114,3 +114,392 @@
     }
 }
 
+/* Média Queries */
+
+/* Desktop */
+
+/* Ecrans entre 1025 px et 1300 px */
+
+/* Partie Fonctionnement */
+
+@media screen and (min-width: 1025px) and (max-width: 1300px)
+{
+
+    .fonctionnement
+    {    
+        margin-top: 2em;
+        margin-bottom: 2em;
+        & h2
+        {
+            padding-top: 0.7em;
+            padding-left: 0.8em;
+        }
+
+/* Fonctionnement Menu */    
+
+        & .contenu-fct
+        {
+            display: flex;
+            justify-content: space-around;    
+            align-items: center;  
+            padding-top: 1.5em;
+        }
+
+/* Menu Choisir */    
+
+        & .choisir
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 1.5em 1.5em 1.5em;
+        }
+
+/* Menu Composer */  
+
+        & .composer
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 2em 1.5em 1.5em;
+        }
+
+/* Menu choisir */  
+
+        & .deguster
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 1.5em 1.5em 0.2em;
+        }
+
+/* Paragraghe Menu */ 
+
+        & .contenu-fct p
+        {
+            font-weight: bold;
+        }
+
+/* Logo Menu */ 
+
+        & .fas
+        {
+            padding: 0 1em 0 1em;
+        }
+
+/* Nombre Menu */ 
+
+        & .nombre
+        {
+            background: $primary-color;
+            border-radius: 50%;
+            padding: 0.5em 0.7em ;
+            margin-right: 0.8em;
+            margin-left: -1rem;
+            color:$white;
+        }
+
+/* Nombre Composer */ 
+
+        & .composer .nombre
+        {
+            margin-left: -2.5em;
+        }
+
+/* Logo Mobile */ 
+        
+        .fa-mobile-alt
+        {
+            color:gray;
+        }
+
+/* Logo Triple Traits */ 
+
+        .fa-list-ul
+        {
+            color:gray;
+        }
+
+/* Logo Boutique */ 
+
+        .fa-store
+        {
+            color:$primary-color;
+        }
+    }
+}
+
+/* Tablette */
+
+/* Ecrans entre 769 px et 1024 px */
+
+/* Partie Fonctionnement */
+
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+    .fonctionnement
+    {    
+        margin-top: 2em;
+        margin-bottom: 2em;
+        & h2
+        {
+            padding-top: 0.5em;
+            padding-left: 0.8em;
+        }
+
+/* Fonctionnement Menu */    
+
+        & .contenu-fct
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;    
+            align-items: center;  
+            padding-top: 1.5em;
+        }
+
+/* Menu Choisir */    
+
+        & .choisir
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 3.5em 1.5em 1.5em;
+        }
+
+/* Menu Composer */  
+
+        & .composer
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 4em 1.5em 1.5em;
+        }
+
+/* Menu choisir */  
+
+        & .deguster
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 3.5em 1.5em 0.2em;
+        }
+
+/* Paragraghe Menu */ 
+
+        & .contenu-fct p
+        {
+            font-weight: bold;
+        }
+
+/* Logo Menu */ 
+
+        & .fas
+        {
+            padding: 0 1em 0 1em;
+        }
+
+/* Nombre Menu */ 
+
+        & .nombre
+        {
+            background: $primary-color;
+            border-radius: 50%;
+            padding: 0.5em 0.7em ;
+            margin-right: 0.8em;
+            margin-left: -1rem;
+            color:$white;
+        }
+
+/* Nombre Composer */ 
+
+        & .choisir .nombre
+        {
+            margin-left: -2.5em;
+        }
+
+/* Nombre Composer */ 
+
+        & .composer .nombre
+        {
+            margin-left: -2.5em;
+        }
+
+
+/* Logo Mobile */ 
+        
+        .fa-mobile-alt
+        {
+            color:gray;
+        }
+
+/* Logo Triple Traits */ 
+
+        .fa-list-ul
+        {
+            color:gray;
+        }
+
+/* Logo Boutique */ 
+
+        .fa-store
+        {
+            color:$primary-color;
+        }
+    }
+}
+
+/* Mobile */
+
+/* Ecrans en-dessous de 768 px */
+
+/* Partie Fonctionnement */
+
+@media screen and (max-width: 768px)
+{
+    .fonctionnement
+    {    
+        margin-top: 2em;
+        margin-bottom: 2em;
+        & h2
+        {
+            padding-top: 0.5em;
+            padding-left: 0.8em;
+        }
+
+/* Fonctionnement Menu */    
+
+        & .contenu-fct
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;    
+            align-items: center;  
+            padding-top: 2.5em;
+        }
+
+/* Menu Choisir */    
+
+        & .choisir
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 4em 1.5em 1.5em;
+        }
+
+/* Menu Composer */  
+
+        & .composer
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 4.5em 1.5em 1.5em;
+        }
+
+/* Menu choisir */  
+
+        & .deguster
+        {
+            display:flex;
+            align-items: center;
+            background: $background-color;
+            border-radius: 1.4em;
+            margin-bottom: 1.5em;
+            box-shadow: 0 0 0.6em 0.2em $grey;
+            padding: 1.5em 4em 1.5em 0.2em;
+        }
+
+/* Paragraghe Menu */ 
+
+        & .contenu-fct p
+        {
+            font-weight: bold;
+        }
+
+/* Logo Menu */ 
+
+        & .fas
+        {
+            padding: 0 1em 0 1em;
+        }
+
+/* Nombre Menu */ 
+
+        & .nombre
+        {
+            background: $primary-color;
+            border-radius: 50%;
+            padding: 0.5em 0.7em ;
+            margin-right: 0.8em;
+            margin-left: -1rem;
+            color:$white;
+        }
+
+/* Nombre Composer */ 
+
+        & .choisir .nombre
+        {
+            margin-left: -2.5em;
+        }
+
+/* Nombre Composer */ 
+
+        & .composer .nombre
+        {
+            margin-left: -2.5em;
+        }
+
+
+/* Logo Mobile */ 
+        
+        .fa-mobile-alt
+        {
+            color:gray;
+        }
+
+/* Logo Triple Traits */ 
+
+        .fa-list-ul
+        {
+            color:gray;
+        }
+
+/* Logo Boutique */ 
+
+        .fa-store
+        {
+            color:$primary-color;
+        }
+    }
+}

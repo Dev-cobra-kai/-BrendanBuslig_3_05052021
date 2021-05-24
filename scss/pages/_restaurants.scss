@@ -150,3 +150,489 @@
     border-radius: 5px;    
     }
 }
+
+/* Média Queries */
+
+/* Desktop */
+
+/* Ecrans entre 1025 px et 1300 px */
+
+/* Partie Restaurants */ 
+
+@media screen and (min-width: 1025px) and (max-width: 1300px)
+{
+    .restaurants
+    {
+        display: flex;
+        flex-direction: column;
+        background: $background-color;
+        padding-bottom: 3em;
+        padding-top: 1em;
+
+/* Titre Restaurants */ 
+
+        & h2
+        {
+            padding-top: 1em;
+            padding-left: 0.8em;
+            padding-bottom: 1em;
+        }
+
+/* Les Divers Menus */ 
+
+        & .divers-menu
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+/* Ancre du Menu La Palette du goût */ 
+
+        & .menu-la-palette-du-gout a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu La Palette du Goût */
+
+        & .menu-la-palette-du-gout img
+        {
+            display: flex;
+            width: 63em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu La Note Enchantée */
+
+        & .menu-la-note-enchantee a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu La Note Enchantée */
+
+        & .menu-la-note-enchantee img
+        {
+            display: flex;
+            width: 63em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu A la Française */
+
+        & .menu-a-la-francaise a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu A la Française */
+
+        & .menu-a-la-francaise img
+        {
+            display: flex;
+            width: 63em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu Le Délice des Sens */
+
+        & .menu-le-delice-des-sens a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu Le Délice des Sens */
+
+        & .menu-le-delice-des-sens img
+        {
+            display: flex;
+            width: 63em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Image des Menus */
+
+        & img
+        {
+            object-fit:cover;
+            width: 100%;
+            height: 15em;       
+        }
+
+/* Texte + Coeur */
+
+        & .texte-coeur
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em;
+            background-color: $white;
+            border-radius: 0 0 1em 1em;
+            box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+        }
+
+/* Paragraphe Nouveau */
+
+        & .nouveau
+        {
+        background-color: $tertiary-color;
+        font-weight: bold;
+        color: darken($tertiary-color, 40%);
+        position: absolute;
+        right: 2em;
+        top: 1em;
+        padding: 0.7em;
+        border-radius: 5px;    
+        }
+    }
+}
+
+/* Tablette */
+
+/* Ecrans entre 769 px et 1024 px */
+
+/* Partie Restaurants */ 
+
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+    .restaurants
+    {
+        display: flex;
+        flex-direction: column;
+        background: $background-color;
+        padding-bottom: 3em;
+        padding-top: 1em;
+
+/* Titre Restaurants */ 
+
+        & h2
+        {
+            padding-top: 1em;
+            padding-left: 0.8em;
+            padding-bottom: 1em;
+        }
+
+/* Les Divers Menus */ 
+
+        & .divers-menu
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+/* Ancre du Menu La Palette du goût */ 
+
+        & .menu-la-palette-du-gout a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu La Palette du Goût */
+
+        & .menu-la-palette-du-gout img
+        {
+            display: flex;
+            width: 45em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu La Note Enchantée */
+
+        & .menu-la-note-enchantee a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu La Note Enchantée */
+
+        & .menu-la-note-enchantee img
+        {
+            display: flex;
+            width: 45em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu A la Française */
+
+        & .menu-a-la-francaise a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu A la Française */
+
+        & .menu-a-la-francaise img
+        {
+            display: flex;
+            width: 45em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu Le Délice des Sens */
+
+        & .menu-le-delice-des-sens a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu Le Délice des Sens */
+
+        & .menu-le-delice-des-sens img
+        {
+            display: flex;
+            width: 45em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Image des Menus */
+
+        & img
+        {
+            object-fit:cover;
+            width: 100%;
+            height: 15em;       
+        }
+
+/* Texte + Coeur */
+
+        & .texte-coeur
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em;
+            background-color: $white;
+            border-radius: 0 0 1em 1em;
+            box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+        }
+
+/* Paragraphe Nouveau */
+
+        & .nouveau
+        {
+        background-color: $tertiary-color;
+        font-weight: bold;
+        color: darken($tertiary-color, 40%);
+        position: absolute;
+        right: 2em;
+        top: 1em;
+        padding: 0.7em;
+        border-radius: 5px;    
+        }
+    }
+}
+
+/* Mobile */
+
+/* Ecrans en-dessous de 768 px */
+
+/* Partie Restaurants */ 
+
+@media screen and (max-width: 768px)
+{
+    .restaurants
+    {
+        display: flex;
+        flex-direction: column;
+        background: $background-color;
+        padding-bottom: 3em;
+        padding-top: 1em;
+
+/* Titre Restaurants */ 
+
+        & h2
+        {
+            padding-top: 1em;
+            padding-left: 0.8em;
+            padding-bottom: 1em;
+        }
+
+/* Les Divers Menus */ 
+
+        & .divers-menu
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+/* Ancre du Menu La Palette du goût */ 
+
+        & .menu-la-palette-du-gout a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu La Palette du Goût */
+
+        & .menu-la-palette-du-gout img
+        {
+            display: flex;
+            width: 25em;
+            height: 11em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu La Note Enchantée */
+
+        & .menu-la-note-enchantee a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu La Note Enchantée */
+
+        & .menu-la-note-enchantee img
+        {
+            display: flex;
+            width: 25em;
+            height: 11em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu A la Française */
+
+        & .menu-a-la-francaise a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu A la Française */
+
+        & .menu-a-la-francaise img
+        {
+            display: flex;
+            width: 25em;
+            height: 11em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Ancre du Menu Le Délice des Sens */
+
+        & .menu-le-delice-des-sens a
+        {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-decoration: none;
+            color: $black;
+            margin-bottom: 3em;
+        }
+
+/* Image du Menu Le Délice des Sens */
+
+        & .menu-le-delice-des-sens img
+        {
+            display: flex;
+            width: 25em;
+            height: 11em;
+            border-radius: 1em 1em 0 0;
+            object-fit:cover;
+        }
+
+/* Image des Menus */
+
+        & img
+        {
+            object-fit:cover;
+            width: 100%;
+            height: 15em;       
+        }
+
+/* Texte + Coeur */
+
+        & .texte-coeur
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em;
+            background-color: $white;
+            border-radius: 0 0 1em 1em;
+            box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+        }
+
+/* Paragraphe Nouveau */
+
+        & .nouveau
+        {
+        background-color: $tertiary-color;
+        font-weight: bold;
+        color: darken($tertiary-color, 40%);
+        position: absolute;
+        right: 2em;
+        top: 1em;
+        padding: 0.7em;
+        border-radius: 5px;    
+        }
+    }
+}

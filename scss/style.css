@@ -40,6 +40,66 @@
   cursor: pointer;
 }
 
+/* Média Queries */
+/* Desktop */
+/* Ecrans entre 1025 px et 1300 px */
+/* Bouton commander */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .btn-commander {
+    background: #9356DC;
+    border-radius: 50px;
+    font-size: 1.2em;
+    position: relative;
+    top: 24em;
+    right: 33em;
+    height: 3.5em;
+    padding: 1em 5em 1em 5em;
+  }
+  .btn-commander:hover {
+    cursor: pointer;
+  }
+}
+
+/* Tablette */
+/* Ecrans entre 769 px et 1024 px */
+/* Bouton commander */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .btn-commander {
+    background: #9356DC;
+    border-radius: 50px;
+    font-size: 1.2em;
+    position: relative;
+    top: 4.5em;
+    left: 18em;
+    height: 3.5em;
+    width: 15em;
+    padding: 1em 5em 1em 5em;
+  }
+  .btn-commander:hover {
+    cursor: pointer;
+  }
+}
+
+/* Mobile */
+/* Ecrans en-dessous de 768 px */
+/* Bouton commander */
+@media screen and (max-width: 768px) {
+  .btn-commander {
+    background: #9356DC;
+    border-radius: 50px;
+    font-size: 1.2em;
+    position: relative;
+    top: 2.5em;
+    left: 4em;
+    height: 3.5em;
+    width: 15em;
+    padding: 1em 5em 1em 5em;
+  }
+  .btn-commander:hover {
+    cursor: pointer;
+  }
+}
+
 header {
   padding: 0;
   margin: 0;
@@ -77,7 +137,7 @@ header .fa-arrow-left {
   font-size: 2em;
   position: absolute;
   top: 1em;
-  left: 9em;
+  left: 6em;
 }
 
 header .lieu {
@@ -141,6 +201,299 @@ header .image img {
   padding-top: 1em;
   height: 18em;
   width: 100%;
+}
+
+/* Média Queries */
+/* Desktop */
+/* Ecrans entre 1025 px et 1300 px */
+/* En-tête */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  header {
+    padding: 0;
+    margin: 0;
+    /* logo */
+    /* Flèche retour */
+    /* Lieu */
+    /* Icone lieu */
+    /* Paragraphe lieu */
+    /* Réservation */
+    /* Réservation titre */
+    /* Réservation paragraphe */
+    /* Image menu */
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  header .logo img {
+    height: 45px;
+  }
+  header .fa-arrow-left {
+    color: black;
+    font-size: 2em;
+    position: absolute;
+    top: 1em;
+    left: 9em;
+  }
+  header .lieu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #DCDCDC;
+    margin-top: 2em;
+    height: 4em;
+    width: 100%;
+    -webkit-box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+  }
+  header .fa-map-marker-alt {
+    margin-right: 1.2em;
+  }
+  header .lieu p {
+    font-size: 1.5em;
+  }
+  header .reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+  }
+  header .reservation h2 {
+    font-size: 1.8em;
+    padding-bottom: 0.7em;
+    width: 50%;
+  }
+  header .reservation p {
+    font-size: 1.1em;
+    padding-bottom: 0.7em;
+  }
+  header .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-top: 1em;
+    height: 18em;
+    width: 100%;
+  }
+}
+
+/* Tablette */
+/* Ecrans entre 769 px et 1024 px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 0;
+    margin: 0;
+    /* logo */
+    /* Flèche retour */
+    /* Lieu */
+    /* Icone lieu */
+    /* Paragraphe lieu */
+    /* Réservation */
+    /* Réservation titre */
+    /* Réservation paragraphe */
+    /* Image menu */
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  header .logo img {
+    height: 45px;
+  }
+  header .fa-arrow-left {
+    color: black;
+    font-size: 2em;
+    position: absolute;
+    top: 1em;
+    left: 4em;
+  }
+  header .lieu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #DCDCDC;
+    margin-top: 2em;
+    height: 4em;
+    width: 100%;
+    -webkit-box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+  }
+  header .fa-map-marker-alt {
+    margin-right: 1.2em;
+  }
+  header .lieu p {
+    font-size: 1.5em;
+  }
+  header .reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  header .reservation h2 {
+    font-size: 1.6em;
+    padding-bottom: 0.7em;
+    width: 50%;
+  }
+  header .reservation p {
+    font-size: 1.1em;
+    padding-bottom: 0.7em;
+  }
+  header .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-top: 1em;
+    height: 18em;
+    width: 100%;
+  }
+}
+
+/* Mobile */
+/* Ecrans en-dessous de 768 px */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+    margin: 0;
+    /* logo */
+    /* Flèche retour */
+    /* Lieu */
+    /* Icone lieu */
+    /* Paragraphe lieu */
+    /* Réservation */
+    /* Réservation titre */
+    /* Réservation paragraphe */
+    /* Image menu */
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  header .logo img {
+    height: 40px;
+  }
+  header .fa-arrow-left {
+    color: black;
+    font-size: 2em;
+    position: absolute;
+    top: 0.9em;
+    left: 1em;
+  }
+  header .lieu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #DCDCDC;
+    margin-top: 2em;
+    height: 4em;
+    width: 100%;
+    -webkit-box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+  }
+  header .fa-map-marker-alt {
+    margin-right: 1.2em;
+  }
+  header .lieu p {
+    font-size: 1.4em;
+  }
+  header .reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  header .reservation h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.7em;
+    width: 55%;
+  }
+  header .reservation p {
+    font-size: 1.2em;
+    padding-bottom: 0.7em;
+  }
+  header .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-top: 1em;
+    height: 18em;
+    width: 100%;
+  }
 }
 
 footer {
@@ -266,13 +619,13 @@ footer a {
   font-size: 1em;
 }
 
-.menu .les-entrees .entree .contenu-entree .texte .prix {
+.menu .les-entrees .entree .contenu-entree .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .menu .les-entrees .entree .choix {
@@ -330,13 +683,13 @@ footer a {
   font-size: 1em;
 }
 
-.menu .les-plats .plat .contenu-plat .texte .prix {
+.menu .les-plats .plat .contenu-plat .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .menu .les-plats .plat .choix {
@@ -394,13 +747,13 @@ footer a {
   font-size: 1em;
 }
 
-.menu .les-desserts .dessert .contenu-dessert .texte .prix {
+.menu .les-desserts .dessert .contenu-dessert .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .menu .les-desserts .dessert .choix {
@@ -413,116 +766,559 @@ footer a {
           justify-content: flex-end;
 }
 
-.menu .les-desserts .dessert .choix .fas {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
 /* Média Queries */
 /* Desktop */
 /* Ecrans entre 1025 px et 1300 px */
-/* En-tête */
+/* Menu */
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
-  header {
-    padding: 0;
-    margin: 0;
-    /* logo */
-    /* Flèche retour */
-    /* Lieu */
-    /* Icone lieu */
-    /* Paragraphe lieu */
-    /* Réservation */
-    /* Réservation titre */
-    /* Réservation paragraphe */
-    /* Image menu */
-  }
-  header .logo {
+  .menu {
+    background-color: #DCDCDC;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 9em;
+  }
+  .menu .titre {
+    width: 100%;
+    position: absolute;
+    top: 21em;
+  }
+  .menu .titre h1 {
+    background-color: #DCDCDC;
+    padding: 0.7em;
+    border-radius: 2em 2em 0 0;
+    padding-left: 13em;
+  }
+  .menu .titre .coeur {
+    position: absolute;
+    top: 2em;
+    right: 20em;
+  }
+  .menu .les-entrees {
+    padding: 0;
+  }
+  .menu .les-entrees h2 {
+    margin-left: 1.7em;
+    padding-bottom: 1em;
+  }
+  .menu .les-entrees .entree {
+    width: 65%;
+    margin-left: 2.5em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-entrees .entree .contenu-entree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 24em;
+  }
+  .menu .les-entrees .entree .contenu-entree .texte {
+    padding-right: 5em;
+  }
+  .menu .les-entrees .entree .contenu-entree .texte h3 {
     margin-bottom: 0.5em;
   }
-  header .logo img {
-    height: 45px;
+  .menu .les-entrees .entree .contenu-entree .texte p {
+    font-size: 1em;
   }
-  header .fa-arrow-left {
-    color: black;
-    font-size: 2em;
-    position: absolute;
-    top: 1em;
-    left: 9em;
-  }
-  header .lieu {
+  .menu .les-entrees .entree .contenu-entree .prix {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #DCDCDC;
-    margin-top: 2em;
-    height: 4em;
-    width: 100%;
-    -webkit-box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-  header .fa-map-marker-alt {
-    margin-right: 1.2em;
-  }
-  header .lieu p {
-    font-size: 1.5em;
-  }
-  header .reservation {
+  .menu .les-entrees .entree .choix {
+    background-color: #99E2D0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu .les-plats {
+    padding: 0;
+  }
+  .menu .les-plats h2 {
+    margin-left: 1em;
+    padding-bottom: 1em;
+  }
+  .menu .les-plats .plat {
+    width: 65%;
+    margin-left: 1em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-plats .plat .contenu-plat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte {
+    padding-right: 5em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte p {
+    font-size: 1em;
+  }
+  .menu .les-plats .plat .contenu-plat .prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu .les-plats .plat .choix {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu .les-desserts {
+    padding: 0;
+  }
+  .menu .les-desserts h2 {
+    margin-left: 1em;
+    padding-bottom: 1em;
+  }
+  .menu .les-desserts .dessert {
+    width: 60%;
+    margin-left: 1.2em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-desserts .dessert .contenu-dessert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte {
+    padding-right: 5em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte p {
+    font-size: 1em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu .les-desserts .dessert .choix {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+/* Tablette */
+/* Ecrans entre 769 px et 1024 px */
+/* Menu */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu {
+    background-color: #DCDCDC;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #F2F2F2;
+    padding-top: 3em;
+    padding-bottom: 9em;
+  }
+  .menu .titre {
     width: 100%;
-    padding-top: 1.5em;
-    padding-bottom: 3em;
+    position: absolute;
+    top: 21em;
   }
-  header .reservation h2 {
-    font-size: 1.8em;
-    padding-bottom: 0.7em;
-    width: 50%;
+  .menu .titre h1 {
+    background-color: #DCDCDC;
+    padding: 0.7em;
+    border-radius: 2em 2em 0 0;
+    padding-left: 10em;
   }
-  header .reservation p {
-    font-size: 1.1em;
-    padding-bottom: 0.7em;
+  .menu .titre .coeur {
+    position: absolute;
+    top: 2em;
+    right: 10em;
   }
-  header .image img {
-    -o-object-fit: cover;
-       object-fit: cover;
+  .menu .les-entrees {
+    padding: 0;
+  }
+  .menu .les-entrees h2 {
+    margin-left: 2.7em;
+    padding-bottom: 1em;
+  }
+  .menu .les-entrees .entree {
+    width: 80%;
+    margin-left: 3.5em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-entrees .entree .contenu-entree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 24em;
+  }
+  .menu .les-entrees .entree .contenu-entree .texte {
+    padding-right: 5em;
+  }
+  .menu .les-entrees .entree .contenu-entree .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-entrees .entree .contenu-entree .texte p {
+    font-size: 1em;
+  }
+  .menu .les-entrees .entree .contenu-entree .prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu .les-entrees .entree .choix {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu .les-plats {
+    padding: 0;
+  }
+  .menu .les-plats h2 {
+    margin-left: 2.7em;
+    padding-bottom: 1.1em;
     padding-top: 1em;
-    height: 18em;
-    width: 100%;
+  }
+  .menu .les-plats .plat {
+    width: 80%;
+    margin-left: 3.5em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-plats .plat .contenu-plat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte {
+    padding-right: 5em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte p {
+    font-size: 1em;
+  }
+  .menu .les-plats .plat .contenu-plat .prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu .les-plats .plat .choix {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu .les-desserts {
+    padding: 0;
+  }
+  .menu .les-desserts h2 {
+    margin-left: 2.7em;
+    padding-bottom: 1.1em;
+    padding-top: 1em;
+  }
+  .menu .les-desserts .dessert {
+    width: 80%;
+    margin-left: 3.5em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-desserts .dessert .contenu-dessert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte {
+    padding-right: 5em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte p {
+    font-size: 1em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu .les-desserts .dessert .choix {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
-/* Média Queries */
-/* Tablette */
-/* Ecrans entre 769 px et 1024 px */
-/* Média Queries */
 /* Mobile */
 /* Ecrans en-dessous de 768 px */
+/* Menu */
+@media screen and (max-width: 768px) {
+  .menu {
+    background-color: #DCDCDC;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 9em;
+  }
+  .menu .titre {
+    width: 100%;
+    position: absolute;
+    top: 21em;
+  }
+  .menu .titre h1 {
+    background-color: #DCDCDC;
+    padding: 0.7em;
+    border-radius: 2em 2em 0 0;
+    padding-left: 1em;
+  }
+  .menu .titre .coeur {
+    position: absolute;
+    top: 2em;
+    right: 3em;
+  }
+  .menu .les-entrees {
+    padding: 0;
+  }
+  .menu .les-entrees h2 {
+    margin-left: 1em;
+    padding-bottom: 1em;
+  }
+  .menu .les-entrees .entree {
+    width: 80%;
+    margin-left: 1.3em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-entrees .entree .contenu-entree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 24em;
+  }
+  .menu .les-entrees .entree .contenu-entree .texte {
+    padding-right: 5em;
+  }
+  .menu .les-entrees .entree .contenu-entree .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-entrees .entree .contenu-entree .texte p {
+    font-size: 1em;
+  }
+  .menu .les-entrees .entree .contenu-entree .prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu .les-entrees .entree .choix {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu .les-plats {
+    padding: 0;
+  }
+  .menu .les-plats h2 {
+    margin-left: 1em;
+    padding-bottom: 1.1em;
+    padding-top: 1em;
+  }
+  .menu .les-plats .plat {
+    width: 80%;
+    margin-left: 1.3em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-plats .plat .contenu-plat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte {
+    padding-right: 5em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-plats .plat .contenu-plat .texte p {
+    font-size: 1em;
+  }
+  .menu .les-plats .plat .contenu-plat .prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu .les-plats .plat .choix {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu .les-desserts {
+    padding: 0;
+  }
+  .menu .les-desserts h2 {
+    margin-left: 1em;
+    padding-bottom: 1.1em;
+    padding-top: 1em;
+  }
+  .menu .les-desserts .dessert {
+    width: 80%;
+    margin-left: 1.3em;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
+            box-shadow: 0 0.3em 0.8em 0.1em black;
+    cursor: pointer;
+  }
+  .menu .les-desserts .dessert .contenu-dessert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte {
+    padding-right: 5em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .texte p {
+    font-size: 1em;
+  }
+  .menu .les-desserts .dessert .contenu-dessert .prix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu .les-desserts .dessert .choix {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 /* Partie Fonctionnement */
 .fonctionnement {
   margin-top: 2em;
@@ -656,7 +1452,7 @@ footer a {
     /* Logo Boutique */
   }
   .fonctionnement h2 {
-    padding-top: 1em;
+    padding-top: 0.7em;
     padding-left: 0.8em;
   }
   .fonctionnement .contenu-fct {
@@ -668,7 +1464,7 @@ footer a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 1em;
+    padding-top: 1.5em;
   }
   .fonctionnement .choisir {
     display: -webkit-box;
@@ -682,7 +1478,7 @@ footer a {
     margin-bottom: 1.5em;
     -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
             box-shadow: 0 0 0.6em 0.2em #DCDCDC;
-    padding: 1.5em 5.5em 1.5em 1.5em;
+    padding: 1.5em 1.5em 1.5em 1.5em;
   }
   .fonctionnement .composer {
     display: -webkit-box;
@@ -696,7 +1492,7 @@ footer a {
     margin-bottom: 1.5em;
     -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
             box-shadow: 0 0 0.6em 0.2em #DCDCDC;
-    padding: 1.5em 5.5em 1.5em 1.5em;
+    padding: 1.5em 2em 1.5em 1.5em;
   }
   .fonctionnement .deguster {
     display: -webkit-box;
@@ -710,10 +1506,10 @@ footer a {
     margin-bottom: 1.5em;
     -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
             box-shadow: 0 0 0.6em 0.2em #DCDCDC;
-    padding: 1.5em 5em 1.5em 0.2em;
+    padding: 1.5em 1.5em 1.5em 0.2em;
   }
   .fonctionnement .contenu-fct p {
-    font-weight: normal;
+    font-weight: bold;
   }
   .fonctionnement .fas {
     padding: 0 1em 0 1em;
@@ -725,6 +1521,230 @@ footer a {
     margin-right: 0.8em;
     margin-left: -1rem;
     color: white;
+  }
+  .fonctionnement .composer .nombre {
+    margin-left: -2.5em;
+  }
+  .fonctionnement .fa-mobile-alt {
+    color: gray;
+  }
+  .fonctionnement .fa-list-ul {
+    color: gray;
+  }
+  .fonctionnement .fa-store {
+    color: #9356DC;
+  }
+}
+
+/* Tablette */
+/* Ecrans entre 769 px et 1024 px */
+/* Partie Fonctionnement */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fonctionnement {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* Fonctionnement Menu */
+    /* Menu Choisir */
+    /* Menu Composer */
+    /* Menu choisir */
+    /* Paragraghe Menu */
+    /* Logo Menu */
+    /* Nombre Menu */
+    /* Nombre Composer */
+    /* Nombre Composer */
+    /* Logo Mobile */
+    /* Logo Triple Traits */
+    /* Logo Boutique */
+  }
+  .fonctionnement h2 {
+    padding-top: 0.5em;
+    padding-left: 0.8em;
+  }
+  .fonctionnement .contenu-fct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.5em;
+  }
+  .fonctionnement .choisir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 3.5em 1.5em 1.5em;
+  }
+  .fonctionnement .composer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 4em 1.5em 1.5em;
+  }
+  .fonctionnement .deguster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 3.5em 1.5em 0.2em;
+  }
+  .fonctionnement .contenu-fct p {
+    font-weight: bold;
+  }
+  .fonctionnement .fas {
+    padding: 0 1em 0 1em;
+  }
+  .fonctionnement .nombre {
+    background: #9356DC;
+    border-radius: 50%;
+    padding: 0.5em 0.7em;
+    margin-right: 0.8em;
+    margin-left: -1rem;
+    color: white;
+  }
+  .fonctionnement .choisir .nombre {
+    margin-left: -2.5em;
+  }
+  .fonctionnement .composer .nombre {
+    margin-left: -2.5em;
+  }
+  .fonctionnement .fa-mobile-alt {
+    color: gray;
+  }
+  .fonctionnement .fa-list-ul {
+    color: gray;
+  }
+  .fonctionnement .fa-store {
+    color: #9356DC;
+  }
+}
+
+/* Mobile */
+/* Ecrans en-dessous de 768 px */
+/* Partie Fonctionnement */
+@media screen and (max-width: 768px) {
+  .fonctionnement {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* Fonctionnement Menu */
+    /* Menu Choisir */
+    /* Menu Composer */
+    /* Menu choisir */
+    /* Paragraghe Menu */
+    /* Logo Menu */
+    /* Nombre Menu */
+    /* Nombre Composer */
+    /* Nombre Composer */
+    /* Logo Mobile */
+    /* Logo Triple Traits */
+    /* Logo Boutique */
+  }
+  .fonctionnement h2 {
+    padding-top: 0.5em;
+    padding-left: 0.8em;
+  }
+  .fonctionnement .contenu-fct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2.5em;
+  }
+  .fonctionnement .choisir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 4em 1.5em 1.5em;
+  }
+  .fonctionnement .composer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 4.5em 1.5em 1.5em;
+  }
+  .fonctionnement .deguster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 4em 1.5em 0.2em;
+  }
+  .fonctionnement .contenu-fct p {
+    font-weight: bold;
+  }
+  .fonctionnement .fas {
+    padding: 0 1em 0 1em;
+  }
+  .fonctionnement .nombre {
+    background: #9356DC;
+    border-radius: 50%;
+    padding: 0.5em 0.7em;
+    margin-right: 0.8em;
+    margin-left: -1rem;
+    color: white;
+  }
+  .fonctionnement .choisir .nombre {
+    margin-left: -2.5em;
   }
   .fonctionnement .composer .nombre {
     margin-left: -2.5em;
@@ -950,7 +1970,7 @@ footer a {
   .restaurants h2 {
     padding-top: 1em;
     padding-left: 0.8em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
   .restaurants .divers-menu {
     display: -webkit-box;
@@ -981,7 +2001,7 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80em;
+    width: 63em;
     border-radius: 1em 1em 0 0;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1003,7 +2023,7 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80em;
+    width: 63em;
     border-radius: 1em 1em 0 0;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1025,7 +2045,7 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80em;
+    width: 63em;
     border-radius: 1em 1em 0 0;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1047,7 +2067,347 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80em;
+    width: 63em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 15em;
+  }
+  .restaurants .texte-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0 0 1em 1em;
+    -webkit-box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+  }
+  .restaurants .nouveau {
+    background-color: #99E2D0;
+    font-weight: bold;
+    color: #278870;
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    padding: 0.7em;
+    border-radius: 5px;
+  }
+}
+
+/* Tablette */
+/* Ecrans entre 769 px et 1024 px */
+/* Partie Restaurants */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    /* Titre Restaurants */
+    /* Les Divers Menus */
+    /* Ancre du Menu La Palette du goût */
+    /* Image du Menu La Palette du Goût */
+    /* Ancre du Menu La Note Enchantée */
+    /* Image du Menu La Note Enchantée */
+    /* Ancre du Menu A la Française */
+    /* Image du Menu A la Française */
+    /* Ancre du Menu Le Délice des Sens */
+    /* Image du Menu Le Délice des Sens */
+    /* Image des Menus */
+    /* Texte + Coeur */
+    /* Paragraphe Nouveau */
+  }
+  .restaurants h2 {
+    padding-top: 1em;
+    padding-left: 0.8em;
+    padding-bottom: 1em;
+  }
+  .restaurants .divers-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurants .menu-la-palette-du-gout a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-la-palette-du-gout img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-la-note-enchantee a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-la-note-enchantee img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-a-la-francaise a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-a-la-francaise img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-le-delice-des-sens a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-le-delice-des-sens img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 15em;
+  }
+  .restaurants .texte-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0 0 1em 1em;
+    -webkit-box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+  }
+  .restaurants .nouveau {
+    background-color: #99E2D0;
+    font-weight: bold;
+    color: #278870;
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    padding: 0.7em;
+    border-radius: 5px;
+  }
+}
+
+/* Mobile */
+/* Ecrans en-dessous de 768 px */
+/* Partie Restaurants */
+@media screen and (max-width: 768px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    /* Titre Restaurants */
+    /* Les Divers Menus */
+    /* Ancre du Menu La Palette du goût */
+    /* Image du Menu La Palette du Goût */
+    /* Ancre du Menu La Note Enchantée */
+    /* Image du Menu La Note Enchantée */
+    /* Ancre du Menu A la Française */
+    /* Image du Menu A la Française */
+    /* Ancre du Menu Le Délice des Sens */
+    /* Image du Menu Le Délice des Sens */
+    /* Image des Menus */
+    /* Texte + Coeur */
+    /* Paragraphe Nouveau */
+  }
+  .restaurants h2 {
+    padding-top: 1em;
+    padding-left: 0.8em;
+    padding-bottom: 1em;
+  }
+  .restaurants .divers-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurants .menu-la-palette-du-gout a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-la-palette-du-gout img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25em;
+    height: 11em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-la-note-enchantee a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-la-note-enchantee img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25em;
+    height: 11em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-a-la-francaise a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-a-la-francaise img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25em;
+    height: 11em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants .menu-le-delice-des-sens a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  .restaurants .menu-le-delice-des-sens img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25em;
+    height: 11em;
     border-radius: 1em 1em 0 0;
     -o-object-fit: cover;
        object-fit: cover;

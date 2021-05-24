@@ -2,18 +2,14 @@
 @import "./utils/mixins";
 
 @import "./components/boutons";
+@import "./components/icons";
 
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/menu";
-@import "./layout/header-desktop";
-@import "./layout/tablette";
-@import "./layout/mobile";
 
 @import "./pages/fonctionnement";
-@import "./pages/fonctionnement-desktop";
 @import "./pages/restaurants";
-@import "./pages/restaurants-desktop";
 
 @import "./base/base";
 

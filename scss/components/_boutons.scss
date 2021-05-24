@@ -36,3 +36,85 @@
         cursor: pointer;
     }
 } 
+
+/* Média Queries */
+
+/* Desktop */
+
+/* Ecrans entre 1025 px et 1300 px */
+
+ /* Bouton commander */
+
+@media screen and (min-width: 1025px) and (max-width: 1300px)
+{
+    .btn-commander
+    {
+        background: $primary-color;
+        border-radius: 50px; 
+        font-size: 1.2em;
+        position: relative;
+        top: 24em;
+        right: 33em;
+        height: 3.5em;
+        padding: 1em 5em 1em 5em;
+    
+        &:hover 
+        {
+            cursor: pointer;
+        }
+    } 
+}
+
+/* Tablette */
+
+/* Ecrans entre 769 px et 1024 px */
+
+ /* Bouton commander */
+
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+    .btn-commander
+    {
+        background: $primary-color;
+        border-radius: 50px; 
+        font-size: 1.2em;
+        position: relative;
+        top: 4.5em;
+        left: 18em;
+        height: 3.5em;
+        width: 15em;
+        padding: 1em 5em 1em 5em;
+    
+        &:hover 
+        {
+            cursor: pointer;
+        }
+    } 
+}
+
+/* Mobile */
+
+/* Ecrans en-dessous de 768 px */
+
+/* Bouton commander */
+
+@media screen and (max-width: 768px)
+{
+    .btn-commander
+    {
+        background: $primary-color;
+        border-radius: 50px; 
+        font-size: 1.2em;
+        position: relative;
+        top: 2.5em;
+        left: 4em;
+        height: 3.5em;
+        width: 15em;
+        padding: 1em 5em 1em 5em;
+    
+        &:hover 
+        {
+            cursor: pointer;
+        }
+    } 
+}

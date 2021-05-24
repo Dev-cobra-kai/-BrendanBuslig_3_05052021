@@ -48,7 +48,7 @@
             & .contenu-entree
             {
             display: flex;
-            width: 24em;            
+            width: 24em;                    
 
                 & .texte
                 {
@@ -62,11 +62,11 @@
                     {
                         font-size: 1em;
                     }
-                    & .prix 
-                    {
-                        display: flex;
-                        justify-content: flex-end;                        
-                    }
+                }
+                & .prix
+                {
+                    display: flex;  
+                    align-items: flex-end; 
                 }
             }
             & .choix
@@ -119,11 +119,12 @@
                     {
                         font-size: 1em;
                     }
-                    & .prix
-                    {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
+                }
+                & .prix
+                {
+                    display: flex;  
+                    align-items: flex-end; 
+                
                 }
             }
             & .choix
@@ -174,13 +175,14 @@
                     }
                     & p
                     {
-                    font-size: 1em;
+                        font-size: 1em;
                     }
-                    & .prix
-                    {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
+                }
+                & .prix
+                {
+                    display: flex;  
+                    align-items: flex-end; 
+            
                 }
             }
             & .choix
@@ -188,16 +190,591 @@
                 background-color:$tertiary-color;
                 display: flex;      
                 justify-content: flex-end; 
-                 
-                & .fas
+            }
+        }
+    }
+}
+
+/* Média Queries */
+
+/* Desktop */
+
+/* Ecrans entre 1025 px et 1300 px */
+
+/* Menu */
+
+@media screen and (min-width: 1025px) and (max-width: 1300px)
+{
+    .menu
+    {
+    background-color: $grey;
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 9em;
+    
+        & .titre 
+        {             
+            width: 100%;
+            position: absolute;
+            top: 21em;
+            & h1
+            {
+                background-color: $grey;          
+                padding: 0.7em; 
+                border-radius: 2em 2em 0 0 ;
+                padding-left: 13em;
+            }    
+            & .coeur
+            {
+                position: absolute;
+                top: 2em;
+                right: 20em;
+            }   
+        }   
+        & .les-entrees
+        {              
+            padding: 0;
+            & h2
+            {
+                margin-left: 1.7em;
+                padding-bottom: 1em;  
+            }
+            & .entree
+            {    
+                width: 65%;
+                margin-left: 2.5em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-entree
                 {
-                    transform: rotate(0deg);
+                display: flex;
+                width: 24em;            
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end;  
+                }
+            }
+        }    
+        & .les-plats
+        {              
+            padding: 0;
+
+            & h2
+            {
+                margin-left: 1em;
+                padding-bottom: 1em;  
+            }
+            & .plat
+            {    
+                width: 65%;
+                margin-left: 1em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-plat
+                {
+                display: flex;
+                width: 26em;  
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end;
+                }
+            }
+        }        
+        & .les-desserts
+        {              
+            padding: 0;
+
+            & h2
+            {
+                margin-left: 1em;
+                padding-bottom: 1em;  
+            }
+            & .dessert
+            {    
+                width: 60%;
+                margin-left: 1.2em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-dessert
+                {
+                display: flex;
+                width: 26em; 
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end; 
                 }
             }
         }
     }
 }
 
+/* Tablette */
 
+/* Ecrans entre 769 px et 1024 px */
 
+/* Menu */
 
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+    .menu
+    {
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 9em;
+    
+        & .titre 
+        {             
+            width: 100%;
+            position: absolute;
+            top: 21em;
+            & h1
+            {
+                background-color: $grey;          
+                padding: 0.7em; 
+                border-radius: 2em 2em 0 0 ;
+                padding-left: 10em;
+            }    
+            & .coeur
+            {
+                position: absolute;
+                top: 2em;
+                right: 10em;
+            }   
+        }   
+        & .les-entrees
+        {              
+            padding: 0;
+            & h2
+            {
+                margin-left: 2.7em;
+                padding-bottom: 1em;  
+            }
+            & .entree
+            {    
+                width: 80%;
+                margin-left: 3.5em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-entree
+                {
+                display: flex;
+                width: 24em;            
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end;  
+                }
+            }
+        }    
+        & .les-plats
+        {              
+            padding: 0;
+
+            & h2
+            {
+                margin-left: 2.7em;
+                padding-bottom: 1.1em;  
+                padding-top: 1em;  
+            }
+            & .plat
+            {    
+                width: 80%;
+                margin-left: 3.5em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-plat
+                {
+                display: flex;
+                width: 26em;  
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end;
+                }
+            }
+        }        
+        & .les-desserts
+        {              
+            padding: 0;
+
+            & h2
+            {
+                margin-left: 2.7em;
+                padding-bottom: 1.1em; 
+                padding-top: 1em;   
+            }
+            & .dessert
+            {    
+                width: 80%;
+                margin-left: 3.5em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-dessert
+                {
+                display: flex;
+                width: 26em; 
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end; 
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+/* Ecrans en-dessous de 768 px */
+
+/* Menu */
+
+@media screen and (max-width: 768px)
+{
+    .menu
+    {
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 9em;
+    
+        & .titre 
+        {             
+            width: 100%;
+            position: absolute;
+            top: 21em;
+            & h1
+            {
+                background-color: $grey;          
+                padding: 0.7em; 
+                border-radius: 2em 2em 0 0 ;
+                padding-left: 1em;
+            }    
+            & .coeur
+            {
+                position: absolute;
+                top: 2em;
+                right: 3em;
+            }   
+        }   
+        & .les-entrees
+        {              
+            padding: 0;
+            & h2
+            {
+                margin-left: 1em;
+                padding-bottom: 1em;  
+            }
+            & .entree
+            {    
+                width: 80%;
+                margin-left: 1.3em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-entree
+                {
+                display: flex;
+                width: 24em;            
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end;  
+                }
+            }
+        }    
+        & .les-plats
+        {              
+            padding: 0;
+
+            & h2
+            {
+                margin-left: 1em;
+                padding-bottom: 1.1em;  
+                padding-top: 1em;  
+            }
+            & .plat
+            {    
+                width: 80%;
+                margin-left: 1.3em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-plat
+                {
+                display: flex;
+                width: 26em;  
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end;
+                }
+            }
+        }        
+        & .les-desserts
+        {              
+            padding: 0;
+
+            & h2
+            {
+                margin-left: 1em;
+                padding-bottom: 1.1em; 
+                padding-top: 1em;   
+            }
+            & .dessert
+            {    
+                width: 80%;
+                margin-left: 1.3em;                  
+                background-color: $white;
+                margin-bottom: 1em;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 0 0.3em 0.8em 0.1em $black;      
+                cursor: pointer;
+
+                & .contenu-dessert
+                {
+                display: flex;
+                width: 26em; 
+
+                    & .texte
+                    {
+                        padding-right: 5em;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                    & .prix
+                    {
+                        display: flex;  
+                        align-items: flex-end; 
+                    }
+                }
+                & .choix
+                {
+                    background-color:$tertiary-color;
+                    display: flex;      
+                    justify-content: flex-end; 
+                }
+            }
+        }
+    }
+}
