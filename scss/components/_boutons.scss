@@ -28,9 +28,9 @@
     border-radius: 50px; 
     border: transparent;
     font-size: 1.2em;
-    position: relative;
-    top: 22em;
-    right: 42em;
+    position: absolute;
+    top: 44em;
+    right: 27em;
     height: 3.5em;
     padding: 1em 5em 1em 5em;
     color: $white;
@@ -49,7 +49,7 @@
 
  /* Bouton commander */
 
-@media screen and (min-width: 1025px) and (max-width: 1300px)
+@media screen and (min-width: 1025px) and (max-width: 1350px)
 {
     .btn-commander
     {
@@ -58,9 +58,9 @@
         border: transparent;
         border-radius: 50px; 
         font-size: 1.2em;
-        position: relative;
-        top: 24em;
-        right: 33em;
+        position: absolute;
+        top: 93em;
+        right: 24em;
         height: 3.5em;
         padding: 1em 5em 1em 5em;
     
@@ -86,9 +86,9 @@
         border: transparent;
         border-radius: 50px; 
         font-size: 1.2em;
-        position: relative;
-        top: 4.5em;
-        left: 18em;
+        position: absolute;
+        top: 84em;
+        right: 16em;
         height: 3.5em;
         width: 15em;
         padding: 1em 5em 1em 5em;
@@ -115,9 +115,9 @@
         border: transparent;
         border-radius: 50px; 
         font-size: 1.2em;
-        position: relative;
-        top: 2.5em;
-        left: 4em;
+        position: absolute;
+        top: 84em;
+        right: 3.5em;
         height: 3.5em;
         width: 15em;
         padding: 1em 5em 1em 5em;
