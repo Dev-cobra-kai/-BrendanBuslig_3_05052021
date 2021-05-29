@@ -1,0 +1,11 @@
+/* Coeur */
+
+.coeur i
+{
+    font-size: 2em;
+}
+
+.coeur:hover
+{
+    background: linear-gradient($secondary-color, $primary-color);
+}

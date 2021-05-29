@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* couleur */
 /* Taille des polices */
+/*Animations */
 /* Bouton Explorer nos restaurants */
 .btn-explorer {
   display: -webkit-box;
@@ -13,11 +14,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 15em;
-  background: #9356DC;
   border-radius: 50px;
   padding: 20px;
   margin: 20px auto;
   font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: transparent;
 }
 
 .btn-explorer:hover {
@@ -26,14 +30,17 @@
 
 /* Bouton commander */
 .btn-commander {
-  background: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
+  border: transparent;
   font-size: 1.2em;
   position: relative;
-  top: 24em;
+  top: 22em;
   right: 42em;
   height: 3.5em;
   padding: 1em 5em 1em 5em;
+  color: white;
 }
 
 .btn-commander:hover {
@@ -46,7 +53,10 @@
 /* Bouton commander */
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
   .btn-commander {
-    background: #9356DC;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: transparent;
     border-radius: 50px;
     font-size: 1.2em;
     position: relative;
@@ -65,7 +75,10 @@
 /* Bouton commander */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .btn-commander {
-    background: #9356DC;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: transparent;
     border-radius: 50px;
     font-size: 1.2em;
     position: relative;
@@ -85,7 +98,10 @@
 /* Bouton commander */
 @media screen and (max-width: 768px) {
   .btn-commander {
-    background: #9356DC;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: transparent;
     border-radius: 50px;
     font-size: 1.2em;
     position: relative;
@@ -98,6 +114,16 @@
   .btn-commander:hover {
     cursor: pointer;
   }
+}
+
+/* Coeur */
+.coeur i {
+  font-size: 2em;
+}
+
+.coeur:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 header {
@@ -576,149 +602,31 @@ footer a {
 .menu .titre .coeur {
   position: absolute;
   top: 2em;
-  right: 30em;
+  right: 20em;
 }
 
-.menu .les-entrees {
+.menu .les-cartes {
   padding: 0;
 }
 
-.menu .les-entrees h2 {
-  margin-left: 1.7em;
+.menu .les-cartes h2 {
+  margin-left: 0.8em;
   padding-bottom: 1em;
+  padding-top: 1em;
 }
 
-.menu .les-entrees .entree {
-  width: 22em;
-  margin-left: 2.3em;
-  background-color: white;
-  margin-bottom: 1em;
-  padding: 1em;
-  border-radius: 1em;
-  -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-          box-shadow: 0 0.3em 0.8em 0.1em black;
-  cursor: pointer;
-}
-
-.menu .les-entrees .entree .contenu-entree {
+.menu .les-cartes .carte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 24em;
-}
-
-.menu .les-entrees .entree .contenu-entree .texte {
-  padding-right: 5em;
-}
-
-.menu .les-entrees .entree .contenu-entree .texte h3 {
-  margin-bottom: 0.5em;
-}
-
-.menu .les-entrees .entree .contenu-entree .texte p {
-  font-size: 1em;
-}
-
-.menu .les-entrees .entree .contenu-entree .prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.menu .les-entrees .entree .choix {
-  background-color: #99E2D0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.menu .les-entrees .entree .choix .fas {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.menu .les-plats {
-  padding: 0;
-}
-
-.menu .les-plats h2 {
-  margin-left: 1em;
-  padding-bottom: 1em;
-}
-
-.menu .les-plats .plat {
-  width: 24em;
-  margin-left: 1.2em;
-  background-color: white;
-  margin-bottom: 1em;
-  padding: 1em;
-  border-radius: 1em;
-  -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-          box-shadow: 0 0.3em 0.8em 0.1em black;
-  cursor: pointer;
-}
-
-.menu .les-plats .plat .contenu-plat {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 26em;
-}
-
-.menu .les-plats .plat .contenu-plat .texte {
-  padding-right: 5em;
-}
-
-.menu .les-plats .plat .contenu-plat .texte h3 {
-  margin-bottom: 0.5em;
-}
-
-.menu .les-plats .plat .contenu-plat .texte p {
-  font-size: 1em;
-}
-
-.menu .les-plats .plat .contenu-plat .prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.menu .les-plats .plat .choix {
-  background-color: #99E2D0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.menu .les-plats .plat .choix .fas {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.menu .les-desserts {
-  padding: 0;
-}
-
-.menu .les-desserts h2 {
-  margin-left: 1em;
-  padding-bottom: 1em;
-}
-
-.menu .les-desserts .dessert {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 25em;
-  margin-left: 1.2em;
+  margin-left: 0.8em;
   background-color: white;
   margin-bottom: 1em;
   padding: 1em;
@@ -728,26 +636,29 @@ footer a {
   cursor: pointer;
 }
 
-.menu .les-desserts .dessert .contenu-dessert {
+.menu .les-cartes .carte .contenu-carte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 26em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
-.menu .les-desserts .dessert .contenu-dessert .texte {
-  padding-right: 5em;
+.menu .les-cartes .carte .contenu-carte .texte {
+  padding-right: 0;
 }
 
-.menu .les-desserts .dessert .contenu-dessert .texte h3 {
+.menu .les-cartes .carte .contenu-carte .texte h3 {
   margin-bottom: 0.5em;
 }
 
-.menu .les-desserts .dessert .contenu-dessert .texte p {
+.menu .les-cartes .carte .contenu-carte .texte p {
   font-size: 1em;
 }
 
-.menu .les-desserts .dessert .contenu-dessert .prix {
+.menu .les-cartes .carte .contenu-carte .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,7 +667,7 @@ footer a {
           align-items: flex-end;
 }
 
-.menu .les-desserts .dessert .choix {
+.menu .les-cartes .carte .choix {
   background-color: #99E2D0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,13 +675,18 @@ footer a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.menu .les-cartes .carte .choix .fas {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 /* Média Queries */
 /* Desktop */
-/* Ecrans entre 1025 px et 1300 px */
+/* Ecrans entre 1025 px et 1350 px */
 /* Menu */
-@media screen and (min-width: 1025px) and (max-width: 1300px) {
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
   .menu {
     background-color: #DCDCDC;
     display: -webkit-box;
@@ -795,16 +711,27 @@ footer a {
     top: 2em;
     right: 20em;
   }
-  .menu .les-entrees {
-    padding: 0;
+  .menu .les-cartes {
+    padding: 1.5em;
+    width: 100%;
   }
-  .menu .les-entrees h2 {
-    margin-left: 1.7em;
+  .menu .les-cartes h2 {
+    margin-left: 0.8em;
     padding-bottom: 1em;
+    padding-top: 1em;
   }
-  .menu .les-entrees .entree {
-    width: 65%;
-    margin-left: 2.5em;
+  .menu .les-cartes .carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-left: 0.8em;
     background-color: white;
     margin-bottom: 1em;
     padding: 1em;
@@ -813,22 +740,20 @@ footer a {
             box-shadow: 0 0.3em 0.8em 0.1em black;
     cursor: pointer;
   }
-  .menu .les-entrees .entree .contenu-entree {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 24em;
+  .menu .les-cartes .carte .contenu-carte {
+    width: 100%;
+    padding: 0em 5em 0em 5em;
   }
-  .menu .les-entrees .entree .contenu-entree .texte {
-    padding-right: 5em;
+  .menu .les-cartes .carte .contenu-carte .texte {
+    padding-right: 0;
   }
-  .menu .les-entrees .entree .contenu-entree .texte h3 {
+  .menu .les-cartes .carte .contenu-carte .texte h3 {
     margin-bottom: 0.5em;
   }
-  .menu .les-entrees .entree .contenu-entree .texte p {
+  .menu .les-cartes .carte .contenu-carte .texte p {
     font-size: 1em;
   }
-  .menu .les-entrees .entree .contenu-entree .prix {
+  .menu .les-cartes .carte .contenu-carte .prix {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -836,107 +761,7 @@ footer a {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .menu .les-entrees .entree .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .menu .les-plats {
-    padding: 0;
-  }
-  .menu .les-plats h2 {
-    margin-left: 1em;
-    padding-bottom: 1em;
-  }
-  .menu .les-plats .plat {
-    width: 65%;
-    margin-left: 1em;
-    background-color: white;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
-    cursor: pointer;
-  }
-  .menu .les-plats .plat .contenu-plat {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 26em;
-  }
-  .menu .les-plats .plat .contenu-plat .texte {
-    padding-right: 5em;
-  }
-  .menu .les-plats .plat .contenu-plat .texte h3 {
-    margin-bottom: 0.5em;
-  }
-  .menu .les-plats .plat .contenu-plat .texte p {
-    font-size: 1em;
-  }
-  .menu .les-plats .plat .contenu-plat .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-plats .plat .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .menu .les-desserts {
-    padding: 0;
-  }
-  .menu .les-desserts h2 {
-    margin-left: 1em;
-    padding-bottom: 1em;
-  }
-  .menu .les-desserts .dessert {
-    width: 60%;
-    margin-left: 1.2em;
-    background-color: white;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
-    cursor: pointer;
-  }
-  .menu .les-desserts .dessert .contenu-dessert {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 26em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte {
-    padding-right: 5em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte h3 {
-    margin-bottom: 0.5em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte p {
-    font-size: 1em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-desserts .dessert .choix {
+  .menu .les-cartes .carte .choix {
     background-color: #99E2D0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -979,67 +804,26 @@ footer a {
     top: 2em;
     right: 10em;
   }
-  .menu .les-entrees {
+  .menu .les-cartes {
     padding: 0;
   }
-  .menu .les-entrees h2 {
-    margin-left: 2.7em;
+  .menu .les-cartes h2 {
+    margin-left: 0.8em;
     padding-bottom: 1em;
-  }
-  .menu .les-entrees .entree {
-    width: 80%;
-    margin-left: 3.5em;
-    background-color: white;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
-    cursor: pointer;
-  }
-  .menu .les-entrees .entree .contenu-entree {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 24em;
-  }
-  .menu .les-entrees .entree .contenu-entree .texte {
-    padding-right: 5em;
-  }
-  .menu .les-entrees .entree .contenu-entree .texte h3 {
-    margin-bottom: 0.5em;
-  }
-  .menu .les-entrees .entree .contenu-entree .texte p {
-    font-size: 1em;
-  }
-  .menu .les-entrees .entree .contenu-entree .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-entrees .entree .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .menu .les-plats {
-    padding: 0;
-  }
-  .menu .les-plats h2 {
-    margin-left: 2.7em;
-    padding-bottom: 1.1em;
     padding-top: 1em;
   }
-  .menu .les-plats .plat {
-    width: 80%;
-    margin-left: 3.5em;
+  .menu .les-cartes .carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 25em;
+    margin-left: 0.8em;
     background-color: white;
     margin-bottom: 1em;
     padding: 1em;
@@ -1048,22 +832,25 @@ footer a {
             box-shadow: 0 0.3em 0.8em 0.1em black;
     cursor: pointer;
   }
-  .menu .les-plats .plat .contenu-plat {
+  .menu .les-cartes .carte .contenu-carte {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 26em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
   }
-  .menu .les-plats .plat .contenu-plat .texte {
-    padding-right: 5em;
+  .menu .les-cartes .carte .contenu-carte .texte {
+    padding-right: 0;
   }
-  .menu .les-plats .plat .contenu-plat .texte h3 {
+  .menu .les-cartes .carte .contenu-carte .texte h3 {
     margin-bottom: 0.5em;
   }
-  .menu .les-plats .plat .contenu-plat .texte p {
+  .menu .les-cartes .carte .contenu-carte .texte p {
     font-size: 1em;
   }
-  .menu .les-plats .plat .contenu-plat .prix {
+  .menu .les-cartes .carte .contenu-carte .prix {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1071,58 +858,7 @@ footer a {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .menu .les-plats .plat .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .menu .les-desserts {
-    padding: 0;
-  }
-  .menu .les-desserts h2 {
-    margin-left: 2.7em;
-    padding-bottom: 1.1em;
-    padding-top: 1em;
-  }
-  .menu .les-desserts .dessert {
-    width: 80%;
-    margin-left: 3.5em;
-    background-color: white;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
-    cursor: pointer;
-  }
-  .menu .les-desserts .dessert .contenu-dessert {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 26em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte {
-    padding-right: 5em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte h3 {
-    margin-bottom: 0.5em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte p {
-    font-size: 1em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-desserts .dessert .choix {
+  .menu .les-cartes .carte .choix {
     background-color: #99E2D0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1165,67 +901,26 @@ footer a {
     top: 2em;
     right: 3em;
   }
-  .menu .les-entrees {
+  .menu .les-cartes {
     padding: 0;
   }
-  .menu .les-entrees h2 {
-    margin-left: 1em;
+  .menu .les-cartes h2 {
+    margin-left: 0.8em;
     padding-bottom: 1em;
-  }
-  .menu .les-entrees .entree {
-    width: 80%;
-    margin-left: 1.3em;
-    background-color: white;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
-    cursor: pointer;
-  }
-  .menu .les-entrees .entree .contenu-entree {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 24em;
-  }
-  .menu .les-entrees .entree .contenu-entree .texte {
-    padding-right: 5em;
-  }
-  .menu .les-entrees .entree .contenu-entree .texte h3 {
-    margin-bottom: 0.5em;
-  }
-  .menu .les-entrees .entree .contenu-entree .texte p {
-    font-size: 1em;
-  }
-  .menu .les-entrees .entree .contenu-entree .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-entrees .entree .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .menu .les-plats {
-    padding: 0;
-  }
-  .menu .les-plats h2 {
-    margin-left: 1em;
-    padding-bottom: 1.1em;
     padding-top: 1em;
   }
-  .menu .les-plats .plat {
-    width: 80%;
-    margin-left: 1.3em;
+  .menu .les-cartes .carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 25em;
+    margin-left: 0.8em;
     background-color: white;
     margin-bottom: 1em;
     padding: 1em;
@@ -1234,22 +929,25 @@ footer a {
             box-shadow: 0 0.3em 0.8em 0.1em black;
     cursor: pointer;
   }
-  .menu .les-plats .plat .contenu-plat {
+  .menu .les-cartes .carte .contenu-carte {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 26em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
   }
-  .menu .les-plats .plat .contenu-plat .texte {
-    padding-right: 5em;
+  .menu .les-cartes .carte .contenu-carte .texte {
+    padding-right: 0;
   }
-  .menu .les-plats .plat .contenu-plat .texte h3 {
+  .menu .les-cartes .carte .contenu-carte .texte h3 {
     margin-bottom: 0.5em;
   }
-  .menu .les-plats .plat .contenu-plat .texte p {
+  .menu .les-cartes .carte .contenu-carte .texte p {
     font-size: 1em;
   }
-  .menu .les-plats .plat .contenu-plat .prix {
+  .menu .les-cartes .carte .contenu-carte .prix {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1257,58 +955,7 @@ footer a {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .menu .les-plats .plat .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .menu .les-desserts {
-    padding: 0;
-  }
-  .menu .les-desserts h2 {
-    margin-left: 1em;
-    padding-bottom: 1.1em;
-    padding-top: 1em;
-  }
-  .menu .les-desserts .dessert {
-    width: 80%;
-    margin-left: 1.3em;
-    background-color: white;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
-    cursor: pointer;
-  }
-  .menu .les-desserts .dessert .contenu-dessert {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 26em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte {
-    padding-right: 5em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte h3 {
-    margin-bottom: 0.5em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .texte p {
-    font-size: 1em;
-  }
-  .menu .les-desserts .dessert .contenu-dessert .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-desserts .dessert .choix {
+  .menu .les-cartes .carte .choix {
     background-color: #99E2D0;
     display: -webkit-box;
     display: -ms-flexbox;

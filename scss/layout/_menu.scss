@@ -23,21 +23,27 @@
         {
             position: absolute;
             top: 2em;
-            right: 30em;
-        }   
+            right: 20em;
+            
+        }    
     }   
-    & .les-entrees
+    & .les-cartes
     {              
         padding: 0;
+        
         & h2
         {
-            margin-left: 1.7em;
-            padding-bottom: 1em;  
+            margin-left: 0.8em;
+            padding-bottom: 1em;
+            padding-top: 1em;
         }
-        & .entree
+        & .carte
         {    
-            width: 22em;
-            margin-left: 2.3em;                  
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 25em;
+            margin-left: 0.8em;                  
             background-color: $white;
             margin-bottom: 1em;
             padding: 1em;
@@ -45,14 +51,15 @@
             box-shadow: 0 0.3em 0.8em 0.1em $black;      
             cursor: pointer;
 
-            & .contenu-entree
+            & .contenu-carte
             {
             display: flex;
-            width: 24em;                    
+            justify-content: space-between;
+            width: 100%;                  
 
                 & .texte
                 {
-                    padding-right: 5em;
+                    padding-right: 0;
                     
                     & h3
                     {
@@ -82,128 +89,17 @@
             }
         }
     }    
-    & .les-plats
-    {              
-        padding: 0;
-
-        & h2
-        {
-            margin-left: 1em;
-            padding-bottom: 1em;  
-        }
-        & .plat
-        {    
-            width: 24em;
-            margin-left: 1.2em;                  
-            background-color: $white;
-            margin-bottom: 1em;
-            padding: 1em;
-            border-radius: 1em;
-            box-shadow: 0 0.3em 0.8em 0.1em $black;      
-            cursor: pointer;
-
-            & .contenu-plat
-            {
-            display: flex;
-            width: 26em;  
-
-                & .texte
-                {
-                    padding-right: 5em;
-                    
-                    & h3
-                    {
-                        margin-bottom: 0.5em;                            
-                    }
-                    & p
-                    {
-                        font-size: 1em;
-                    }
-                }
-                & .prix
-                {
-                    display: flex;  
-                    align-items: flex-end; 
-                
-                }
-            }
-            & .choix
-            {
-                background-color:$tertiary-color;
-                display: flex;      
-                justify-content: flex-end; 
-
-                & .fas
-                {
-                    transform: rotate(0deg);
-                }
-            }
-        }
-    }        
-    & .les-desserts
-    {              
-        padding: 0;
-
-        & h2
-        {
-            margin-left: 1em;
-            padding-bottom: 1em;  
-        }
-        & .dessert
-        {    
-            width: 25em;
-            margin-left: 1.2em;                  
-            background-color: $white;
-            margin-bottom: 1em;
-            padding: 1em;
-            border-radius: 1em;
-            box-shadow: 0 0.3em 0.8em 0.1em $black;      
-            cursor: pointer;
-
-            & .contenu-dessert
-            {
-            display: flex;
-            width: 26em; 
-
-                & .texte
-                {
-                    padding-right: 5em;
-                    
-                    & h3
-                    {
-                        margin-bottom: 0.5em;                            
-                    }
-                    & p
-                    {
-                        font-size: 1em;
-                    }
-                }
-                & .prix
-                {
-                    display: flex;  
-                    align-items: flex-end; 
-            
-                }
-            }
-            & .choix
-            {
-                background-color:$tertiary-color;
-                display: flex;      
-                justify-content: flex-end; 
-            }
-        }
-    }
 }
 
 /* Média Queries */
 
 /* Desktop */
 
-/* Ecrans entre 1025 px et 1300 px */
+/* Ecrans entre 1025 px et 1350 px */
 
 /* Menu */
 
-@media screen and (min-width: 1025px) and (max-width: 1300px)
+@media screen and (min-width: 1025px) and (max-width: 1350px)
 {
     .menu
     {
@@ -211,7 +107,7 @@
     display: flex;
     padding-top: 2em;
     padding-bottom: 9em;
-    
+
         & .titre 
         {             
             width: 100%;
@@ -229,35 +125,41 @@
                 position: absolute;
                 top: 2em;
                 right: 20em;
-            }   
+            }    
         }   
-        & .les-entrees
+        & .les-cartes
         {              
-            padding: 0;
+            padding: 1.5em;
+            width: 100%;
+            
             & h2
             {
-                margin-left: 1.7em;
-                padding-bottom: 1em;  
+                margin-left: 0.8em;
+                padding-bottom: 1em;
+                padding-top: 1em;
             }
-            & .entree
+            & .carte
             {    
-                width: 65%;
-                margin-left: 2.5em;                  
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-left: 0.8em;                  
                 background-color: $white;
                 margin-bottom: 1em;
                 padding: 1em;
                 border-radius: 1em;
                 box-shadow: 0 0.3em 0.8em 0.1em $black;      
                 cursor: pointer;
-
-                & .contenu-entree
+    
+                & .contenu-carte
                 {
-                display: flex;
-                width: 24em;            
-
+                width: 100%;  
+                padding: 0em 5em 0em 5em;               
+    
                     & .texte
                     {
-                        padding-right: 5em;
+                        padding-right: 0;
                         
                         & h3
                         {
@@ -282,110 +184,6 @@
                 }
             }
         }    
-        & .les-plats
-        {              
-            padding: 0;
-
-            & h2
-            {
-                margin-left: 1em;
-                padding-bottom: 1em;  
-            }
-            & .plat
-            {    
-                width: 65%;
-                margin-left: 1em;                  
-                background-color: $white;
-                margin-bottom: 1em;
-                padding: 1em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
-
-                & .contenu-plat
-                {
-                display: flex;
-                width: 26em;  
-
-                    & .texte
-                    {
-                        padding-right: 5em;
-                        
-                        & h3
-                        {
-                            margin-bottom: 0.5em;                            
-                        }
-                        & p
-                        {
-                            font-size: 1em;
-                        }
-                    }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
-                }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end;
-                }
-            }
-        }        
-        & .les-desserts
-        {              
-            padding: 0;
-
-            & h2
-            {
-                margin-left: 1em;
-                padding-bottom: 1em;  
-            }
-            & .dessert
-            {    
-                width: 60%;
-                margin-left: 1.2em;                  
-                background-color: $white;
-                margin-bottom: 1em;
-                padding: 1em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
-
-                & .contenu-dessert
-                {
-                display: flex;
-                width: 26em; 
-
-                    & .texte
-                    {
-                        padding-right: 5em;
-                        
-                        & h3
-                        {
-                            margin-bottom: 0.5em;                            
-                        }
-                        & p
-                        {
-                            font-size: 1em;
-                        }
-                    }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
-                }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end; 
-                }
-            }
-        }
     }
 }
 
@@ -424,33 +222,39 @@
                 right: 10em;
             }   
         }   
-        & .les-entrees
+        & .les-cartes
         {              
             padding: 0;
+            
             & h2
             {
-                margin-left: 2.7em;
-                padding-bottom: 1em;  
+                margin-left: 0.8em;
+                padding-bottom: 1em;
+                padding-top: 1em;
             }
-            & .entree
+            & .carte
             {    
-                width: 80%;
-                margin-left: 3.5em;                  
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 25em;
+                margin-left: 0.8em;                  
                 background-color: $white;
                 margin-bottom: 1em;
                 padding: 1em;
                 border-radius: 1em;
                 box-shadow: 0 0.3em 0.8em 0.1em $black;      
                 cursor: pointer;
-
-                & .contenu-entree
+    
+                & .contenu-carte
                 {
                 display: flex;
-                width: 24em;            
-
+                justify-content: space-between;
+                width: 100%;                  
+    
                     & .texte
                     {
-                        padding-right: 5em;
+                        padding-right: 0;
                         
                         & h3
                         {
@@ -475,112 +279,6 @@
                 }
             }
         }    
-        & .les-plats
-        {              
-            padding: 0;
-
-            & h2
-            {
-                margin-left: 2.7em;
-                padding-bottom: 1.1em;  
-                padding-top: 1em;  
-            }
-            & .plat
-            {    
-                width: 80%;
-                margin-left: 3.5em;                  
-                background-color: $white;
-                margin-bottom: 1em;
-                padding: 1em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
-
-                & .contenu-plat
-                {
-                display: flex;
-                width: 26em;  
-
-                    & .texte
-                    {
-                        padding-right: 5em;
-                        
-                        & h3
-                        {
-                            margin-bottom: 0.5em;                            
-                        }
-                        & p
-                        {
-                            font-size: 1em;
-                        }
-                    }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
-                }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end;
-                }
-            }
-        }        
-        & .les-desserts
-        {              
-            padding: 0;
-
-            & h2
-            {
-                margin-left: 2.7em;
-                padding-bottom: 1.1em; 
-                padding-top: 1em;   
-            }
-            & .dessert
-            {    
-                width: 80%;
-                margin-left: 3.5em;                  
-                background-color: $white;
-                margin-bottom: 1em;
-                padding: 1em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
-
-                & .contenu-dessert
-                {
-                display: flex;
-                width: 26em; 
-
-                    & .texte
-                    {
-                        padding-right: 5em;
-                        
-                        & h3
-                        {
-                            margin-bottom: 0.5em;                            
-                        }
-                        & p
-                        {
-                            font-size: 1em;
-                        }
-                    }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
-                }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end; 
-                }
-            }
-        }
     }
 }
 
@@ -619,33 +317,39 @@
                 right: 3em;
             }   
         }   
-        & .les-entrees
+        & .les-cartes
         {              
             padding: 0;
+            
             & h2
             {
-                margin-left: 1em;
-                padding-bottom: 1em;  
+                margin-left: 0.8em;
+                padding-bottom: 1em;
+                padding-top: 1em;
             }
-            & .entree
+            & .carte
             {    
-                width: 80%;
-                margin-left: 1.3em;                  
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 25em;
+                margin-left: 0.8em;                  
                 background-color: $white;
                 margin-bottom: 1em;
                 padding: 1em;
                 border-radius: 1em;
                 box-shadow: 0 0.3em 0.8em 0.1em $black;      
                 cursor: pointer;
-
-                & .contenu-entree
+    
+                & .contenu-carte
                 {
                 display: flex;
-                width: 24em;            
-
+                justify-content: space-between;
+                width: 100%;                  
+    
                     & .texte
                     {
-                        padding-right: 5em;
+                        padding-right: 0;
                         
                         & h3
                         {
@@ -670,111 +374,5 @@
                 }
             }
         }    
-        & .les-plats
-        {              
-            padding: 0;
-
-            & h2
-            {
-                margin-left: 1em;
-                padding-bottom: 1.1em;  
-                padding-top: 1em;  
-            }
-            & .plat
-            {    
-                width: 80%;
-                margin-left: 1.3em;                  
-                background-color: $white;
-                margin-bottom: 1em;
-                padding: 1em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
-
-                & .contenu-plat
-                {
-                display: flex;
-                width: 26em;  
-
-                    & .texte
-                    {
-                        padding-right: 5em;
-                        
-                        & h3
-                        {
-                            margin-bottom: 0.5em;                            
-                        }
-                        & p
-                        {
-                            font-size: 1em;
-                        }
-                    }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
-                }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end;
-                }
-            }
-        }        
-        & .les-desserts
-        {              
-            padding: 0;
-
-            & h2
-            {
-                margin-left: 1em;
-                padding-bottom: 1.1em; 
-                padding-top: 1em;   
-            }
-            & .dessert
-            {    
-                width: 80%;
-                margin-left: 1.3em;                  
-                background-color: $white;
-                margin-bottom: 1em;
-                padding: 1em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
-
-                & .contenu-dessert
-                {
-                display: flex;
-                width: 26em; 
-
-                    & .texte
-                    {
-                        padding-right: 5em;
-                        
-                        & h3
-                        {
-                            margin-bottom: 0.5em;                            
-                        }
-                        & p
-                        {
-                            font-size: 1em;
-                        }
-                    }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
-                }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end; 
-                }
-            }
-        }
     }
 }
