@@ -1,2 +1,32 @@
-/*Animations */
+/* Animations */
+
+/* Apparition menus */
+
+.carte
+{
+  animation-name: apparition-menu;
+  animation-duration: 5s;
+}
+
+@keyframes apparition-menu
+  {
+    0% 
+    {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% 
+    {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/* Selection d'un plat */
+
+.choix
+{
+  animation: writing-menu 1.5s ease-out forwards;
+  overflow: hidden;
+}
 
