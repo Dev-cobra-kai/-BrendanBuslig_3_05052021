@@ -7,10 +7,10 @@
     & h2
     {
         padding-top: 1em;
-        padding-left: 0.8em;
+        padding-left: 24em;
     }
 
-/* Fonctionnement Menu */    
+/* Fonctionnement Navigateur */    
 
     & .contenu-fct
     {
@@ -20,9 +20,9 @@
         padding-top: 2em;
     }
 
-/* Menu Choisir */    
+/* Navigateur Choisir, Composer, Déguster */    
 
-    & .choisir
+    & .navigateur
     {
         display:flex;
         align-items: center;
@@ -33,31 +33,19 @@
         padding: 1.5em 5em 1.5em 0.2em;
     }
 
-/* Menu Composer */  
+/* Navigateur Composer */  
 
     & .composer
     {
-        display:flex;
-        align-items: center;
-        background: $background-color;
-        border-radius: 1.4em;
-        margin-bottom: 1.5em;
-        box-shadow: 0 0 0.6em 0.2em $grey;
         padding: 1.5em 5.5em 1.5em 1.5em;
     }
 
-/* Menu choisir */  
+/* Navigateur Composer */  
 
     & .deguster
     {
-        display:flex;
-        align-items: center;
-        background: $background-color;
-        border-radius: 1.4em;
-        margin-bottom: 1.5em;
-        box-shadow: 0 0 0.6em 0.2em $grey;
-        padding: 1.5em 5em 1.5em 0.2em;
-    }
+        background-color: $grey;
+    }   
 
 /* Paragraghe Menu */ 
 
@@ -66,20 +54,20 @@
         font-weight: bold;
     }
 
-/* Logo Menu */ 
+/* Logo Navigateur */ 
 
     & .fas
     {
         padding: 0 1em 0 1em;
     }
 
-/* Nombre Menu */ 
+/* Nombre Navigateur */ 
 
     & .nombre
     {
         background: $primary-color;
         border-radius: 50%;
-        padding: 0.5em 0.7em ;
+        padding: 0.5em 0.8em 0.5em 0.8em;
         margin-right: 0.8em;
         margin-left: -1rem;
         color:$white;
@@ -92,16 +80,9 @@
         margin-left: -2.5em;
     }
 
-/* Logo Mobile */ 
+/* Logo Mobile + Logo Triple Traits */ 
     
-    .fa-mobile-alt
-    {
-        color:gray;
-    }
-
-/* Logo Triple Traits */ 
-
-    .fa-list-ul
+    .fa-mobile-alt,  .fa-list-ul
     {
         color:gray;
     }
@@ -118,11 +99,11 @@
 
 /* Desktop */
 
-/* Ecrans entre 1025 px et 1300 px */
+/* Ecrans entre 1025 px et 1350 px */
 
 /* Partie Fonctionnement */
 
-@media screen and (min-width: 1025px) and (max-width: 1300px)
+@media screen and (min-width: 1025px) and (max-width: 1350px)
 {
 
     .fonctionnement
@@ -135,7 +116,7 @@
             padding-left: 0.8em;
         }
 
-/* Fonctionnement Menu */    
+/* Fonctionnement Navigateur */    
 
         & .contenu-fct
         {
@@ -145,9 +126,9 @@
             padding-top: 1.5em;
         }
 
-/* Menu Choisir */    
+/* Navigateur Choisir, Composer, Déguster */    
 
-        & .choisir
+        & .navigateur
         {
             display:flex;
             align-items: center;
@@ -158,30 +139,11 @@
             padding: 1.5em 1.5em 1.5em 1.5em;
         }
 
-/* Menu Composer */  
+/* Navigateur Composer */  
 
         & .composer
         {
-            display:flex;
-            align-items: center;
-            background: $background-color;
-            border-radius: 1.4em;
-            margin-bottom: 1.5em;
-            box-shadow: 0 0 0.6em 0.2em $grey;
             padding: 1.5em 2em 1.5em 1.5em;
-        }
-
-/* Menu choisir */  
-
-        & .deguster
-        {
-            display:flex;
-            align-items: center;
-            background: $background-color;
-            border-radius: 1.4em;
-            margin-bottom: 1.5em;
-            box-shadow: 0 0 0.6em 0.2em $grey;
-            padding: 1.5em 1.5em 1.5em 0.2em;
         }
 
 /* Paragraghe Menu */ 
@@ -191,20 +153,20 @@
             font-weight: bold;
         }
 
-/* Logo Menu */ 
+/* Logo Navigateur */ 
 
         & .fas
         {
             padding: 0 1em 0 1em;
         }
 
-/* Nombre Menu */ 
+/* Nombre Navigateur */ 
 
         & .nombre
         {
             background: $primary-color;
             border-radius: 50%;
-            padding: 0.5em 0.7em ;
+            padding: 0.5em 0.8em 0.5em 0.8em;
             margin-right: 0.8em;
             margin-left: -1rem;
             color:$white;
@@ -215,27 +177,6 @@
         & .composer .nombre
         {
             margin-left: -2.5em;
-        }
-
-/* Logo Mobile */ 
-        
-        .fa-mobile-alt
-        {
-            color:gray;
-        }
-
-/* Logo Triple Traits */ 
-
-        .fa-list-ul
-        {
-            color:gray;
-        }
-
-/* Logo Boutique */ 
-
-        .fa-store
-        {
-            color:$primary-color;
         }
     }
 }
@@ -258,7 +199,7 @@
             padding-left: 0.8em;
         }
 
-/* Fonctionnement Menu */    
+/* Fonctionnement Navigateur */    
 
         & .contenu-fct
         {
@@ -269,9 +210,9 @@
             padding-top: 1.5em;
         }
 
-/* Menu Choisir */    
+/* Navigateur Choisir, Composer, Déguster */    
 
-        & .choisir
+        & .navigateur
         {
             display:flex;
             align-items: center;
@@ -282,93 +223,45 @@
             padding: 1.5em 3.5em 1.5em 1.5em;
         }
 
-/* Menu Composer */  
+/* Navigateur Composer */  
 
         & .composer
         {
-            display:flex;
-            align-items: center;
-            background: $background-color;
-            border-radius: 1.4em;
-            margin-bottom: 1.5em;
-            box-shadow: 0 0 0.6em 0.2em $grey;
             padding: 1.5em 4em 1.5em 1.5em;
         }
 
-/* Menu choisir */  
-
-        & .deguster
-        {
-            display:flex;
-            align-items: center;
-            background: $background-color;
-            border-radius: 1.4em;
-            margin-bottom: 1.5em;
-            box-shadow: 0 0 0.6em 0.2em $grey;
-            padding: 1.5em 3.5em 1.5em 0.2em;
-        }
-
-/* Paragraghe Menu */ 
+/* Paragraghe Navigateur */ 
 
         & .contenu-fct p
         {
             font-weight: bold;
         }
 
-/* Logo Menu */ 
+/* Logo Navigateur */ 
 
         & .fas
         {
             padding: 0 1em 0 1em;
         }
 
-/* Nombre Menu */ 
+/* Nombre Navigateur */ 
 
         & .nombre
         {
             background: $primary-color;
             border-radius: 50%;
-            padding: 0.5em 0.7em ;
+            padding: 0.5em 0.8em 0.5em 0.8em;
             margin-right: 0.8em;
             margin-left: -1rem;
             color:$white;
         }
 
-/* Nombre Composer */ 
+/* Nombre Choisir + Composer */ 
 
-        & .choisir .nombre
+        & .navigateur .nombre
         {
             margin-left: -2.5em;
-        }
-
-/* Nombre Composer */ 
-
-        & .composer .nombre
-        {
-            margin-left: -2.5em;
-        }
-
-
-/* Logo Mobile */ 
-        
-        .fa-mobile-alt
-        {
-            color:gray;
-        }
-
-/* Logo Triple Traits */ 
-
-        .fa-list-ul
-        {
-            color:gray;
-        }
-
-/* Logo Boutique */ 
-
-        .fa-store
-        {
-            color:$primary-color;
-        }
+        }     
     }
 }
 
@@ -390,7 +283,7 @@
             padding-left: 0.8em;
         }
 
-/* Fonctionnement Menu */    
+/* Fonctionnement Navigateur */    
 
         & .contenu-fct
         {
@@ -401,9 +294,9 @@
             padding-top: 2.5em;
         }
 
-/* Menu Choisir */    
+/* Navigateur Choisir, Composer, Déguster */   
 
-        & .choisir
+        & .navigateur
         {
             display:flex;
             align-items: center;
@@ -414,92 +307,44 @@
             padding: 1.5em 4em 1.5em 1.5em;
         }
 
-/* Menu Composer */  
+/* Navigateur Composer */  
 
         & .composer
         {
-            display:flex;
-            align-items: center;
-            background: $background-color;
-            border-radius: 1.4em;
-            margin-bottom: 1.5em;
-            box-shadow: 0 0 0.6em 0.2em $grey;
             padding: 1.5em 4.5em 1.5em 1.5em;
         }
 
-/* Menu choisir */  
-
-        & .deguster
-        {
-            display:flex;
-            align-items: center;
-            background: $background-color;
-            border-radius: 1.4em;
-            margin-bottom: 1.5em;
-            box-shadow: 0 0 0.6em 0.2em $grey;
-            padding: 1.5em 4em 1.5em 0.2em;
-        }
-
-/* Paragraghe Menu */ 
+/* Paragraghe Navigateur */ 
 
         & .contenu-fct p
         {
             font-weight: bold;
         }
 
-/* Logo Menu */ 
+/* Logo Navigateur */ 
 
         & .fas
         {
             padding: 0 1em 0 1em;
         }
 
-/* Nombre Menu */ 
+/* Nombre Navigateur */ 
 
         & .nombre
         {
             background: $primary-color;
             border-radius: 50%;
-            padding: 0.5em 0.7em ;
+            padding: 0.5em 0.8em 0.5em 0.8em;
             margin-right: 0.8em;
             margin-left: -1rem;
             color:$white;
         }
 
-/* Nombre Composer */ 
+/* Nombre Choisir + Composer */ 
 
-        & .choisir .nombre
+        & .navigateur .nombre
         {
             margin-left: -2.5em;
-        }
-
-/* Nombre Composer */ 
-
-        & .composer .nombre
-        {
-            margin-left: -2.5em;
-        }
-
-
-/* Logo Mobile */ 
-        
-        .fa-mobile-alt
-        {
-            color:gray;
-        }
-
-/* Logo Triple Traits */ 
-
-        .fa-list-ul
-        {
-            color:gray;
-        }
-
-/* Logo Boutique */ 
-
-        .fa-store
-        {
-            color:$primary-color;
-        }
+        }  
     }
 }

@@ -1,8 +1,54 @@
 /* Animations */
 
+/* Chargement */
+
+
+
+
+
 /* Apparition menus */
 
-.carte
+.anim-duration-3
+{
+  animation-name: apparition-menu;
+  animation-duration: 3s;
+}
+
+@keyframes apparition-menu
+  {
+    0% 
+    {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% 
+    {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.anim-duration-4
+{
+  animation-name: apparition-menu;
+  animation-duration: 4s;
+}
+
+@keyframes apparition-menu
+  {
+    0% 
+    {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% 
+    {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.anim-duration-5
 {
   animation-name: apparition-menu;
   animation-duration: 5s;

@@ -39,14 +39,14 @@
             border-bottom: 5px solid  $tertiary-color;
             padding-bottom: 5px;
             margin-bottom: 1em;
-            width: 15%;
+            width: 2.5em;
         }
         & .carte
         {    
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 25em;
+            width: 27em;
             margin-left: 0.8em;                  
             background-color: $white;
             margin-bottom: 1em;
@@ -104,7 +104,6 @@
     {
     background-color: $grey;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     padding-top: 2em;
     padding-bottom: 9em;
@@ -131,32 +130,30 @@
         }   
         & .les-cartes
         {              
-            padding: 2em;
+            padding: 1em;
                         
             & h2
             {
-                margin-left: 10em;
                 padding-bottom: 1em;
-                padding-top: 1em;
+                padding-top: 0.5em;
                 border-bottom: 5px solid  $tertiary-color;
                 padding-bottom: 5px;
                 margin-bottom: 1em;
-                width: 11%;
+                width: 2.5em;
             }
             & .carte
             {    
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 35em;   
-                margin-left: 15em;                  
+                width: auto;                     
                 background-color: $white;
                 margin-bottom: 1em;
                 border-radius: 1em;
                 box-shadow: 0 0.3em 0.8em 0.1em $black;      
                 cursor: pointer;
                 padding: 1em; 
-                
+                margin-right: 1em;
     
                 & .contenu-carte
                 {
@@ -241,7 +238,7 @@
                 border-bottom: 5px solid  $tertiary-color;
                 padding-bottom: 5px;
                 margin-bottom: 1em;
-                width: 9%;
+                width: 2.5em;
             }
             & .carte
             {    
@@ -341,7 +338,7 @@
                 border-bottom: 5px solid  $tertiary-color;
                 padding-bottom: 5px;
                 margin-bottom: 1em;
-                width: 13%;
+                width: 2.5em;
             }
             & .carte
             {    

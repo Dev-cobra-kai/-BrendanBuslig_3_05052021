@@ -13,22 +13,22 @@
     & h2
     {
         padding-top: 1em;
-        padding-left: 0.8em;
+        padding-left: 25em;
         padding-bottom: 2em;
     }
 
 /* Les Divers Menus */ 
 
-    & .divers-menu
+    & .divers-menus
     {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-/* Ancre du Menu La Palette du goût */ 
+/* Ancre des Menus */ 
 
-    & .menu-la-palette-du-gout a
+    & .le-menu a
     {
         display: flex;
         flex-direction: column;
@@ -38,75 +38,9 @@
         margin-bottom: 3em;
     }
 
-/* Image du Menu La Palette du Goût */
+/* Image des Menus */
 
-    & .menu-la-palette-du-gout img
-    {
-        display: flex;
-        width: 80em;
-        border-radius: 1em 1em 0 0;
-        object-fit:cover;
-    }
-
-/* Ancre du Menu La Note Enchantée */
-
-    & .menu-la-note-enchantee a
-    {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        text-decoration: none;
-        color: $black;
-        margin-bottom: 3em;
-    }
-
-/* Image du Menu La Note Enchantée */
-
-    & .menu-la-note-enchantee img
-    {
-        display: flex;
-        width: 80em;
-        border-radius: 1em 1em 0 0;
-        object-fit:cover;
-    }
-
-/* Ancre du Menu A la Française */
-
-    & .menu-a-la-francaise a
-    {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        text-decoration: none;
-        color: $black;
-        margin-bottom: 3em;
-    }
-
-/* Image du Menu A la Française */
-
-    & .menu-a-la-francaise img
-    {
-        display: flex;
-        width: 80em;
-        border-radius: 1em 1em 0 0;
-        object-fit:cover;
-    }
-
-/* Ancre du Menu Le Délice des Sens */
-
-    & .menu-le-delice-des-sens a
-    {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        text-decoration: none;
-        color: $black;
-        margin-bottom: 3em;
-    }
-
-/* Image du Menu Le Délice des Sens */
-
-    & .menu-le-delice-des-sens img
+    & .le-menu img
     {
         display: flex;
         width: 80em;
@@ -155,11 +89,11 @@
 
 /* Desktop */
 
-/* Ecrans entre 1025 px et 1300 px */
+/* Ecrans entre 1025 px et 1350 px */
 
 /* Partie Restaurants */ 
 
-@media screen and (min-width: 1025px) and (max-width: 1300px)
+@media screen and (min-width: 1025px) and (max-width: 1350px)
 {
     .restaurants
     {
@@ -180,16 +114,16 @@
 
 /* Les Divers Menus */ 
 
-        & .divers-menu
+        & .divers-menus
         {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-/* Ancre du Menu La Palette du goût */ 
+/* Ancre des Menus */ 
 
-        & .menu-la-palette-du-gout a
+        & .le-menu a
         {
             display: flex;
             flex-direction: column;
@@ -199,75 +133,9 @@
             margin-bottom: 3em;
         }
 
-/* Image du Menu La Palette du Goût */
+/* Image des Menus */
 
-        & .menu-la-palette-du-gout img
-        {
-            display: flex;
-            width: 63em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu La Note Enchantée */
-
-        & .menu-la-note-enchantee a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu La Note Enchantée */
-
-        & .menu-la-note-enchantee img
-        {
-            display: flex;
-            width: 63em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu A la Française */
-
-        & .menu-a-la-francaise a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu A la Française */
-
-        & .menu-a-la-francaise img
-        {
-            display: flex;
-            width: 63em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu Le Délice des Sens */
-
-        & .menu-le-delice-des-sens a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu Le Délice des Sens */
-
-        & .menu-le-delice-des-sens img
+        & .le-menu img
         {
             display: flex;
             width: 63em;
@@ -340,16 +208,16 @@
 
 /* Les Divers Menus */ 
 
-        & .divers-menu
+        & .divers-menus
         {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-/* Ancre du Menu La Palette du goût */ 
+/* Ancre des Menus */ 
 
-        & .menu-la-palette-du-gout a
+        & .le-menu a
         {
             display: flex;
             flex-direction: column;
@@ -359,75 +227,9 @@
             margin-bottom: 3em;
         }
 
-/* Image du Menu La Palette du Goût */
+/* Image des Menus */
 
-        & .menu-la-palette-du-gout img
-        {
-            display: flex;
-            width: 45em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu La Note Enchantée */
-
-        & .menu-la-note-enchantee a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu La Note Enchantée */
-
-        & .menu-la-note-enchantee img
-        {
-            display: flex;
-            width: 45em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu A la Française */
-
-        & .menu-a-la-francaise a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu A la Française */
-
-        & .menu-a-la-francaise img
-        {
-            display: flex;
-            width: 45em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu Le Délice des Sens */
-
-        & .menu-le-delice-des-sens a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu Le Délice des Sens */
-
-        & .menu-le-delice-des-sens img
+        & .le-menu img
         {
             display: flex;
             width: 45em;
@@ -500,16 +302,16 @@
 
 /* Les Divers Menus */ 
 
-        & .divers-menu
+        & .divers-menus
         {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-/* Ancre du Menu La Palette du goût */ 
+/* Ancre des Menus */ 
 
-        & .menu-la-palette-du-gout a
+        & .le-menu a
         {
             display: flex;
             flex-direction: column;
@@ -519,78 +321,9 @@
             margin-bottom: 3em;
         }
 
-/* Image du Menu La Palette du Goût */
+/* Image des Menus */
 
-        & .menu-la-palette-du-gout img
-        {
-            display: flex;
-            width: 25em;
-            height: 11em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu La Note Enchantée */
-
-        & .menu-la-note-enchantee a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu La Note Enchantée */
-
-        & .menu-la-note-enchantee img
-        {
-            display: flex;
-            width: 25em;
-            height: 11em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu A la Française */
-
-        & .menu-a-la-francaise a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu A la Française */
-
-        & .menu-a-la-francaise img
-        {
-            display: flex;
-            width: 25em;
-            height: 11em;
-            border-radius: 1em 1em 0 0;
-            object-fit:cover;
-        }
-
-/* Ancre du Menu Le Délice des Sens */
-
-        & .menu-le-delice-des-sens a
-        {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
-            margin-bottom: 3em;
-        }
-
-/* Image du Menu Le Délice des Sens */
-
-        & .menu-le-delice-des-sens img
+        & .le-menu img
         {
             display: flex;
             width: 25em;

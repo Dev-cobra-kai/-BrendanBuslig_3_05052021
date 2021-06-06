@@ -2,8 +2,9 @@
 
 :root
 {
-    --pink-light: #ff7eb4;
-    --pink: #ff2581;
+    --pink-light: #9356DC;
+    --pink: #FF79DA;
+    --black: black;
 }
   
 *,*::before,*::after 
@@ -14,7 +15,7 @@
 .coeur
 {
    fill: transparent;
-   stroke: var(--pink);
+   stroke: var(--black);
    stroke-width: 20;
    cursor: pointer;
    position: relative;
@@ -63,7 +64,8 @@
       transform: scale(1.1);}
     90% {transform: scale(1);}
     100% {stroke-dashoffset: 3100;
-      fill: var(--pink);}
+      fill: var(--pink);
+    }
 }
   
 @keyframes fade-animation 
