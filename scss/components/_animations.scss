@@ -4,6 +4,12 @@
 
 .spinner
 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: $grey;
+  animation: bgFade 3s forwards;
+  z-index: 2;
   display: flex;
   animation-name: invisible;
   animation-duration: 5s;
@@ -13,17 +19,17 @@
 .chargement
 {
   display: flex;
-  padding-left: 25%;
+  padding-left: 20%;
   margin-left: 35%;
   position: fixed;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-bottom: 100px;
   border: 16px solid #bdc3c7;
   width: 120px;
   height: 120px;
   border-color: $secondary-color $primary-color $tertiary-color;
   border-radius: 50%;
-  animation: chargement 4s linear infinite;
+  animation: chargement 10s linear infinite;
 }
 
 @keyframes chargement

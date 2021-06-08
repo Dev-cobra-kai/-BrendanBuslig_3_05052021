@@ -1,90 +1,42 @@
-/* Coeur */
+.coeur-vide
+{    
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 1;
+  transition: opacity 1s;
+  cursor: pointer;
 
-:root
-{
-    --pink-light: #9356DC;
-    --pink: #FF79DA;
-    --black: black;
-}
-  
-*,*::before,*::after 
-{
-    box-sizing: border-box;
-}
-  
-.coeur
-{
-   fill: transparent;
-   stroke: var(--black);
-   stroke-width: 20;
-   cursor: pointer;
-   position: relative;
-  
-    svg
+  &:hover
+  {
+    opacity: 0;
+
+    &:hover + .coeur-plein 
     {
-      overflow: visible;
-      width: 2.5em;
+      animation: coeur 1s ease-in-out forwards;
     }
-  
-    path 
-    {
-      stroke-dashoffset: 0;
-      stroke-dasharray: 1550;
-      transform-origin: center;
-    }
-  
-    .coeur-de-fond
-    {
-      position: absolute;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      stroke: none;
-    }
-  
-    .coeur-principal:hover path 
-    {
-      animation: stroke-animation 2s ease-in-out forwards;
-    }
-  
-    .coeur-principal:hover ~ .coeur-de-fond path 
-    {
-      animation: fade-animation 2s ease-in-out forwards;
-    }
+  }  
 }
-  
-@keyframes stroke-animation 
+.coeur-plein
 {
-    0% {stroke-dashoffset: 0;}
-    30% {stroke-dashoffset: 1550;}
-    60% {stroke-dashoffset: 3100;
-      fill: transparent;
-      transform: scale(1);}
-    80% {fill: var(--pink);
-      transform: scale(1.1);}
-    90% {transform: scale(1);}
-    100% {stroke-dashoffset: 3100;
-      fill: var(--pink);
-    }
+  background: $background;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0; 
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  cursor: pointer;
 }
-  
-@keyframes fade-animation 
+
+@keyframes coeur 
 {
-    70% {
-      fill: transparent;
-      transform: scale(1);
-    }
-    80% {
-      fill: var(--pink-light);
-      transform: scale(1.1);
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      transform: scale(2.5);
-      opacity: 0;
-    }
+  from 
+  {
+    opacity: 0;
+  }
+  to 
+  { 
+    opacity: 1;
+  }
 }
-  

@@ -4,7 +4,6 @@
 {
     background-color: $grey;
     display: flex;
-    flex-wrap: wrap;
     padding-top: 2em;
     padding-bottom: 9em;
     
@@ -18,13 +17,14 @@
             background-color: $grey;          
             padding: 0.7em; 
             border-radius: 2em 2em 0 0 ;
-            padding-left: 18em;
+            padding-left: 13em;
+            padding-top: 0.5em;
         }    
         & .coeur
         {
             position: absolute;
-            top: 1.5em;
-            right: 20em;
+            top: 1.8em;
+            right: 24em;
         }    
     }   
     & .les-cartes
@@ -40,13 +40,14 @@
             padding-bottom: 5px;
             margin-bottom: 1em;
             width: 2.5em;
+            font-size: large;
         }
         & .carte
         {    
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 27em;
+            width: 25em;
             margin-left: 0.8em;                  
             background-color: $white;
             margin-bottom: 1em;
@@ -106,7 +107,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 2em;
-    padding-bottom: 9em;
+    padding-bottom: 14em;
     justify-self: center;
     
         & .titre 
@@ -119,12 +120,13 @@
                 background-color: $grey;          
                 padding: 0.7em; 
                 border-radius: 2em 2em 0 0 ;
-                padding-left: 13em;
+                padding-left: 11em;
+                padding-top: 1em;
             }    
             & .coeur
             {
                 position: absolute;
-                top: 1.5em;
+                top: 2.5em;
                 right: 15em;
             }    
         }   
@@ -140,6 +142,7 @@
                 padding-bottom: 5px;
                 margin-bottom: 1em;
                 width: 2.5em;
+                font-size: large;
             }
             & .carte
             {    
@@ -205,7 +208,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding-top: 3em;
-    padding-bottom: 9em;
+    padding-bottom: 14em;
     
         & .titre 
         {             
@@ -217,12 +220,14 @@
                 background-color: $grey;          
                 padding: 0.7em; 
                 border-radius: 2em 2em 0 0 ;
-                padding-left: 9em;
+                padding-left: 5em;
+                padding-top: 1.5em;
+                
             }    
             & .coeur
             {
                 position: absolute;
-                top: 1.5em;
+                top: 3.7em;
                 right: 8em;
             }   
         }   
@@ -239,6 +244,7 @@
                 padding-bottom: 5px;
                 margin-bottom: 1em;
                 width: 2.5em;
+                font-size: large ; 
             }
             & .carte
             {    
@@ -305,25 +311,29 @@
     display: flex;
     flex-direction: column;
     padding-top: 3em;
-    padding-bottom: 9em;
+    padding-bottom: 14em;
     
         & .titre 
         {             
             width: 100%;
             position: absolute;
             top: 21em;
+            
             & h1
             {
-                background-color: $grey;          
+                background-color: $grey;
+                font-size: xx-large ;   
                 padding: 0.7em; 
                 border-radius: 2em 2em 0 0 ;
                 padding-left: 1em;
+                padding-top: 1.8em;
+                
             }    
             & .coeur
             {
                 position: absolute;
-                top: 1.5em;
-                right: 3em;
+                top: 4em;
+                right: 4em;
             }   
         }   
         & .les-cartes
@@ -339,6 +349,7 @@
                 padding-bottom: 5px;
                 margin-bottom: 1em;
                 width: 2.5em;
+                font-size: large ; 
             }
             & .carte
             {    
