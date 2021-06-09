@@ -8,10 +8,9 @@
   height: 100%;
   position: fixed;
   background-color: $grey;
-  animation: bgFade 3s forwards;
   z-index: 2;
   display: flex;
-  animation-name: invisible;
+  animation-name: invisible, fin;
   animation-duration: 5s;
   animation-fill-mode: forwards;
 }
@@ -19,8 +18,8 @@
 .chargement
 {
   display: flex;
-  padding-left: 20%;
-  margin-left: 35%;
+  padding-left: 30%;
+  margin-left: 25%;
   position: fixed;
   margin-top: 250px;
   margin-bottom: 100px;
@@ -29,7 +28,7 @@
   height: 120px;
   border-color: $secondary-color $primary-color $tertiary-color;
   border-radius: 50%;
-  animation: chargement 10s linear infinite;
+  animation: chargement 4s linear infinite;
 }
 
 @keyframes chargement
@@ -54,12 +53,27 @@
   }
 }
 
-@keyframes invisible{
-  from{
-      opacity: 1;
+@keyframes invisible
+{
+  from
+  {
+    opacity: 1;
   }
-  to{
-      opacity: 0;
+  to
+  {
+    opacity: 0;
+  }
+}
+
+@keyframes fin 
+{
+  from 
+  {
+    visibility: visible;
+  }
+  to 
+  {
+    visibility: hidden;      
   }
 }
 
@@ -72,7 +86,7 @@
 }
 
 @keyframes apparition-menu
-  {
+{
     0% 
     {
       opacity: 0;
@@ -92,7 +106,7 @@
 }
 
 @keyframes apparition-menu
-  {
+{
     0% 
     {
       opacity: 0;
@@ -112,24 +126,39 @@
 }
 
 @keyframes apparition-menu
+{
+  0% 
   {
-    0% 
-    {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% 
-    {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Selection d'un plat */
 
-.choix
+.carte:hover h3, .carte:active h3, .carte:focus h3
 {
-  animation: writing-menu 1.5s ease-out forwards;
+  width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
+
+.carte:hover .choix
+{
+  color: $white;
+  padding: 1em;
+}
+
+.carte .fas:hover
+{
+  transform: rotate(720deg);
+  transition: 1s ;
+}
+
 

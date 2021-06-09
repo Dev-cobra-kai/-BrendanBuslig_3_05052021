@@ -8,14 +8,12 @@
   height: 100%;
   position: fixed;
   background-color: #DCDCDC;
-  -webkit-animation: bgFade 3s forwards;
-          animation: bgFade 3s forwards;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation-name: invisible;
-          animation-name: invisible;
+  -webkit-animation-name: invisible, fin;
+          animation-name: invisible, fin;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-fill-mode: forwards;
@@ -26,8 +24,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 20%;
-  margin-left: 35%;
+  padding-left: 30%;
+  margin-left: 25%;
   position: fixed;
   margin-top: 250px;
   margin-bottom: 100px;
@@ -36,8 +34,8 @@
   height: 120px;
   border-color: #FF79DA #9356DC #99E2D0;
   border-radius: 50%;
-  -webkit-animation: chargement 10s linear infinite;
-          animation: chargement 10s linear infinite;
+  -webkit-animation: chargement 4s linear infinite;
+          animation: chargement 4s linear infinite;
 }
 
 @-webkit-keyframes chargement {
@@ -103,6 +101,24 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes fin {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes fin {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
   }
 }
 
@@ -181,10 +197,23 @@
 }
 
 /* Selection d'un plat */
-.choix {
-  -webkit-animation: writing-menu 1.5s ease-out forwards;
-          animation: writing-menu 1.5s ease-out forwards;
+.carte:hover h3, .carte:active h3, .carte:focus h3 {
+  width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.carte:hover .choix {
+  color: white;
+  padding: 1em;
+}
+
+.carte .fas:hover {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /* Bouton Explorer nos restaurants */
