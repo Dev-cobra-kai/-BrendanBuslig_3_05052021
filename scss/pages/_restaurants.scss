@@ -1,6 +1,6 @@
 /* Partie Restaurants */ 
 
-.restaurants
+#restaurants
 {
     display: flex;
     flex-direction: column;
@@ -13,8 +13,8 @@
     & h2
     {
         padding-top: 1em;
-        padding-left: 25em;
-        padding-bottom: 2em;
+        padding-left: 1em;
+        padding-bottom: 1em;
     }
 
 /* Les Divers Menus */ 
@@ -22,7 +22,7 @@
     & .divers-menus
     {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
@@ -35,7 +35,8 @@
         position: relative;
         text-decoration: none;
         color: $black;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
+        padding: 0.5em;
     }
 
 /* Image des Menus */
@@ -43,18 +44,10 @@
     & .le-menu img
     {
         display: flex;
-        width: 80em;
+        width: 20em;
+        height: 15em;  
         border-radius: 1em 1em 0 0;
-        object-fit:cover;
-    }
-
-/* Image des Menus */
-
-    & img
-    {
-        object-fit:cover;
-        width: 100%;
-        height: 15em;    
+        object-fit: cover;
     }
 
 /* Texte + Coeur */
@@ -95,7 +88,7 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1350px)
 {
-    .restaurants
+    #restaurants
     {
         display: flex;
         flex-direction: column;
@@ -143,15 +136,6 @@
             object-fit:cover;
         }
 
-/* Image des Menus */
-
-        & img
-        {
-            object-fit:cover;
-            width: 100%;
-            height: 15em;       
-        }
-
 /* Texte + Coeur */
 
         & .texte-coeur
@@ -189,7 +173,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px)
 {
-    .restaurants
+    #restaurants
     {
         display: flex;
         flex-direction: column;
@@ -233,17 +217,9 @@
         {
             display: flex;
             width: 45em;
+            height: 15em;  
             border-radius: 1em 1em 0 0;
             object-fit:cover;
-        }
-
-/* Image des Menus */
-
-        & img
-        {
-            object-fit:cover;
-            width: 100%;
-            height: 15em;       
         }
 
 /* Texte + Coeur */
@@ -283,7 +259,7 @@
 
 @media screen and (max-width: 768px)
 {
-    .restaurants
+    #restaurants
     {
         display: flex;
         flex-direction: column;
@@ -330,15 +306,6 @@
             height: 11em;
             border-radius: 1em 1em 0 0;
             object-fit:cover;
-        }
-
-/* Image des Menus */
-
-        & img
-        {
-            object-fit:cover;
-            width: 100%;
-            height: 15em;       
         }
 
 /* Texte + Coeur */

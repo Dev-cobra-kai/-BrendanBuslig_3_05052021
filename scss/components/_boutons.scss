@@ -11,12 +11,18 @@
     margin: 20px auto;
     font-size: 1.2em;
     background: linear-gradient($secondary-color, $primary-color);
-    color: $white;
     border: transparent;
+    transform: scale(1);
 
     &:hover 
     {
-        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    & a
+    {
+        color: $white;
+        text-decoration: none;
     }
 } 
 
@@ -34,12 +40,22 @@
     height: 3.5em;
     padding: 1em 5em 1em 5em;
     color: $white;
-  
+    transform: scale(1);
+
     &:hover 
     {
+        transform: scale(1.05);
         cursor: pointer;
     }
 } 
+
+.menu .menu-2
+{
+    position: absolute;
+    top: 44em;
+    right: 35em;
+}
+
 
 /* Média Queries */
 
@@ -63,12 +79,14 @@
         right: 24em;
         height: 3.5em;
         padding: 1em 5em 1em 5em;
-    
+        transform: scale(1);
+
         &:hover 
         {
+            transform: scale(1.05);
             cursor: pointer;
         }
-    } 
+    }
 }
 
 /* Tablette */
@@ -93,8 +111,11 @@
         width: 15em;
         padding: 1em 5em 1em 5em;
     
+        transform: scale(1);
+
         &:hover 
         {
+            transform: scale(1.05);
             cursor: pointer;
         }
     } 
@@ -121,9 +142,11 @@
         height: 3.5em;
         width: 15em;
         padding: 1em 5em 1em 5em;
-    
+        transform: scale(1);
+
         &:hover 
         {
+            transform: scale(1.05);
             cursor: pointer;
         }
     } 

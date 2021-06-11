@@ -12,6 +12,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-animation-name: invisible, fin;
           animation-name: invisible, fin;
   -webkit-animation-duration: 5s;
@@ -24,10 +27,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 30%;
-  margin-left: 25%;
+  padding-left: 25%;
   position: fixed;
-  margin-top: 250px;
+  margin-top: 220px;
   margin-bottom: 100px;
   border: 16px solid #bdc3c7;
   width: 120px;
@@ -38,6 +40,233 @@
           animation: chargement 4s linear infinite;
 }
 
+/* Apparition menus */
+.anim-duration-3 {
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.anim-duration-4 {
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.anim-duration-5 {
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+/* Selection d'un plat */
+.carte:hover h3, .carte:active h3, .carte:focus h3 {
+  width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.carte:hover .choix {
+  color: white;
+  padding: 1em;
+}
+
+.carte .fas:hover {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* Bouton Explorer nos restaurants */
+.btn-explorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 15em;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 20px auto;
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: transparent;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.btn-explorer:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.btn-explorer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Bouton commander */
+.btn-commander {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  border: transparent;
+  font-size: 1.2em;
+  position: absolute;
+  top: 44em;
+  right: 27em;
+  height: 3.5em;
+  padding: 1em 5em 1em 5em;
+  color: white;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.btn-commander:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.menu .menu-2 {
+  position: absolute;
+  top: 44em;
+  right: 35em;
+}
+
+/* Média Queries */
+/* Desktop */
+/* Ecrans entre 1025 px et 1300 px */
+/* Bouton commander */
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+  .btn-commander {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 90em;
+    right: 24em;
+    height: 3.5em;
+    padding: 1em 5em 1em 5em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .btn-commander:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+/* Tablette */
+/* Ecrans entre 769 px et 1024 px */
+/* Bouton commander */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .btn-commander {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 88em;
+    right: 16em;
+    height: 3.5em;
+    width: 15em;
+    padding: 1em 5em 1em 5em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .btn-commander:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+/* Mobile */
+/* Ecrans en-dessous de 768 px */
+/* Bouton commander */
+@media screen and (max-width: 768px) {
+  .btn-commander {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 87em;
+    right: 3.5em;
+    height: 3.5em;
+    width: 15em;
+    padding: 1em 5em 1em 5em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .btn-commander:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+/* Coeur Accueil */
+.coeur-vide {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  cursor: pointer;
+}
+
+.coeur-vide:hover {
+  opacity: 0;
+}
+
+.coeur-vide:hover:hover + .coeur-plein {
+  -webkit-animation: coeur 1s ease-in-out forwards;
+          animation: coeur 1s ease-in-out forwards;
+}
+
+.coeur-plein {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/* Coeur Menu */
+.coeur .menu {
+  position: absolute;
+  top: -2em;
+  right: 30px;
+  background-color: transparent;
+}
+
+/* Keyframes */
+/* Chargement + Spinner */
 @-webkit-keyframes chargement {
   0% {
     -webkit-transform: rotate(0deg) scale(1);
@@ -61,7 +290,6 @@
     border-color: #FF79DA #9356DC #99E2D0;
   }
 }
-
 @keyframes chargement {
   0% {
     -webkit-transform: rotate(0deg) scale(1);
@@ -123,13 +351,6 @@
 }
 
 /* Apparition menus */
-.anim-duration-3 {
-  -webkit-animation-name: apparition-menu;
-          animation-name: apparition-menu;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
 @-webkit-keyframes apparition-menu {
   0% {
     opacity: 0;
@@ -142,7 +363,6 @@
             transform: translateY(0);
   }
 }
-
 @keyframes apparition-menu {
   0% {
     opacity: 0;
@@ -156,211 +376,7 @@
   }
 }
 
-.anim-duration-4 {
-  -webkit-animation-name: apparition-menu;
-          animation-name: apparition-menu;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@keyframes apparition-menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-.anim-duration-5 {
-  -webkit-animation-name: apparition-menu;
-          animation-name: apparition-menu;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
-@keyframes apparition-menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-/* Selection d'un plat */
-.carte:hover h3, .carte:active h3, .carte:focus h3 {
-  width: 90%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.carte:hover .choix {
-  color: white;
-  padding: 1em;
-}
-
-.carte .fas:hover {
-  -webkit-transform: rotate(720deg);
-          transform: rotate(720deg);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-/* Bouton Explorer nos restaurants */
-.btn-explorer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 15em;
-  border-radius: 50px;
-  padding: 20px;
-  margin: 20px auto;
-  font-size: 1.2em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  border: transparent;
-}
-
-.btn-explorer:hover {
-  cursor: pointer;
-}
-
-/* Bouton commander */
-.btn-commander {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 50px;
-  border: transparent;
-  font-size: 1.2em;
-  position: absolute;
-  top: 44em;
-  right: 27em;
-  height: 3.5em;
-  padding: 1em 5em 1em 5em;
-  color: white;
-}
-
-.btn-commander:hover {
-  cursor: pointer;
-}
-
-/* Média Queries */
-/* Desktop */
-/* Ecrans entre 1025 px et 1300 px */
-/* Bouton commander */
-@media screen and (min-width: 1025px) and (max-width: 1350px) {
-  .btn-commander {
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-    color: white;
-    border: transparent;
-    border-radius: 50px;
-    font-size: 1.2em;
-    position: absolute;
-    top: 90em;
-    right: 24em;
-    height: 3.5em;
-    padding: 1em 5em 1em 5em;
-  }
-  .btn-commander:hover {
-    cursor: pointer;
-  }
-}
-
-/* Tablette */
-/* Ecrans entre 769 px et 1024 px */
-/* Bouton commander */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .btn-commander {
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-    color: white;
-    border: transparent;
-    border-radius: 50px;
-    font-size: 1.2em;
-    position: absolute;
-    top: 88em;
-    right: 16em;
-    height: 3.5em;
-    width: 15em;
-    padding: 1em 5em 1em 5em;
-  }
-  .btn-commander:hover {
-    cursor: pointer;
-  }
-}
-
-/* Mobile */
-/* Ecrans en-dessous de 768 px */
-/* Bouton commander */
-@media screen and (max-width: 768px) {
-  .btn-commander {
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-    color: white;
-    border: transparent;
-    border-radius: 50px;
-    font-size: 1.2em;
-    position: absolute;
-    top: 87em;
-    right: 3.5em;
-    height: 3.5em;
-    width: 15em;
-    padding: 1em 5em 1em 5em;
-  }
-  .btn-commander:hover {
-    cursor: pointer;
-  }
-}
-
-.coeur-vide {
-  position: absolute;
-  right: 30px;
-  bottom: 20px;
-  z-index: 1;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  cursor: pointer;
-}
-
-.coeur-vide:hover {
-  opacity: 0;
-}
-
-.coeur-vide:hover:hover + .coeur-plein {
-  -webkit-animation: coeur 1s ease-in-out forwards;
-          animation: coeur 1s ease-in-out forwards;
-}
-
-.coeur-plein {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  cursor: pointer;
-}
-
+/* Coeur */
 @-webkit-keyframes coeur {
   from {
     opacity: 0;
@@ -369,7 +385,6 @@
     opacity: 1;
   }
 }
-
 @keyframes coeur {
   from {
     opacity: 0;
@@ -836,11 +851,10 @@ footer a {
 }
 
 .menu .les-cartes {
-  padding: 0;
+  margin: auto;
 }
 
 .menu .les-cartes h2 {
-  margin-left: 0.8em;
   padding-bottom: 1em;
   padding-top: 1em;
   border-bottom: 5px solid #99E2D0;
@@ -860,8 +874,7 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 25em;
-  margin-left: 0.8em;
+  width: 24em;
   background-color: white;
   margin-bottom: 1em;
   padding: 1em;
@@ -949,6 +962,7 @@ footer a {
   }
   .menu .les-cartes {
     padding: 1em;
+    margin: 0;
   }
   .menu .les-cartes h2 {
     padding-bottom: 1em;
@@ -977,7 +991,6 @@ footer a {
             box-shadow: 0 0.3em 0.8em 0.1em black;
     cursor: pointer;
     padding: 1em;
-    margin-right: 1em;
   }
   .menu .les-cartes .carte .contenu-carte {
     display: -webkit-box;
@@ -1047,14 +1060,15 @@ footer a {
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 3.7em;
+    top: 1.5em;
     right: 8em;
   }
   .menu .les-cartes {
     padding: 0;
+    margin: 0;
   }
   .menu .les-cartes h2 {
-    margin-left: 1.5em;
+    margin-left: 1.7em;
     padding-bottom: 1em;
     padding-top: 1em;
     border-bottom: 5px solid #99E2D0;
@@ -1145,18 +1159,19 @@ footer a {
   .menu .titre h1 {
     background-color: #DCDCDC;
     font-size: xx-large;
-    padding: 0.7em;
+    padding: 0.5em;
     border-radius: 2em 2em 0 0;
     padding-left: 1em;
-    padding-top: 1.8em;
+    padding-top: 1.6em;
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 4em;
-    right: 4em;
+    top: 1.6em;
+    right: 0.5em;
   }
   .menu .les-cartes {
     padding: 0;
+    margin: 0;
   }
   .menu .les-cartes h2 {
     margin-left: 0.8em;
@@ -1227,7 +1242,7 @@ footer a {
 }
 
 /* Partie Fonctionnement */
-.fonctionnement {
+#fonctionnement {
   margin-top: 2em;
   margin-bottom: 2em;
   /* Fonctionnement Navigateur */
@@ -1242,12 +1257,12 @@ footer a {
   /* Logo boutique */
 }
 
-.fonctionnement h2 {
+#fonctionnement h2 {
   padding-top: 1em;
-  padding-left: 24em;
+  padding-left: 1em;
 }
 
-.fonctionnement .contenu-fct {
+#fonctionnement .contenu-fct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1259,7 +1274,7 @@ footer a {
   padding-top: 2em;
 }
 
-.fonctionnement .navigateur {
+#fonctionnement .navigateur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1274,23 +1289,23 @@ footer a {
   padding: 1.5em 5em 1.5em 0.2em;
 }
 
-.fonctionnement .composer {
+#fonctionnement .composer {
   padding: 1.5em 5.5em 1.5em 1.5em;
 }
 
-.fonctionnement .deguster {
+#fonctionnement .deguster {
   background-color: #DCDCDC;
 }
 
-.fonctionnement .contenu-fct p {
+#fonctionnement .contenu-fct p {
   font-weight: bold;
 }
 
-.fonctionnement .fas {
+#fonctionnement .fas {
   padding: 0 1em 0 1em;
 }
 
-.fonctionnement .nombre {
+#fonctionnement .nombre {
   background: #9356DC;
   border-radius: 50%;
   padding: 0.5em 0.8em 0.5em 0.8em;
@@ -1299,15 +1314,15 @@ footer a {
   color: white;
 }
 
-.fonctionnement .composer .nombre {
+#fonctionnement .composer .nombre {
   margin-left: -2.5em;
 }
 
-.fonctionnement .fa-mobile-alt, .fonctionnement .fa-list-ul {
+#fonctionnement .fa-mobile-alt, #fonctionnement .fa-list-ul {
   color: gray;
 }
 
-.fonctionnement .fa-store {
+#fonctionnement .fa-store {
   color: #9356DC;
 }
 
@@ -1316,7 +1331,7 @@ footer a {
 /* Ecrans entre 1025 px et 1350 px */
 /* Partie Fonctionnement */
 @media screen and (min-width: 1025px) and (max-width: 1350px) {
-  .fonctionnement {
+  #fonctionnement {
     margin-top: 2em;
     margin-bottom: 2em;
     /* Fonctionnement Navigateur */
@@ -1327,11 +1342,11 @@ footer a {
     /* Nombre Navigateur */
     /* Nombre Composer */
   }
-  .fonctionnement h2 {
+  #fonctionnement h2 {
     padding-top: 0.7em;
     padding-left: 0.8em;
   }
-  .fonctionnement .contenu-fct {
+  #fonctionnement .contenu-fct {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1342,7 +1357,7 @@ footer a {
             align-items: center;
     padding-top: 1.5em;
   }
-  .fonctionnement .navigateur {
+  #fonctionnement .navigateur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1356,16 +1371,16 @@ footer a {
             box-shadow: 0 0 0.6em 0.2em #DCDCDC;
     padding: 1.5em 1.5em 1.5em 1.5em;
   }
-  .fonctionnement .composer {
+  #fonctionnement .composer {
     padding: 1.5em 2em 1.5em 1.5em;
   }
-  .fonctionnement .contenu-fct p {
+  #fonctionnement .contenu-fct p {
     font-weight: bold;
   }
-  .fonctionnement .fas {
+  #fonctionnement .fas {
     padding: 0 1em 0 1em;
   }
-  .fonctionnement .nombre {
+  #fonctionnement .nombre {
     background: #9356DC;
     border-radius: 50%;
     padding: 0.5em 0.8em 0.5em 0.8em;
@@ -1373,7 +1388,7 @@ footer a {
     margin-left: -1rem;
     color: white;
   }
-  .fonctionnement .composer .nombre {
+  #fonctionnement .composer .nombre {
     margin-left: -2.5em;
   }
 }
@@ -1382,7 +1397,7 @@ footer a {
 /* Ecrans entre 769 px et 1024 px */
 /* Partie Fonctionnement */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .fonctionnement {
+  #fonctionnement {
     margin-top: 2em;
     margin-bottom: 2em;
     /* Fonctionnement Navigateur */
@@ -1393,11 +1408,11 @@ footer a {
     /* Nombre Navigateur */
     /* Nombre Choisir + Composer */
   }
-  .fonctionnement h2 {
+  #fonctionnement h2 {
     padding-top: 0.5em;
     padding-left: 0.8em;
   }
-  .fonctionnement .contenu-fct {
+  #fonctionnement .contenu-fct {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1412,7 +1427,7 @@ footer a {
             align-items: center;
     padding-top: 1.5em;
   }
-  .fonctionnement .navigateur {
+  #fonctionnement .navigateur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1426,16 +1441,16 @@ footer a {
             box-shadow: 0 0 0.6em 0.2em #DCDCDC;
     padding: 1.5em 3.5em 1.5em 1.5em;
   }
-  .fonctionnement .composer {
+  #fonctionnement .composer {
     padding: 1.5em 4em 1.5em 1.5em;
   }
-  .fonctionnement .contenu-fct p {
+  #fonctionnement .contenu-fct p {
     font-weight: bold;
   }
-  .fonctionnement .fas {
+  #fonctionnement .fas {
     padding: 0 1em 0 1em;
   }
-  .fonctionnement .nombre {
+  #fonctionnement .nombre {
     background: #9356DC;
     border-radius: 50%;
     padding: 0.5em 0.8em 0.5em 0.8em;
@@ -1443,7 +1458,7 @@ footer a {
     margin-left: -1rem;
     color: white;
   }
-  .fonctionnement .navigateur .nombre {
+  #fonctionnement .navigateur .nombre {
     margin-left: -2.5em;
   }
 }
@@ -1452,7 +1467,7 @@ footer a {
 /* Ecrans en-dessous de 768 px */
 /* Partie Fonctionnement */
 @media screen and (max-width: 768px) {
-  .fonctionnement {
+  #fonctionnement {
     margin-top: 2em;
     margin-bottom: 2em;
     /* Fonctionnement Navigateur */
@@ -1463,11 +1478,11 @@ footer a {
     /* Nombre Navigateur */
     /* Nombre Choisir + Composer */
   }
-  .fonctionnement h2 {
+  #fonctionnement h2 {
     padding-top: 0.5em;
     padding-left: 0.8em;
   }
-  .fonctionnement .contenu-fct {
+  #fonctionnement .contenu-fct {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1482,7 +1497,7 @@ footer a {
             align-items: center;
     padding-top: 2.5em;
   }
-  .fonctionnement .navigateur {
+  #fonctionnement .navigateur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1496,16 +1511,16 @@ footer a {
             box-shadow: 0 0 0.6em 0.2em #DCDCDC;
     padding: 1.5em 4em 1.5em 1.5em;
   }
-  .fonctionnement .composer {
+  #fonctionnement .composer {
     padding: 1.5em 4.5em 1.5em 1.5em;
   }
-  .fonctionnement .contenu-fct p {
+  #fonctionnement .contenu-fct p {
     font-weight: bold;
   }
-  .fonctionnement .fas {
+  #fonctionnement .fas {
     padding: 0 1em 0 1em;
   }
-  .fonctionnement .nombre {
+  #fonctionnement .nombre {
     background: #9356DC;
     border-radius: 50%;
     padding: 0.5em 0.8em 0.5em 0.8em;
@@ -1513,13 +1528,13 @@ footer a {
     margin-left: -1rem;
     color: white;
   }
-  .fonctionnement .navigateur .nombre {
+  #fonctionnement .navigateur .nombre {
     margin-left: -2.5em;
   }
 }
 
 /* Partie Restaurants */
-.restaurants {
+#restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1534,31 +1549,29 @@ footer a {
   /* Les Divers Menus */
   /* Ancre des Menus */
   /* Image des Menus */
-  /* Image des Menus */
   /* Texte + Coeur */
   /* Paragraphe Nouveau */
 }
 
-.restaurants h2 {
+#restaurants h2 {
   padding-top: 1em;
-  padding-left: 25em;
-  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-bottom: 1em;
 }
 
-.restaurants .divers-menus {
+#restaurants .divers-menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.restaurants .le-menu a {
+#restaurants .le-menu a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1569,27 +1582,22 @@ footer a {
   position: relative;
   text-decoration: none;
   color: black;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+  padding: 0.5em;
 }
 
-.restaurants .le-menu img {
+#restaurants .le-menu img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80em;
+  width: 20em;
+  height: 15em;
   border-radius: 1em 1em 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.restaurants img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 15em;
-}
-
-.restaurants .texte-coeur {
+#restaurants .texte-coeur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1606,7 +1614,7 @@ footer a {
           box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
 }
 
-.restaurants .nouveau {
+#restaurants .nouveau {
   background-color: #99E2D0;
   font-weight: bold;
   color: #278870;
@@ -1622,7 +1630,7 @@ footer a {
 /* Ecrans entre 1025 px et 1350 px */
 /* Partie Restaurants */
 @media screen and (min-width: 1025px) and (max-width: 1350px) {
-  .restaurants {
+  #restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1637,16 +1645,15 @@ footer a {
     /* Les Divers Menus */
     /* Ancre des Menus */
     /* Image des Menus */
-    /* Image des Menus */
     /* Texte + Coeur */
     /* Paragraphe Nouveau */
   }
-  .restaurants h2 {
+  #restaurants h2 {
     padding-top: 1em;
     padding-left: 0.8em;
     padding-bottom: 1em;
   }
-  .restaurants .divers-menus {
+  #restaurants .divers-menus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1658,7 +1665,7 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .restaurants .le-menu a {
+  #restaurants .le-menu a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1671,7 +1678,7 @@ footer a {
     color: black;
     margin-bottom: 3em;
   }
-  .restaurants .le-menu img {
+  #restaurants .le-menu img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1680,13 +1687,7 @@ footer a {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .restaurants img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 15em;
-  }
-  .restaurants .texte-coeur {
+  #restaurants .texte-coeur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1702,7 +1703,7 @@ footer a {
     -webkit-box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
   }
-  .restaurants .nouveau {
+  #restaurants .nouveau {
     background-color: #99E2D0;
     font-weight: bold;
     color: #278870;
@@ -1718,7 +1719,7 @@ footer a {
 /* Ecrans entre 769 px et 1024 px */
 /* Partie Restaurants */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .restaurants {
+  #restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1733,16 +1734,15 @@ footer a {
     /* Les Divers Menus */
     /* Ancre des Menus */
     /* Image des Menus */
-    /* Image des Menus */
     /* Texte + Coeur */
     /* Paragraphe Nouveau */
   }
-  .restaurants h2 {
+  #restaurants h2 {
     padding-top: 1em;
     padding-left: 0.8em;
     padding-bottom: 1em;
   }
-  .restaurants .divers-menus {
+  #restaurants .divers-menus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1754,7 +1754,7 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .restaurants .le-menu a {
+  #restaurants .le-menu a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1767,22 +1767,17 @@ footer a {
     color: black;
     margin-bottom: 3em;
   }
-  .restaurants .le-menu img {
+  #restaurants .le-menu img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 45em;
+    height: 15em;
     border-radius: 1em 1em 0 0;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .restaurants img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 15em;
-  }
-  .restaurants .texte-coeur {
+  #restaurants .texte-coeur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1798,7 +1793,7 @@ footer a {
     -webkit-box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
   }
-  .restaurants .nouveau {
+  #restaurants .nouveau {
     background-color: #99E2D0;
     font-weight: bold;
     color: #278870;
@@ -1814,7 +1809,7 @@ footer a {
 /* Ecrans en-dessous de 768 px */
 /* Partie Restaurants */
 @media screen and (max-width: 768px) {
-  .restaurants {
+  #restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1829,16 +1824,15 @@ footer a {
     /* Les Divers Menus */
     /* Ancre des Menus */
     /* Image des Menus */
-    /* Image des Menus */
     /* Texte + Coeur */
     /* Paragraphe Nouveau */
   }
-  .restaurants h2 {
+  #restaurants h2 {
     padding-top: 1em;
     padding-left: 0.8em;
     padding-bottom: 1em;
   }
-  .restaurants .divers-menus {
+  #restaurants .divers-menus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1850,7 +1844,7 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .restaurants .le-menu a {
+  #restaurants .le-menu a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1863,7 +1857,7 @@ footer a {
     color: black;
     margin-bottom: 3em;
   }
-  .restaurants .le-menu img {
+  #restaurants .le-menu img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1873,13 +1867,7 @@ footer a {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .restaurants img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 15em;
-  }
-  .restaurants .texte-coeur {
+  #restaurants .texte-coeur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1895,7 +1883,7 @@ footer a {
     -webkit-box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
   }
-  .restaurants .nouveau {
+  #restaurants .nouveau {
     background-color: #99E2D0;
     font-weight: bold;
     color: #278870;

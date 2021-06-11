@@ -1,0 +1,80 @@
+/* Keyframes */
+
+/* Chargement + Spinner */
+
+@keyframes chargement
+{
+  0%{
+    transform: rotate(0deg) scale(1);
+    border-color: $secondary-color $primary-color $tertiary-color;
+  }
+  25%{
+    border-color: $secondary-color $primary-color $tertiary-color;
+  }
+  50% {
+    transform: rotate(360deg) scale(1.15);
+    border-color: $secondary-color $primary-color $tertiary-color;
+  }
+  75%{
+    border-color: $secondary-color $primary-color $tertiary-color;
+  }
+  100%{
+    transform: rotate(720deg) scale(1);
+    border-color: $secondary-color $primary-color $tertiary-color;
+  }
+}
+
+@keyframes invisible
+{
+  from
+  {
+    opacity: 1;
+  }
+  to
+  {
+    opacity: 0;
+  }
+}
+
+@keyframes fin 
+{
+  from 
+  {
+    visibility: visible;
+  }
+  to 
+  {
+    visibility: hidden;      
+  }
+}
+
+/* Apparition menus */
+
+@keyframes apparition-menu
+{
+    0% 
+    {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% 
+    {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/* Coeur */
+
+@keyframes coeur 
+{
+  from 
+  {
+    opacity: 0;
+  }
+  to 
+  { 
+    opacity: 1;
+  }
+}
+

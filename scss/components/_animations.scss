@@ -10,6 +10,7 @@
   background-color: $grey;
   z-index: 2;
   display: flex;
+  justify-content: center;
   animation-name: invisible, fin;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -18,10 +19,9 @@
 .chargement
 {
   display: flex;
-  padding-left: 30%;
-  margin-left: 25%;
+  padding-left: 25%;
   position: fixed;
-  margin-top: 250px;
+  margin-top: 220px;
   margin-bottom: 100px;
   border: 16px solid #bdc3c7;
   width: 120px;
@@ -29,52 +29,6 @@
   border-color: $secondary-color $primary-color $tertiary-color;
   border-radius: 50%;
   animation: chargement 4s linear infinite;
-}
-
-@keyframes chargement
-{
-  0%{
-    transform: rotate(0deg) scale(1);
-    border-color: $secondary-color $primary-color $tertiary-color;
-  }
-  25%{
-    border-color: $secondary-color $primary-color $tertiary-color;
-  }
-  50% {
-    transform: rotate(360deg) scale(1.15);
-    border-color: $secondary-color $primary-color $tertiary-color;
-  }
-  75%{
-    border-color: $secondary-color $primary-color $tertiary-color;
-  }
-  100%{
-    transform: rotate(720deg) scale(1);
-    border-color: $secondary-color $primary-color $tertiary-color;
-  }
-}
-
-@keyframes invisible
-{
-  from
-  {
-    opacity: 1;
-  }
-  to
-  {
-    opacity: 0;
-  }
-}
-
-@keyframes fin 
-{
-  from 
-  {
-    visibility: visible;
-  }
-  to 
-  {
-    visibility: hidden;      
-  }
 }
 
 /* Apparition menus */
@@ -85,58 +39,16 @@
   animation-duration: 3s;
 }
 
-@keyframes apparition-menu
-{
-    0% 
-    {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% 
-    {
-      opacity: 1;
-      transform: translateY(0);
-    }
-}
-
 .anim-duration-4
 {
   animation-name: apparition-menu;
   animation-duration: 4s;
 }
 
-@keyframes apparition-menu
-{
-    0% 
-    {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% 
-    {
-      opacity: 1;
-      transform: translateY(0);
-    }
-}
-
 .anim-duration-5
 {
   animation-name: apparition-menu;
   animation-duration: 5s;
-}
-
-@keyframes apparition-menu
-{
-  0% 
-  {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% 
-  {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Selection d'un plat */

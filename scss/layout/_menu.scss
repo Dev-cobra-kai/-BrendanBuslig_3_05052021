@@ -29,11 +29,10 @@
     }   
     & .les-cartes
     {              
-        padding: 0;
+        margin: auto;        
         
         & h2
         {
-            margin-left: 0.8em;
             padding-bottom: 1em;
             padding-top: 1em;
             border-bottom: 5px solid  $tertiary-color;
@@ -47,8 +46,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 25em;
-            margin-left: 0.8em;                  
+            width: 24em;                 
             background-color: $white;
             margin-bottom: 1em;
             padding: 1em;
@@ -133,6 +131,7 @@
         & .les-cartes
         {              
             padding: 1em;
+            margin: 0;
                         
             & h2
             {
@@ -156,7 +155,6 @@
                 box-shadow: 0 0.3em 0.8em 0.1em $black;      
                 cursor: pointer;
                 padding: 1em; 
-                margin-right: 1em;
     
                 & .contenu-carte
                 {
@@ -227,17 +225,18 @@
             & .coeur
             {
                 position: absolute;
-                top: 3.7em;
+                top: 1.5em;
                 right: 8em;
             }   
         }   
         & .les-cartes
         {              
             padding: 0;
+            margin: 0;
             
             & h2
             {
-                margin-left: 1.5em;
+                margin-left: 1.7em;
                 padding-bottom: 1em;
                 padding-top: 1em;
                 border-bottom: 5px solid  $tertiary-color;
@@ -323,22 +322,23 @@
             {
                 background-color: $grey;
                 font-size: xx-large ;   
-                padding: 0.7em; 
+                padding: 0.5em; 
                 border-radius: 2em 2em 0 0 ;
                 padding-left: 1em;
-                padding-top: 1.8em;
+                padding-top: 1.6em;
                 
             }    
             & .coeur
             {
                 position: absolute;
-                top: 4em;
-                right: 4em;
+                top: 1.6em;
+                right: 0.5em;
             }   
         }   
         & .les-cartes
         {              
             padding: 0;
+            margin: 0;
             
             & h2
             {

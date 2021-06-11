@@ -1,13 +1,14 @@
 /* Partie Fonctionnement */
 
-.fonctionnement
+#fonctionnement
 {    
     margin-top: 2em;
     margin-bottom: 2em;
+    
     & h2
     {
         padding-top: 1em;
-        padding-left: 24em;
+        padding-left: 1em;       
     }
 
 /* Fonctionnement Navigateur */    
@@ -106,7 +107,7 @@
 @media screen and (min-width: 1025px) and (max-width: 1350px)
 {
 
-    .fonctionnement
+    #fonctionnement
     {    
         margin-top: 2em;
         margin-bottom: 2em;
@@ -189,7 +190,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px)
 {
-    .fonctionnement
+    #fonctionnement
     {    
         margin-top: 2em;
         margin-bottom: 2em;
@@ -273,7 +274,7 @@
 
 @media screen and (max-width: 768px)
 {
-    .fonctionnement
+    #fonctionnement
     {    
         margin-top: 2em;
         margin-bottom: 2em;
