@@ -120,6 +120,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
+  justify-items: center;
   border: transparent;
   font-size: 1.2em;
   position: absolute;
@@ -140,25 +141,26 @@
 
 .menu .menu-2 {
   position: absolute;
-  top: 44em;
-  right: 35em;
+  top: 48em;
+  right: 28em;
 }
 
 /* Média Queries */
 /* Desktop */
-/* Ecrans entre 1025 px et 1300 px */
+/* Ecrans entre 1025 px et 1350 px */
 /* Bouton commander */
 @media screen and (min-width: 1025px) and (max-width: 1350px) {
   .btn-commander {
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
+    width: 50%;
     border: transparent;
     border-radius: 50px;
     font-size: 1.2em;
     position: absolute;
-    top: 90em;
-    right: 24em;
+    top: 86em;
+    right: 15em;
     height: 3.5em;
     padding: 1em 5em 1em 5em;
     -webkit-transform: scale(1);
@@ -168,6 +170,11 @@
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
     cursor: pointer;
+  }
+  .menu .menu-2 {
+    position: absolute;
+    top: 91em;
+    right: 14em;
   }
 }
 
@@ -179,14 +186,14 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
+    width: 50%;
     border: transparent;
     border-radius: 50px;
     font-size: 1.2em;
     position: absolute;
-    top: 88em;
-    right: 16em;
+    top: 83em;
+    right: 12em;
     height: 3.5em;
-    width: 15em;
     padding: 1em 5em 1em 5em;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -195,6 +202,11 @@
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
     cursor: pointer;
+  }
+  .menu .menu-2 {
+    position: absolute;
+    top: 89em;
+    right: 12em;
   }
 }
 
@@ -210,10 +222,10 @@
     border-radius: 50px;
     font-size: 1.2em;
     position: absolute;
-    top: 87em;
+    top: 83em;
     right: 3.5em;
     height: 3.5em;
-    width: 15em;
+    width: 70%;
     padding: 1em 5em 1em 5em;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -222,6 +234,11 @@
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
     cursor: pointer;
+  }
+  .menu .menu-2 {
+    position: absolute;
+    top: 88em;
+    right: 3.5em;
   }
 }
 
@@ -850,6 +867,10 @@ footer a {
   right: 24em;
 }
 
+.menu .menu-la-note-enchantee {
+  padding-bottom: 6em;
+}
+
 .menu .les-cartes {
   margin: auto;
 }
@@ -940,7 +961,7 @@ footer a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 2em;
-    padding-bottom: 14em;
+    padding-bottom: 9em;
     justify-self: center;
   }
   .menu .titre {
@@ -1044,7 +1065,7 @@ footer a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 3em;
-    padding-bottom: 14em;
+    padding-bottom: 9em;
   }
   .menu .titre {
     width: 100%;
@@ -1149,7 +1170,7 @@ footer a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 3em;
-    padding-bottom: 14em;
+    padding-bottom: 9em;
   }
   .menu .titre {
     width: 100%;

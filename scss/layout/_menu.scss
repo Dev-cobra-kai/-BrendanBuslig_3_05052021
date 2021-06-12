@@ -26,7 +26,12 @@
             top: 1.8em;
             right: 24em;
         }    
-    }   
+    }
+    & .menu-la-note-enchantee 
+    {
+        padding-bottom: 6em;
+    }
+    
     & .les-cartes
     {              
         margin: auto;        
@@ -86,7 +91,7 @@
                 justify-content: flex-end;  
             }
         }
-    }    
+    }
 }
 
 /* Média Queries */
@@ -105,7 +110,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 2em;
-    padding-bottom: 14em;
+    padding-bottom: 9em;
     justify-self: center;
     
         & .titre 
@@ -206,7 +211,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding-top: 3em;
-    padding-bottom: 14em;
+    padding-bottom: 9em;
     
         & .titre 
         {             
@@ -310,7 +315,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 3em;
-    padding-bottom: 14em;
+    padding-bottom: 9em;
     
         & .titre 
         {             
