@@ -53,24 +53,62 @@
 
 /* Selection d'un plat */
 
-.carte:hover h3, .carte:active h3, .carte:focus h3
+.carte:hover h3 ,.carte:hover .texte p, .carte:active h3, .carte:active .texte p, .carte:focus h3, .carte:focus .texte p
 {
-  width: 90%;
+  width: 85%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.carte:hover .choix
-{
-  color: $white;
-  padding: 1em;
+.carte
+{  
+  height: 3em;
+  
+  &:hover
+  {
+    &:hover .prix 
+    {
+      transform: translate(-20px);
+    }
+    & > .choix
+    {
+      transform: scale(1);
+      color: $white;
+      padding: 0.5em;
+
+      & > .fas
+      {
+        transform: rotate(0);
+      }
+    }
+    & > .prix
+    {
+      transform: translate(0);
+    }
+  }
+  
+  .prix
+  {    
+    padding: 1em;
+    transform: translate(25px);
+  }
+  .choix
+  {
+    border-radius: 0 1em 1em 0;
+    background-color: $tertiary-color;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 60px;
+    margin: -20px;
+    transition: transform 0.8s;
+  }
+  .fa-check-circle
+  {
+    color: $white;
+    padding: 0.5em;
+    font-size: 2em;
+    transform: rotate(360deg);
+    transition: transform 500ms;
+  }
 }
-
-.carte .fas:hover
-{
-  transform: rotate(720deg);
-  transition: 1s ;
-}
-
-

@@ -78,3 +78,41 @@
   }
 }
 
+/* Selection d'un plat */
+
+@keyframes selection {
+  from {
+      width:80%;
+  }
+  to {
+      width: 48%;
+  }
+}
+
+@keyframes courses-unveiling {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dishes-unveiling {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

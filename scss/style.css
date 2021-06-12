@@ -63,23 +63,70 @@
 }
 
 /* Selection d'un plat */
-.carte:hover h3, .carte:active h3, .carte:focus h3 {
-  width: 90%;
+.carte:hover h3, .carte:hover .texte p, .carte:active h3, .carte:active .texte p, .carte:focus h3, .carte:focus .texte p {
+  width: 85%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.carte:hover .choix {
-  color: white;
-  padding: 1em;
+.carte {
+  height: 3em;
 }
 
-.carte .fas:hover {
-  -webkit-transform: rotate(720deg);
-          transform: rotate(720deg);
-  -webkit-transition: 1s;
-  transition: 1s;
+.carte:hover:hover .prix {
+  -webkit-transform: translate(-20px);
+          transform: translate(-20px);
+}
+
+.carte:hover > .choix {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: white;
+  padding: 0.5em;
+}
+
+.carte:hover > .choix > .fas {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.carte:hover > .prix {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.carte .prix {
+  padding: 1em;
+  -webkit-transform: translate(25px);
+          transform: translate(25px);
+}
+
+.carte .choix {
+  border-radius: 0 1em 1em 0;
+  background-color: #99E2D0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  width: 60px;
+  margin: -20px;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.carte .fa-check-circle {
+  color: white;
+  padding: 0.5em;
+  font-size: 2em;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
 /* Bouton Explorer nos restaurants */
@@ -108,6 +155,10 @@
 .btn-explorer:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 20px #9356DC;
+          box-shadow: 5px 5px 20px #9356DC;
+  cursor: pointer;
 }
 
 .btn-explorer a {
@@ -125,8 +176,9 @@
   font-size: 1.2em;
   position: absolute;
   top: 44em;
-  right: 27em;
+  right: 19em;
   height: 3.5em;
+  width: 50%;
   padding: 1em 5em 1em 5em;
   color: white;
   -webkit-transform: scale(1);
@@ -136,13 +188,16 @@
 .btn-commander:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 20px #9356DC;
+          box-shadow: 5px 5px 20px #9356DC;
   cursor: pointer;
 }
 
 .menu .menu-2 {
   position: absolute;
-  top: 48em;
-  right: 28em;
+  top: 49em;
+  right: 19em;
 }
 
 /* Média Queries */
@@ -169,6 +224,9 @@
   .btn-commander:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
+    opacity: 0.8;
+    -webkit-box-shadow: 5px 5px 20px #9356DC;
+            box-shadow: 5px 5px 20px #9356DC;
     cursor: pointer;
   }
   .menu .menu-2 {
@@ -201,6 +259,9 @@
   .btn-commander:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
+    opacity: 0.8;
+    -webkit-box-shadow: 5px 5px 20px #9356DC;
+            box-shadow: 5px 5px 20px #9356DC;
     cursor: pointer;
   }
   .menu .menu-2 {
@@ -233,6 +294,9 @@
   .btn-commander:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
+    opacity: 0.8;
+    -webkit-box-shadow: 5px 5px 20px #9356DC;
+            box-shadow: 5px 5px 20px #9356DC;
     cursor: pointer;
   }
   .menu .menu-2 {
@@ -407,6 +471,88 @@
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+/* Selection d'un plat */
+@-webkit-keyframes selection {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 48%;
+  }
+}
+@keyframes selection {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 48%;
+  }
+}
+
+@-webkit-keyframes courses-unveiling {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes courses-unveiling {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes dishes-unveiling {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dishes-unveiling {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
@@ -925,25 +1071,6 @@ footer a {
 
 .menu .les-cartes .carte .contenu-carte .texte p {
   font-size: 1em;
-}
-
-.menu .les-cartes .carte .contenu-carte .prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.menu .les-cartes .carte .choix {
-  background-color: #99E2D0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 /* Média Queries */

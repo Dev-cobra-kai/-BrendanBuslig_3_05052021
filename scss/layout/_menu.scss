@@ -78,17 +78,6 @@
                         font-size: 1em;
                     }
                 }
-                & .prix
-                {
-                    display: flex;  
-                    align-items: flex-end; 
-                }
-            }
-            & .choix
-            {
-                background-color:$tertiary-color;
-                display: flex;      
-                justify-content: flex-end;  
             }
         }
     }
