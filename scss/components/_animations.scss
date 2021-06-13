@@ -90,8 +90,9 @@
   
   .prix
   {    
-    padding: 1em;
+    padding-top: 2em;
     transform: translate(25px);
+    font-weight: bold;
   }
   .choix
   {
@@ -100,7 +101,8 @@
     transform: scaleX(0);
     transform-origin: right;
     width: 60px;
-    margin: -20px;
+    margin: -16px;
+    padding: 0.5em;
     transition: transform 0.8s;
   }
   .fa-check-circle

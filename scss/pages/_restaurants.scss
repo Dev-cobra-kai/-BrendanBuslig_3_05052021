@@ -2,11 +2,7 @@
 
 #restaurants
 {
-    display: flex;
-    flex-direction: column;
-    background: $background-color;
-    padding-bottom: 3em;
-    padding-top: 1em;
+    @include restaurants;
 
 /* Titre Restaurants */ 
 
@@ -22,21 +18,16 @@
     & .divers-menus
     {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
     }
 
 /* Ancre des Menus */ 
 
     & .le-menu a
     {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        text-decoration: none;
-        color: $black;
+        @include le-menu;  
         margin-bottom: 2em;
-        padding: 0.5em;
     }
 
 /* Image des Menus */
@@ -44,7 +35,7 @@
     & .le-menu img
     {
         display: flex;
-        width: 20em;
+        width: 19em;
         height: 15em;  
         border-radius: 1em 1em 0 0;
         object-fit: cover;
@@ -54,27 +45,14 @@
 
     & .texte-coeur
     {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1em;
-        background-color: $white;
-        border-radius: 0 0 1em 1em;
-        box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+        @include texte-coeur;
     }
 
 /* Paragraphe Nouveau */
 
     & .nouveau
     {
-    background-color: $tertiary-color;
-    font-weight: bold;
-    color: darken($tertiary-color, 40%);
-    position: absolute;
-    right: 2em;
-    top: 1em;
-    padding: 0.7em;
-    border-radius: 5px;    
+        @include nouveau;   
     }
 }
 
@@ -90,11 +68,7 @@
 {
     #restaurants
     {
-        display: flex;
-        flex-direction: column;
-        background: $background-color;
-        padding-bottom: 3em;
-        padding-top: 1em;
+        @include restaurants;
 
 /* Titre Restaurants */ 
 
@@ -118,11 +92,7 @@
 
         & .le-menu a
         {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
+            @include le-menu; 
             margin-bottom: 3em;
         }
 
@@ -140,27 +110,14 @@
 
         & .texte-coeur
         {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1em;
-            background-color: $white;
-            border-radius: 0 0 1em 1em;
-            box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+            @include texte-coeur;
         }
 
 /* Paragraphe Nouveau */
 
         & .nouveau
         {
-        background-color: $tertiary-color;
-        font-weight: bold;
-        color: darken($tertiary-color, 40%);
-        position: absolute;
-        right: 2em;
-        top: 1em;
-        padding: 0.7em;
-        border-radius: 5px;    
+            @include nouveau;      
         }
     }
 }
@@ -175,11 +132,7 @@
 {
     #restaurants
     {
-        display: flex;
-        flex-direction: column;
-        background: $background-color;
-        padding-bottom: 3em;
-        padding-top: 1em;
+        @include restaurants;
 
 /* Titre Restaurants */ 
 
@@ -203,11 +156,7 @@
 
         & .le-menu a
         {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
+            @include le-menu; 
             margin-bottom: 3em;
         }
 
@@ -226,27 +175,14 @@
 
         & .texte-coeur
         {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1em;
-            background-color: $white;
-            border-radius: 0 0 1em 1em;
-            box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+            @include texte-coeur;
         }
 
 /* Paragraphe Nouveau */
 
         & .nouveau
         {
-        background-color: $tertiary-color;
-        font-weight: bold;
-        color: darken($tertiary-color, 40%);
-        position: absolute;
-        right: 2em;
-        top: 1em;
-        padding: 0.7em;
-        border-radius: 5px;    
+            @include nouveau;     
         }
     }
 }
@@ -261,11 +197,7 @@
 {
     #restaurants
     {
-        display: flex;
-        flex-direction: column;
-        background: $background-color;
-        padding-bottom: 3em;
-        padding-top: 1em;
+        @include restaurants;
 
 /* Titre Restaurants */ 
 
@@ -289,11 +221,7 @@
 
         & .le-menu a
         {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            text-decoration: none;
-            color: $black;
+            @include le-menu; 
             margin-bottom: 3em;
         }
 
@@ -312,27 +240,14 @@
 
         & .texte-coeur
         {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1em;
-            background-color: $white;
-            border-radius: 0 0 1em 1em;
-            box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+            @include texte-coeur;
         }
 
 /* Paragraphe Nouveau */
 
         & .nouveau
         {
-        background-color: $tertiary-color;
-        font-weight: bold;
-        color: darken($tertiary-color, 40%);
-        position: absolute;
-        right: 2em;
-        top: 1em;
-        padding: 0.7em;
-        border-radius: 5px;    
+            @include nouveau;    
         }
     }
 }

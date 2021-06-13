@@ -2,21 +2,14 @@
 
 .menu
 {
-    background-color: $grey;
-    display: flex;
-    padding-top: 2em;
-    padding-bottom: 9em;
+   @include menu;
     
     & .titre 
     {             
-        width: 100%;
-        position: absolute;
-        top: 21em;
+        @include position;
         & h1
         {
-            background-color: $grey;          
-            padding: 0.7em; 
-            border-radius: 2em 2em 0 0 ;
+            @include h1;
             padding-left: 13em;
             padding-top: 0.5em;
         }    
@@ -38,27 +31,13 @@
         
         & h2
         {
-            padding-bottom: 1em;
-            padding-top: 1em;
-            border-bottom: 5px solid  $tertiary-color;
-            padding-bottom: 5px;
-            margin-bottom: 1em;
-            width: 2.5em;
-            font-size: large;
+            @include h2;
         }
         & .carte
         {    
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include carte;
             width: 24em;                 
-            background-color: $white;
-            margin-bottom: 1em;
-            padding: 1em;
-            border-radius: 1em;
-            box-shadow: 0 0.3em 0.8em 0.1em $black;      
-            cursor: pointer;
-
+           
             & .contenu-carte
             {
             display: flex;
@@ -95,31 +74,24 @@
 {
     .menu
     {
-    background-color: $grey;
-    display: flex;
+    @include menu;
     flex-direction: column;
-    padding-top: 2em;
-    padding-bottom: 9em;
     justify-self: center;
     
         & .titre 
         {             
-            width: 100%;
-            position: absolute;
-            top: 21em;
+            @include position;
             & h1
             {
-                background-color: $grey;          
-                padding: 0.7em; 
-                border-radius: 2em 2em 0 0 ;
+                @include h1;
                 padding-left: 11em;
                 padding-top: 1em;
             }    
             & .coeur
             {
                 position: absolute;
-                top: 2.5em;
-                right: 15em;
+                top: 2.7em;
+                right: 8em;
             }    
         }   
         & .les-cartes
@@ -129,26 +101,12 @@
                         
             & h2
             {
-                padding-bottom: 1em;
-                padding-top: 0.5em;
-                border-bottom: 5px solid  $tertiary-color;
-                padding-bottom: 5px;
-                margin-bottom: 1em;
-                width: 2.5em;
-                font-size: large;
+                @include h2;
             }
             & .carte
             {    
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: auto;                     
-                background-color: $white;
-                margin-bottom: 1em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
-                padding: 1em; 
+                @include carte;
+                width: auto;                    
     
                 & .contenu-carte
                 {
@@ -168,19 +126,8 @@
                             font-size: 1em;
                         }
                     }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
                 }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end;  
-                }
-            }
+            }   
         }    
     }
 }
@@ -195,23 +142,16 @@
 {
     .menu
     {
-    background-color: $grey;
-    display: flex;
+    @include menu;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 3em;
-    padding-bottom: 9em;
     
         & .titre 
         {             
-            width: 100%;
-            position: absolute;
-            top: 21em;
+            @include position;
             & h1
             {
-                background-color: $grey;          
-                padding: 0.7em; 
-                border-radius: 2em 2em 0 0 ;
+                @include h1;
                 padding-left: 5em;
                 padding-top: 1.5em;
                 
@@ -219,8 +159,8 @@
             & .coeur
             {
                 position: absolute;
-                top: 1.5em;
-                right: 8em;
+                top: 3.7em;
+                right: 7em;
             }   
         }   
         & .les-cartes
@@ -231,28 +171,14 @@
             & h2
             {
                 margin-left: 1.7em;
-                padding-bottom: 1em;
-                padding-top: 1em;
-                border-bottom: 5px solid  $tertiary-color;
-                padding-bottom: 5px;
-                margin-bottom: 1em;
-                width: 2.5em;
-                font-size: large ; 
+                @include h2;
             }
             & .carte
             {    
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include carte;
                 width: auto;
-                margin-left: 2em;                  
-                background-color: $white;
-                margin-bottom: 1em;
-                padding: 1em;
+                margin-left: 2em;          
                 margin-right: 2em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
     
                 & .contenu-carte
                 {
@@ -273,17 +199,6 @@
                             font-size: 1em;
                         }
                     }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
-                }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end;  
                 }
             }
         }    
@@ -300,24 +215,17 @@
 {
     .menu
     {
-    background-color: $grey;
-    display: flex;
+    @include menu;
     flex-direction: column;
-    padding-top: 3em;
-    padding-bottom: 9em;
     
         & .titre 
         {             
-            width: 100%;
-            position: absolute;
-            top: 21em;
+            @include position;
             
             & h1
             {
-                background-color: $grey;
+                @include h1;
                 font-size: xx-large ;   
-                padding: 0.5em; 
-                border-radius: 2em 2em 0 0 ;
                 padding-left: 1em;
                 padding-top: 1.6em;
                 
@@ -325,7 +233,7 @@
             & .coeur
             {
                 position: absolute;
-                top: 1.6em;
+                top: 3.7em;
                 right: 0.5em;
             }   
         }   
@@ -337,28 +245,14 @@
             & h2
             {
                 margin-left: 0.8em;
-                padding-bottom: 1em;
-                padding-top: 1em;
-                border-bottom: 5px solid  $tertiary-color;
-                padding-bottom: 5px;
-                margin-bottom: 1em;
-                width: 2.5em;
-                font-size: large ; 
+                @include h2;
             }
             & .carte
             {    
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include carte;
                 width: auto;
                 margin-left: 0.8em;                  
-                background-color: $white;
-                margin-bottom: 1em;
-                padding: 1em;
                 margin-right: 1em;
-                border-radius: 1em;
-                box-shadow: 0 0.3em 0.8em 0.1em $black;      
-                cursor: pointer;
     
                 & .contenu-carte
                 {
@@ -379,17 +273,6 @@
                             font-size: 1em;
                         }
                     }
-                    & .prix
-                    {
-                        display: flex;  
-                        align-items: flex-end; 
-                    }
-                }
-                & .choix
-                {
-                    background-color:$tertiary-color;
-                    display: flex;      
-                    justify-content: flex-end;  
                 }
             }
         }    

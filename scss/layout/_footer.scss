@@ -12,33 +12,33 @@ footer
         padding-top: 15px;
     }
 
-    & .couverts 
+    & .couverts, & .double-mains
     {
         display: flex;
         align-items: center;
     }
-    & .double-mains
-    {
-        display: flex;
-        align-items: center;
-    }    
+    
     & .fa-utensils 
     {
         margin-right: 15px;
     }
+
     & .fa-hands-helping 
     {
         margin-right: 10px;
     }
+
     & ul 
     {
         padding: 10px;
     }
+
     & li 
     {
         list-style-type: none;
         padding: 5px;
     }
+    
     & a
     {
         color: $white;

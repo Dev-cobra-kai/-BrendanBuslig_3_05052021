@@ -97,9 +97,10 @@
 }
 
 .carte .prix {
-  padding: 1em;
+  padding-top: 2em;
   -webkit-transform: translate(25px);
           transform: translate(25px);
+  font-weight: bold;
 }
 
 .carte .choix {
@@ -110,7 +111,8 @@
   -webkit-transform-origin: right;
           transform-origin: right;
   width: 60px;
-  margin: -20px;
+  margin: -16px;
+  padding: 0.5em;
   -webkit-transition: -webkit-transform 0.8s;
   transition: -webkit-transform 0.8s;
   transition: transform 0.8s;
@@ -214,7 +216,7 @@
     border-radius: 50px;
     font-size: 1.2em;
     position: absolute;
-    top: 86em;
+    top: 85em;
     right: 15em;
     height: 3.5em;
     padding: 1em 5em 1em 5em;
@@ -231,7 +233,7 @@
   }
   .menu .menu-2 {
     position: absolute;
-    top: 91em;
+    top: 90em;
     right: 14em;
   }
 }
@@ -249,7 +251,7 @@
     border-radius: 50px;
     font-size: 1.2em;
     position: absolute;
-    top: 83em;
+    top: 81em;
     right: 12em;
     height: 3.5em;
     padding: 1em 5em 1em 5em;
@@ -266,7 +268,7 @@
   }
   .menu .menu-2 {
     position: absolute;
-    top: 89em;
+    top: 86em;
     right: 12em;
   }
 }
@@ -283,7 +285,7 @@
     border-radius: 50px;
     font-size: 1.2em;
     position: absolute;
-    top: 83em;
+    top: 81em;
     right: 3.5em;
     height: 3.5em;
     width: 70%;
@@ -301,7 +303,7 @@
   }
   .menu .menu-2 {
     position: absolute;
-    top: 88em;
+    top: 86em;
     right: 3.5em;
   }
 }
@@ -310,7 +312,7 @@
 .coeur-vide {
   position: absolute;
   right: 30px;
-  bottom: 30px;
+  bottom: 25px;
   z-index: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
@@ -333,7 +335,7 @@
   -webkit-text-fill-color: transparent;
   opacity: 0;
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   right: 30px;
   cursor: pointer;
 }
@@ -475,88 +477,6 @@
   }
 }
 
-/* Selection d'un plat */
-@-webkit-keyframes selection {
-  from {
-    width: 80%;
-  }
-  to {
-    width: 48%;
-  }
-}
-@keyframes selection {
-  from {
-    width: 80%;
-  }
-  to {
-    width: 48%;
-  }
-}
-
-@-webkit-keyframes courses-unveiling {
-  0% {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes courses-unveiling {
-  0% {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes dishes-unveiling {
-  0% {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes dishes-unveiling {
-  0% {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 header {
   padding: 0;
   margin: 0;
@@ -627,10 +547,12 @@ header .reservation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -727,10 +649,12 @@ header .image img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -816,10 +740,12 @@ header .image img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -943,16 +869,7 @@ footer .logo img {
   padding-top: 15px;
 }
 
-footer .couverts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .double-mains {
+footer .couverts, footer .double-mains {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1041,7 +958,6 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 24em;
   background-color: white;
   margin-bottom: 1em;
   padding: 1em;
@@ -1049,6 +965,7 @@ footer a {
   -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
           box-shadow: 0 0.3em 0.8em 0.1em black;
   cursor: pointer;
+  width: 24em;
 }
 
 .menu .les-cartes .carte .contenu-carte {
@@ -1083,12 +1000,12 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 2em;
+    padding-bottom: 9em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 2em;
-    padding-bottom: 9em;
     justify-self: center;
   }
   .menu .titre {
@@ -1105,8 +1022,8 @@ footer a {
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 2.5em;
-    right: 15em;
+    top: 2.7em;
+    right: 8em;
   }
   .menu .les-cartes {
     padding: 1em;
@@ -1114,7 +1031,7 @@ footer a {
   }
   .menu .les-cartes h2 {
     padding-bottom: 1em;
-    padding-top: 0.5em;
+    padding-top: 1em;
     border-bottom: 5px solid #99E2D0;
     padding-bottom: 5px;
     margin-bottom: 1em;
@@ -1131,14 +1048,14 @@ footer a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: auto;
     background-color: white;
     margin-bottom: 1em;
+    padding: 1em;
     border-radius: 1em;
     -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
             box-shadow: 0 0.3em 0.8em 0.1em black;
     cursor: pointer;
-    padding: 1em;
+    width: auto;
   }
   .menu .les-cartes .carte .contenu-carte {
     display: -webkit-box;
@@ -1157,23 +1074,6 @@ footer a {
   .menu .les-cartes .carte .contenu-carte .texte p {
     font-size: 1em;
   }
-  .menu .les-cartes .carte .contenu-carte .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-cartes .carte .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
 }
 
 /* Tablette */
@@ -1185,14 +1085,14 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 2em;
+    padding-bottom: 9em;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 3em;
-    padding-bottom: 9em;
   }
   .menu .titre {
     width: 100%;
@@ -1208,8 +1108,8 @@ footer a {
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 1.5em;
-    right: 8em;
+    top: 3.7em;
+    right: 7em;
   }
   .menu .les-cartes {
     padding: 0;
@@ -1235,16 +1135,16 @@ footer a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: auto;
-    margin-left: 2em;
     background-color: white;
     margin-bottom: 1em;
     padding: 1em;
-    margin-right: 2em;
     border-radius: 1em;
     -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
             box-shadow: 0 0.3em 0.8em 0.1em black;
     cursor: pointer;
+    width: auto;
+    margin-left: 2em;
+    margin-right: 2em;
   }
   .menu .les-cartes .carte .contenu-carte {
     display: -webkit-box;
@@ -1264,23 +1164,6 @@ footer a {
   .menu .les-cartes .carte .contenu-carte .texte p {
     font-size: 1em;
   }
-  .menu .les-cartes .carte .contenu-carte .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-cartes .carte .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
 }
 
 /* Mobile */
@@ -1292,12 +1175,12 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 2em;
+    padding-bottom: 9em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 3em;
-    padding-bottom: 9em;
   }
   .menu .titre {
     width: 100%;
@@ -1306,15 +1189,15 @@ footer a {
   }
   .menu .titre h1 {
     background-color: #DCDCDC;
-    font-size: xx-large;
-    padding: 0.5em;
+    padding: 0.7em;
     border-radius: 2em 2em 0 0;
+    font-size: xx-large;
     padding-left: 1em;
     padding-top: 1.6em;
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 1.6em;
+    top: 3.7em;
     right: 0.5em;
   }
   .menu .les-cartes {
@@ -1341,16 +1224,16 @@ footer a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: auto;
-    margin-left: 0.8em;
     background-color: white;
     margin-bottom: 1em;
     padding: 1em;
-    margin-right: 1em;
     border-radius: 1em;
     -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
             box-shadow: 0 0.3em 0.8em 0.1em black;
     cursor: pointer;
+    width: auto;
+    margin-left: 0.8em;
+    margin-right: 1em;
   }
   .menu .les-cartes .carte .contenu-carte {
     display: -webkit-box;
@@ -1369,23 +1252,6 @@ footer a {
   }
   .menu .les-cartes .carte .contenu-carte .texte p {
     font-size: 1em;
-  }
-  .menu .les-cartes .carte .contenu-carte .prix {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .menu .les-cartes .carte .choix {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
 }
 
@@ -1711,12 +1577,10 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
 }
 
 #restaurants .le-menu a {
@@ -1731,14 +1595,13 @@ footer a {
   text-decoration: none;
   color: black;
   margin-bottom: 2em;
-  padding: 0.5em;
 }
 
 #restaurants .le-menu img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 20em;
+  width: 19em;
   height: 15em;
   border-radius: 1em 1em 0 0;
   -o-object-fit: cover;
