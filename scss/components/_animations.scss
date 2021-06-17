@@ -72,11 +72,11 @@
   {
     &:hover .prix 
     {
-      transform: translate(-35px);
+      transform: translate(-20px);
     }
     & > .choix
     {
-      transform: scale(1);
+      margin-right: -16px;
       color: $white;
       padding: 0.5em;
 
@@ -94,7 +94,7 @@
   .prix
   {    
     padding-top: 2em;
-    transform: translate(25px);
+    transform: translate(-10px);
     transition: transform 500ms cubic-bezier(.62,.41,.44,.83);
     font-weight: bold;
     animation-name: prix;
@@ -103,12 +103,12 @@
   {
     border-radius: 0 1em 1em 0;
     background-color: $tertiary-color;
-    transform: scaleX(0);
-    transform-origin: right;
+    margin-right: -92px;
     width: 60px;
-    margin: -16px;
+    
     padding: 0.5em;
-    transition: transform 0.8s;
+    transition: margin 0.8s;
+    
   }
   .fa-check-circle
   {
