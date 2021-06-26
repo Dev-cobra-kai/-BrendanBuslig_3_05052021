@@ -985,6 +985,9 @@ header .image img {
   }
   header .reservation h1 {
     padding-bottom: 0.7em;
+    font-size: 1.5em;
+    padding-left: 4em;
+    padding-right: 4em;
   }
   header .reservation p {
     font-size: 1.2em;
