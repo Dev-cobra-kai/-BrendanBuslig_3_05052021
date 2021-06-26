@@ -10,14 +10,14 @@
         & h1
         {
             @include h1;
-            padding-left: 13em;
-            padding-top: 0.5em;
+            padding-left: 1em;
+            padding-top: 0.9em;
         }    
         & .coeur
         {
             position: absolute;
-            top: 1.8em;
-            right: 24em;
+            top: 1.4em;
+            right: 0;
         }    
     }
     & .menu-la-note-enchantee 
@@ -84,14 +84,14 @@
             & h1
             {
                 @include h1;
-                padding-left: 11em;
-                padding-top: 1em;
+                padding-left: 1em;
+                padding-top: 1.2em;
             }    
             & .coeur
             {
                 position: absolute;
-                top: 2.7em;
-                right: 8em;
+                top: 1.8em;
+                right: 0;
             }    
         }   
         & .les-cartes
@@ -152,16 +152,15 @@
             & h1
             {
                 @include h1;
-                padding-left: 5em;
-                padding-top: 1.5em;
-                
+                padding-left: 1em;
+                padding-top: 1.2em;
             }    
             & .coeur
             {
                 position: absolute;
-                top: 3.7em;
-                right: 7em;
-            }   
+                top: 2em;
+                right: 0;
+            }    
         }   
         & .les-cartes
         {              
@@ -207,11 +206,11 @@
 
 /* Mobile */
 
-/* Ecrans en-dessous de 768 px */
+/* Ecrans entre 380 px et 768 px */
 
 /* Menu */
 
-@media screen and (max-width: 768px)
+@media screen and (min-width: 380px) and (max-width: 768px)
 {
     .menu
     {
@@ -221,21 +220,89 @@
         & .titre 
         {             
             @include position;
-            
             & h1
             {
                 @include h1;
-                font-size: xx-large ;   
                 padding-left: 1em;
-                padding-top: 1.6em;
-                
+                padding-top: 1.2em;
             }    
             & .coeur
             {
                 position: absolute;
-                top: 3.7em;
-                right: 0.5em;
-            }   
+                top: 1.6em;
+                right: 0;
+            }    
+        }   
+        & .les-cartes
+        {              
+            padding: 0;
+            margin: 0;
+            
+            & h2
+            {
+                margin-left: 0.8em;
+                @include h2;
+            }
+            & .carte
+            {    
+                @include carte;
+                width: auto;
+                margin-left: 0.8em;                  
+                margin-right: 1em;
+    
+                & .contenu-carte
+                {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;                  
+    
+                    & .texte
+                    {
+                        padding-right: 0;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+
+/* Mini-Mobile */
+
+/* Ecrans entre 300 px et 379 px */
+
+/* Menu */
+
+@media screen and (min-width: 300px) and (max-width: 379px)
+{
+    .menu
+    {
+    @include menu;
+    flex-direction: column;
+    
+        & .titre 
+        {             
+            @include position;
+            & h1
+            {
+                @include h1;
+                padding-left: 1em;
+                padding-top: 1.2em;
+            }    
+            & .coeur
+            {
+                position: absolute;
+                top: 1.6em;
+                right: 0;
+            }    
         }   
         & .les-cartes
         {              

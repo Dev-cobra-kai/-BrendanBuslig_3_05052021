@@ -56,9 +56,17 @@
 
 /* Selection d'un plat */
 
-.carte:hover h3 ,.carte:hover .texte p, .carte:active h3, .carte:active .texte p, .carte:focus h3, .carte:focus .texte p
+.carte:hover h3 
 {
-  width: 85%;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.carte:hover .texte p
+{
+  width: 95%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -72,7 +80,7 @@
   {
     &:hover .prix 
     {
-      transform: translate(-20px);
+      transform: translate(-15px);
     }
     & > .choix
     {
@@ -105,7 +113,6 @@
     background-color: $tertiary-color;
     margin-right: -92px;
     width: 60px;
-    
     padding: 0.5em;
     transition: margin 0.8s;
     
@@ -116,6 +123,6 @@
     padding: 0.5em;
     font-size: 2em;
     transform: rotate(360deg);
-    transition: transform 500ms;
+    transition: transform 900ms;
   }
 }

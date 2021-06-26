@@ -66,8 +66,14 @@
 }
 
 /* Selection d'un plat */
-.carte:hover h3, .carte:hover .texte p, .carte:active h3, .carte:active .texte p, .carte:focus h3, .carte:focus .texte p {
-  width: 85%;
+.carte:hover h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.carte:hover .texte p {
+  width: 95%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -78,8 +84,8 @@
 }
 
 .carte:hover:hover .prix {
-  -webkit-transform: translate(-20px);
-          transform: translate(-20px);
+  -webkit-transform: translate(-15px);
+          transform: translate(-15px);
 }
 
 .carte:hover > .choix {
@@ -127,10 +133,10 @@
   font-size: 2em;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transition: -webkit-transform 900ms;
+  transition: -webkit-transform 900ms;
+  transition: transform 900ms;
+  transition: transform 900ms, -webkit-transform 900ms;
 }
 
 /* Bouton Explorer nos restaurants */
@@ -144,7 +150,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 15em;
+  width: auto;
   border-radius: 50px;
   padding: 20px;
   margin: 20px auto;
@@ -273,9 +279,44 @@
 }
 
 /* Mobile */
-/* Ecrans en-dessous de 768 px */
+/* Ecrans entre 380 px et 768 px */
 /* Bouton commander */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 380px) and (max-width: 768px) {
+  .btn-commander {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: transparent;
+    border-radius: 50px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 81em;
+    right: 3.5em;
+    height: 3.5em;
+    width: 70%;
+    padding: 1em 5em 1em 5em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .btn-commander:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: 0.8;
+    -webkit-box-shadow: 5px 5px 20px #9356DC;
+            box-shadow: 5px 5px 20px #9356DC;
+    cursor: pointer;
+  }
+  .menu .menu-2 {
+    position: absolute;
+    top: 86em;
+    right: 3.5em;
+  }
+}
+
+/* Mini-Mobile */
+/* Ecrans entre 300 px et 379 px */
+/* Bouton commander */
+@media screen and (min-width: 300px) and (max-width: 379px) {
   .btn-commander {
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
@@ -562,10 +603,8 @@ header .reservation {
   padding-bottom: 3em;
 }
 
-header .reservation h2 {
-  font-size: 2em;
+header .reservation h1 {
   padding-bottom: 0.7em;
-  width: 50%;
 }
 
 header .reservation p {
@@ -583,9 +622,9 @@ header .image img {
 
 /* Média Queries */
 /* Desktop */
-/* Ecrans entre 1025 px et 1300 px */
+/* Ecrans entre 1025 px et 1350 px */
 /* En-tête */
-@media screen and (min-width: 1025px) and (max-width: 1300px) {
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
   header {
     padding: 0;
     margin: 0;
@@ -663,10 +702,8 @@ header .image img {
     padding-top: 1.5em;
     padding-bottom: 3em;
   }
-  header .reservation h2 {
-    font-size: 1.8em;
+  header .reservation h1 {
     padding-bottom: 0.7em;
-    width: 50%;
   }
   header .reservation p {
     font-size: 1.1em;
@@ -754,10 +791,8 @@ header .image img {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
-  header .reservation h2 {
-    font-size: 1.6em;
+  header .reservation h1 {
     padding-bottom: 0.7em;
-    width: 50%;
   }
   header .reservation p {
     font-size: 1.1em;
@@ -766,8 +801,8 @@ header .image img {
 }
 
 /* Mobile */
-/* Ecrans en-dessous de 768 px */
-@media screen and (max-width: 768px) {
+/* Ecrans entre 380 px et 768 px */
+@media screen and (min-width: 380px) and (max-width: 768px) {
   header {
     padding: 0;
     margin: 0;
@@ -801,7 +836,7 @@ header .image img {
     font-size: 2em;
     position: absolute;
     top: 0.9em;
-    left: 1em;
+    left: 0.5em;
   }
   header .lieu {
     display: -webkit-box;
@@ -819,6 +854,76 @@ header .image img {
     width: 100%;
     -webkit-box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
             box-shadow: 0px -3px 1px 0px rgba(0, 0, 0, 0.3);
+  }
+  header .fa-map-marker-alt {
+    margin-right: 1.2em;
+  }
+  header .lieu p {
+    font-size: 1.4em;
+  }
+  header .reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  header .reservation h1 {
+    padding-bottom: 0.7em;
+  }
+  header .reservation p {
+    font-size: 1.2em;
+    padding-bottom: 0.7em;
+  }
+}
+
+/* Mini-Mobile */
+/* Ecrans entre 300 px et 379 px */
+@media screen and (min-width: 300px) and (max-width: 379px) {
+  header {
+    padding: 0;
+    margin: 0;
+    /* logo */
+    /* Flèche retour */
+    /* Icone lieu */
+    /* Paragraphe lieu */
+    /* Réservation */
+    /* Réservation titre */
+    /* Réservation paragraphe */
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+  }
+  header .logo img {
+    height: 40px;
+  }
+  header .fa-arrow-left {
+    color: black;
+    font-size: 2em;
+    position: absolute;
+    top: 0.9em;
+    left: 0.2em;
   }
   header .fa-map-marker-alt {
     margin-right: 1.2em;
@@ -901,7 +1006,7 @@ footer a {
 
 /*Menu */
 .menu {
-  background-color: #DCDCDC;
+  background-color: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,21 +1017,22 @@ footer a {
 .menu .titre {
   width: 100%;
   position: absolute;
-  top: 21em;
+  top: 22em;
 }
 
 .menu .titre h1 {
-  background-color: #DCDCDC;
+  background-color: #F2F2F2;
   padding: 0.7em;
   border-radius: 2em 2em 0 0;
-  padding-left: 13em;
-  padding-top: 0.5em;
+  font-size: 1.6em;
+  padding-left: 1em;
+  padding-top: 0.9em;
 }
 
 .menu .titre .coeur {
   position: absolute;
-  top: 1.8em;
-  right: 24em;
+  top: 1.4em;
+  right: 0;
 }
 
 .menu .menu-la-note-enchantee {
@@ -961,8 +1067,8 @@ footer a {
   margin-bottom: 1em;
   padding: 1em;
   border-radius: 1em;
-  -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-          box-shadow: 0 0.3em 0.8em 0.1em black;
+  -webkit-box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
+          box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
   cursor: pointer;
   width: 24em;
 }
@@ -995,7 +1101,7 @@ footer a {
 /* Menu */
 @media screen and (min-width: 1025px) and (max-width: 1350px) {
   .menu {
-    background-color: #DCDCDC;
+    background-color: #F2F2F2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1010,19 +1116,20 @@ footer a {
   .menu .titre {
     width: 100%;
     position: absolute;
-    top: 21em;
+    top: 22em;
   }
   .menu .titre h1 {
-    background-color: #DCDCDC;
+    background-color: #F2F2F2;
     padding: 0.7em;
     border-radius: 2em 2em 0 0;
-    padding-left: 11em;
-    padding-top: 1em;
+    font-size: 1.6em;
+    padding-left: 1em;
+    padding-top: 1.2em;
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 2.7em;
-    right: 8em;
+    top: 1.8em;
+    right: 0;
   }
   .menu .les-cartes {
     padding: 1em;
@@ -1051,8 +1158,8 @@ footer a {
     margin-bottom: 1em;
     padding: 1em;
     border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
+    -webkit-box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
+            box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
     cursor: pointer;
     width: auto;
   }
@@ -1080,7 +1187,7 @@ footer a {
 /* Menu */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .menu {
-    background-color: #DCDCDC;
+    background-color: #F2F2F2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1096,19 +1203,20 @@ footer a {
   .menu .titre {
     width: 100%;
     position: absolute;
-    top: 21em;
+    top: 22em;
   }
   .menu .titre h1 {
-    background-color: #DCDCDC;
+    background-color: #F2F2F2;
     padding: 0.7em;
     border-radius: 2em 2em 0 0;
-    padding-left: 5em;
-    padding-top: 1.5em;
+    font-size: 1.6em;
+    padding-left: 1em;
+    padding-top: 1.2em;
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 3.7em;
-    right: 7em;
+    top: 2em;
+    right: 0;
   }
   .menu .les-cartes {
     padding: 0;
@@ -1138,8 +1246,8 @@ footer a {
     margin-bottom: 1em;
     padding: 1em;
     border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
+    -webkit-box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
+            box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
     cursor: pointer;
     width: auto;
     margin-left: 2em;
@@ -1166,11 +1274,11 @@ footer a {
 }
 
 /* Mobile */
-/* Ecrans en-dessous de 768 px */
+/* Ecrans entre 380 px et 768 px */
 /* Menu */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 380px) and (max-width: 768px) {
   .menu {
-    background-color: #DCDCDC;
+    background-color: #F2F2F2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1184,20 +1292,20 @@ footer a {
   .menu .titre {
     width: 100%;
     position: absolute;
-    top: 21em;
+    top: 22em;
   }
   .menu .titre h1 {
-    background-color: #DCDCDC;
+    background-color: #F2F2F2;
     padding: 0.7em;
     border-radius: 2em 2em 0 0;
-    font-size: xx-large;
+    font-size: 1.6em;
     padding-left: 1em;
-    padding-top: 1.6em;
+    padding-top: 1.2em;
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 3.7em;
-    right: 0.5em;
+    top: 1.6em;
+    right: 0;
   }
   .menu .les-cartes {
     padding: 0;
@@ -1227,8 +1335,97 @@ footer a {
     margin-bottom: 1em;
     padding: 1em;
     border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.8em 0.1em black;
-            box-shadow: 0 0.3em 0.8em 0.1em black;
+    -webkit-box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
+            box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
+    cursor: pointer;
+    width: auto;
+    margin-left: 0.8em;
+    margin-right: 1em;
+  }
+  .menu .les-cartes .carte .contenu-carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .menu .les-cartes .carte .contenu-carte .texte {
+    padding-right: 0;
+  }
+  .menu .les-cartes .carte .contenu-carte .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-cartes .carte .contenu-carte .texte p {
+    font-size: 1em;
+  }
+}
+
+/* Mini-Mobile */
+/* Ecrans entre 300 px et 379 px */
+/* Menu */
+@media screen and (min-width: 300px) and (max-width: 379px) {
+  .menu {
+    background-color: #F2F2F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 9em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .titre {
+    width: 100%;
+    position: absolute;
+    top: 22em;
+  }
+  .menu .titre h1 {
+    background-color: #F2F2F2;
+    padding: 0.7em;
+    border-radius: 2em 2em 0 0;
+    font-size: 1.6em;
+    padding-left: 1em;
+    padding-top: 1.2em;
+  }
+  .menu .titre .coeur {
+    position: absolute;
+    top: 1.6em;
+    right: 0;
+  }
+  .menu .les-cartes {
+    padding: 0;
+    margin: 0;
+  }
+  .menu .les-cartes h2 {
+    margin-left: 0.8em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-bottom: 5px solid #99E2D0;
+    padding-bottom: 5px;
+    margin-bottom: 1em;
+    width: 2.5em;
+    font-size: large;
+  }
+  .menu .les-cartes .carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
+            box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
     cursor: pointer;
     width: auto;
     margin-left: 0.8em;
@@ -1261,13 +1458,12 @@ footer a {
   /* Fonctionnement Navigateur */
   /* Navigateur Choisir, Composer, Déguster */
   /* Navigateur Composer */
-  /* Navigateur Composer */
+  /* Navigateur :hover */
   /* Paragraghe Menu */
   /* Logo Navigateur */
   /* Nombre Navigateur */
   /* Nombre Composer */
   /* Logo Mobile + Logo Triple Traits */
-  /* Logo boutique */
 }
 
 #fonctionnement h2 {
@@ -1306,8 +1502,14 @@ footer a {
   padding: 1.5em 5.5em 1.5em 1.5em;
 }
 
-#fonctionnement .deguster {
+#fonctionnement .navigateur:hover {
   background-color: #DCDCDC;
+  cursor: pointer;
+  /* Logo boutique */
+}
+
+#fonctionnement .navigateur:hover .fas {
+  color: #9356DC;
 }
 
 #fonctionnement .contenu-fct p {
@@ -1331,12 +1533,8 @@ footer a {
   margin-left: -2.5em;
 }
 
-#fonctionnement .fa-mobile-alt, #fonctionnement .fa-list-ul {
+#fonctionnement .fa-mobile-alt, #fonctionnement .fa-list-ul, #fonctionnement .fa-store {
   color: gray;
-}
-
-#fonctionnement .fa-store {
-  color: #9356DC;
 }
 
 /* Média Queries */
@@ -1453,6 +1651,7 @@ footer a {
     -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
             box-shadow: 0 0 0.6em 0.2em #DCDCDC;
     padding: 1.5em 3.5em 1.5em 1.5em;
+    width: 70%;
   }
   #fonctionnement .composer {
     padding: 1.5em 4em 1.5em 1.5em;
@@ -1477,9 +1676,9 @@ footer a {
 }
 
 /* Mobile */
-/* Ecrans en-dessous de 768 px */
+/* Ecrans entre 380 px et 768 px */
 /* Partie Fonctionnement */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 380px) and (max-width: 768px) {
   #fonctionnement {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -1523,6 +1722,77 @@ footer a {
     -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
             box-shadow: 0 0 0.6em 0.2em #DCDCDC;
     padding: 1.5em 4em 1.5em 1.5em;
+    width: 65%;
+  }
+  #fonctionnement .composer {
+    padding: 1.5em 4em 1.5em 1.5em;
+  }
+  #fonctionnement .contenu-fct p {
+    font-weight: bold;
+  }
+  #fonctionnement .fas {
+    padding: 0 1em 0 1em;
+  }
+  #fonctionnement .nombre {
+    background: #9356DC;
+    border-radius: 50%;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    margin-right: 0.8em;
+    margin-left: -1rem;
+    color: white;
+  }
+  #fonctionnement .navigateur .nombre {
+    margin-left: -2.5em;
+  }
+}
+
+/* Mini-Mobile */
+/* Ecrans entre 300 px et 379 px */
+@media screen and (min-width: 300px) and (max-width: 379px) {
+  #fonctionnement {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* Fonctionnement Navigateur */
+    /* Navigateur Choisir, Composer, Déguster */
+    /* Navigateur Composer */
+    /* Paragraghe Navigateur */
+    /* Logo Navigateur */
+    /* Nombre Navigateur */
+    /* Nombre Choisir + Composer */
+  }
+  #fonctionnement h2 {
+    padding-top: 0.5em;
+    padding-left: 0.8em;
+  }
+  #fonctionnement .contenu-fct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2.5em;
+  }
+  #fonctionnement .navigateur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F2F2F2;
+    border-radius: 1.4em;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+            box-shadow: 0 0 0.6em 0.2em #DCDCDC;
+    padding: 1.5em 4em 1.5em 1.5em;
+    width: 50%;
   }
   #fonctionnement .composer {
     padding: 1.5em 4.5em 1.5em 1.5em;
@@ -1653,6 +1923,7 @@ footer a {
     padding-top: 1em;
     /* Titre Restaurants */
     /* Les Divers Menus */
+    /* Les Menus */
     /* Ancre des Menus */
     /* Image des Menus */
     /* Texte + Coeur */
@@ -1675,6 +1946,9 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
   }
+  #restaurants .le-menu {
+    width: 100%;
+  }
   #restaurants .le-menu a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1692,7 +1966,7 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 63em;
+    width: 100%;
     border-radius: 1em 1em 0 0;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1742,6 +2016,7 @@ footer a {
     padding-top: 1em;
     /* Titre Restaurants */
     /* Les Divers Menus */
+    /* Les Menus */
     /* Ancre des Menus */
     /* Image des Menus */
     /* Texte + Coeur */
@@ -1764,6 +2039,9 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
   }
+  #restaurants .le-menu {
+    width: 100%;
+  }
   #restaurants .le-menu a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1781,7 +2059,7 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 45em;
+    width: 100%;
     height: 15em;
     border-radius: 1em 1em 0 0;
     -o-object-fit: cover;
@@ -1816,9 +2094,9 @@ footer a {
 }
 
 /* Mobile */
-/* Ecrans en-dessous de 768 px */
+/* Ecrans entre 380 px et 768 px */
 /* Partie Restaurants */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 380px) and (max-width: 768px) {
   #restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1832,6 +2110,7 @@ footer a {
     padding-top: 1em;
     /* Titre Restaurants */
     /* Les Divers Menus */
+    /* Les Menus */
     /* Ancre des Menus */
     /* Image des Menus */
     /* Texte + Coeur */
@@ -1854,6 +2133,9 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
   }
+  #restaurants .le-menu {
+    width: 100%;
+  }
   #restaurants .le-menu a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1871,7 +2153,101 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 25em;
+    width: 100%;
+    height: 11em;
+    border-radius: 1em 1em 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #restaurants .texte-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0 0 1em 1em;
+    -webkit-box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+  }
+  #restaurants .nouveau {
+    background-color: #99E2D0;
+    font-weight: bold;
+    color: #278870;
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    padding: 0.7em;
+    border-radius: 5px;
+  }
+}
+
+/* Mini-Mobile */
+/* Ecrans entre 300 px et 379 px */
+/* Partie Restaurants */
+@media screen and (min-width: 300px) and (max-width: 379px) {
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #F2F2F2;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    /* Titre Restaurants */
+    /* Les Divers Menus */
+    /* Les Menus */
+    /* Ancre des Menus */
+    /* Image des Menus */
+    /* Texte + Coeur */
+    /* Paragraphe Nouveau */
+  }
+  #restaurants h2 {
+    padding-top: 1em;
+    padding-left: 0.8em;
+    padding-bottom: 1em;
+  }
+  #restaurants .divers-menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #restaurants .le-menu {
+    width: 100%;
+  }
+  #restaurants .le-menu a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3em;
+  }
+  #restaurants .le-menu img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
     height: 11em;
     border-radius: 1em 1em 0 0;
     -o-object-fit: cover;
@@ -1915,8 +2291,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-  font-family: 'Shrikhand', cursive;
+.reservation h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 2.2em;
+}
+
+h1 {
+  font-family: 'Shrikhand', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
