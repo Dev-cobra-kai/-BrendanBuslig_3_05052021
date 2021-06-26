@@ -126,3 +126,79 @@
     transition: transform 900ms;
   }
 }
+
+/* Mini-Mobile */
+
+/* Ecrans entre 300 px et 379 px */
+
+@media screen and (min-width: 300px) and (max-width: 379px)
+{
+  .carte:hover h3 
+  {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .carte:hover .texte p
+  {
+    width: 95%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .carte
+  {  
+    height: 3em;
+    
+    &:hover
+    {
+      &:hover .prix 
+      {
+        transform: translate(-10px);
+      }
+      & > .choix
+      {
+        margin-right: -16px;
+        color: $white;
+  
+        & > .fas
+        {
+          transform: rotate(0);
+        }
+      }
+      & > .prix
+      {
+        transform: translate(0);
+      }
+    }
+    
+    .prix
+    {    
+      padding-top: 1.7em;
+      transform: translate(-10px);
+      transition: transform 800ms cubic-bezier(.62,.41,.44,.83);
+      font-size: 0.8em;
+      animation-name: prix;
+    }
+    .choix
+    {
+      border-radius: 0 1em 1em 0;
+      background-color: $tertiary-color;
+      margin-right: -92px;
+      width: 60px;
+      padding: 0.5em;
+      transition: margin 0.8s;
+      
+    }
+    .fa-check-circle
+    {
+      color: $white;
+      padding: 0.5em;
+      font-size: 2em;
+      transform: rotate(360deg);
+      transition: transform 900ms;
+    }
+  }
+}

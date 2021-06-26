@@ -64,6 +64,74 @@
 
 /* Média Queries */
 
+/* Grand Ecran */
+
+/* Ecrans entre 1600 px et 3000 px */
+
+/* Menu */
+
+@media screen and (min-width: 1600px) and (max-width: 3000px)
+{
+    .menu
+    {
+    @include menu;
+    flex-direction: column;
+    justify-self: center;
+    
+        & .titre 
+        {             
+            @include position;
+            & h1
+            {
+                @include h1;
+                padding-left: 1em;
+                padding-top: 1.2em;
+            }    
+            & .coeur
+            {
+                position: absolute;
+                top: 2em;
+                right: 0;
+            }    
+        }   
+        & .les-cartes
+        {              
+            padding: 1em;
+            margin: 0;
+                        
+            & h2
+            {
+                @include h2;
+            }
+            & .carte
+            {    
+                @include carte;
+                width: auto;                    
+    
+                & .contenu-carte
+                {
+                display: flex;
+                justify-content: space-between;                        
+    
+                    & .texte
+                    {
+                        padding-right: 0;
+                        
+                        & h3
+                        {
+                            margin-bottom: 0.5em;                            
+                        }
+                        & p
+                        {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }   
+        }    
+    }
+}
+
 /* Desktop */
 
 /* Ecrans entre 1025 px et 1350 px */
@@ -90,7 +158,7 @@
             & .coeur
             {
                 position: absolute;
-                top: 1.8em;
+                top: 2em;
                 right: 0;
             }    
         }   
@@ -229,7 +297,7 @@
             & .coeur
             {
                 position: absolute;
-                top: 1.6em;
+                top: 2em;
                 right: 0;
             }    
         }   
@@ -294,13 +362,14 @@
             & h1
             {
                 @include h1;
-                padding-left: 1em;
-                padding-top: 1.2em;
+                padding-left: 0.5em;
+                padding-top: 1.8em;
+                font-size: 1.3em;
             }    
             & .coeur
             {
                 position: absolute;
-                top: 1.6em;
+                top: 2em;
                 right: 0;
             }    
         }   
@@ -318,14 +387,14 @@
             {    
                 @include carte;
                 width: auto;
-                margin-left: 0.8em;                  
-                margin-right: 1em;
+                margin-right: 0.5em;    
+                margin-left: 0.5em;         
     
                 & .contenu-carte
                 {
                 display: flex;
                 justify-content: space-between;
-                width: 100%;                  
+                width: 100%;              
     
                     & .texte
                     {
@@ -333,11 +402,12 @@
                         
                         & h3
                         {
-                            margin-bottom: 0.5em;                            
+                            margin-bottom: 0.5em;  
+                            font-size: 0.8em;                          
                         }
                         & p
                         {
-                            font-size: 1em;
+                            font-size: 0.8em;
                         }
                     }
                 }

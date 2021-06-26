@@ -139,6 +139,73 @@
   transition: transform 900ms, -webkit-transform 900ms;
 }
 
+/* Mini-Mobile */
+/* Ecrans entre 300 px et 379 px */
+@media screen and (min-width: 300px) and (max-width: 379px) {
+  .carte:hover h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .carte:hover .texte p {
+    width: 95%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .carte {
+    height: 3em;
+  }
+  .carte:hover:hover .prix {
+    -webkit-transform: translate(-10px);
+            transform: translate(-10px);
+  }
+  .carte:hover > .choix {
+    margin-right: -16px;
+    color: white;
+  }
+  .carte:hover > .choix > .fas {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .carte:hover > .prix {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .carte .prix {
+    padding-top: 1.7em;
+    -webkit-transform: translate(-10px);
+            transform: translate(-10px);
+    -webkit-transition: -webkit-transform 800ms cubic-bezier(0.62, 0.41, 0.44, 0.83);
+    transition: -webkit-transform 800ms cubic-bezier(0.62, 0.41, 0.44, 0.83);
+    transition: transform 800ms cubic-bezier(0.62, 0.41, 0.44, 0.83);
+    transition: transform 800ms cubic-bezier(0.62, 0.41, 0.44, 0.83), -webkit-transform 800ms cubic-bezier(0.62, 0.41, 0.44, 0.83);
+    font-size: 0.8em;
+    -webkit-animation-name: prix;
+            animation-name: prix;
+  }
+  .carte .choix {
+    border-radius: 0 1em 1em 0;
+    background-color: #99E2D0;
+    margin-right: -92px;
+    width: 60px;
+    padding: 0.5em;
+    -webkit-transition: margin 0.8s;
+    transition: margin 0.8s;
+  }
+  .carte .fa-check-circle {
+    color: white;
+    padding: 0.5em;
+    font-size: 2em;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 900ms;
+    transition: -webkit-transform 900ms;
+    transition: transform 900ms;
+    transition: transform 900ms, -webkit-transform 900ms;
+  }
+}
+
 /* Bouton Explorer nos restaurants */
 .btn-explorer {
   display: -webkit-box;
@@ -208,6 +275,41 @@
 }
 
 /* Média Queries */
+/* Grand Ecran */
+/* Ecrans entre 1600 px et 3000 px */
+/* Bouton commander */
+@media screen and (min-width: 1600px) and (max-width: 3000px) {
+  .btn-commander {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    width: 75%;
+    border: transparent;
+    border-radius: 50px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 85em;
+    right: 15em;
+    height: 3.5em;
+    padding: 1em 5em 1em 5em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .btn-commander:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: 0.8;
+    -webkit-box-shadow: 5px 5px 20px #9356DC;
+            box-shadow: 5px 5px 20px #9356DC;
+    cursor: pointer;
+  }
+  .menu .menu-2 {
+    position: absolute;
+    top: 90em;
+    right: 14em;
+  }
+}
+
 /* Desktop */
 /* Ecrans entre 1025 px et 1350 px */
 /* Bouton commander */
@@ -323,13 +425,16 @@
     color: white;
     border: transparent;
     border-radius: 50px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     position: absolute;
-    top: 81em;
-    right: 3.5em;
+    top: 88em;
+    right: 1.6em;
     height: 3.5em;
-    width: 70%;
+    width: 85%;
     padding: 1em 5em 1em 5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -343,8 +448,8 @@
   }
   .menu .menu-2 {
     position: absolute;
-    top: 86em;
-    right: 3.5em;
+    top: 93em;
+    right: 1.9em;
   }
 }
 
@@ -1096,6 +1201,92 @@ footer a {
 }
 
 /* Média Queries */
+/* Grand Ecran */
+/* Ecrans entre 1600 px et 3000 px */
+/* Menu */
+@media screen and (min-width: 1600px) and (max-width: 3000px) {
+  .menu {
+    background-color: #F2F2F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 9em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
+  }
+  .menu .titre {
+    width: 100%;
+    position: absolute;
+    top: 22em;
+  }
+  .menu .titre h1 {
+    background-color: #F2F2F2;
+    padding: 0.7em;
+    border-radius: 2em 2em 0 0;
+    font-size: 1.6em;
+    padding-left: 1em;
+    padding-top: 1.2em;
+  }
+  .menu .titre .coeur {
+    position: absolute;
+    top: 2em;
+    right: 0;
+  }
+  .menu .les-cartes {
+    padding: 1em;
+    margin: 0;
+  }
+  .menu .les-cartes h2 {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-bottom: 5px solid #99E2D0;
+    padding-bottom: 5px;
+    margin-bottom: 1em;
+    width: 2.5em;
+    font-size: large;
+  }
+  .menu .les-cartes .carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
+            box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
+    cursor: pointer;
+    width: auto;
+  }
+  .menu .les-cartes .carte .contenu-carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .les-cartes .carte .contenu-carte .texte {
+    padding-right: 0;
+  }
+  .menu .les-cartes .carte .contenu-carte .texte h3 {
+    margin-bottom: 0.5em;
+  }
+  .menu .les-cartes .carte .contenu-carte .texte p {
+    font-size: 1em;
+  }
+}
+
 /* Desktop */
 /* Ecrans entre 1025 px et 1350 px */
 /* Menu */
@@ -1128,7 +1319,7 @@ footer a {
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 1.8em;
+    top: 2em;
     right: 0;
   }
   .menu .les-cartes {
@@ -1304,7 +1495,7 @@ footer a {
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 1.6em;
+    top: 2em;
     right: 0;
   }
   .menu .les-cartes {
@@ -1388,12 +1579,13 @@ footer a {
     padding: 0.7em;
     border-radius: 2em 2em 0 0;
     font-size: 1.6em;
-    padding-left: 1em;
-    padding-top: 1.2em;
+    padding-left: 0.5em;
+    padding-top: 1.8em;
+    font-size: 1.3em;
   }
   .menu .titre .coeur {
     position: absolute;
-    top: 1.6em;
+    top: 2em;
     right: 0;
   }
   .menu .les-cartes {
@@ -1428,8 +1620,8 @@ footer a {
             box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
     cursor: pointer;
     width: auto;
-    margin-left: 0.8em;
-    margin-right: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
   }
   .menu .les-cartes .carte .contenu-carte {
     display: -webkit-box;
@@ -1445,9 +1637,10 @@ footer a {
   }
   .menu .les-cartes .carte .contenu-carte .texte h3 {
     margin-bottom: 0.5em;
+    font-size: 0.8em;
   }
   .menu .les-cartes .carte .contenu-carte .texte p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 

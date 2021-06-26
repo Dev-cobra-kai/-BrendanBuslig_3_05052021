@@ -61,6 +61,46 @@
 
 /* Média Queries */
 
+/* Grand Ecran */
+
+/* Ecrans entre 1600 px et 3000 px */
+
+ /* Bouton commander */
+
+ @media screen and (min-width: 1600px) and (max-width: 3000px)
+ {
+     .btn-commander
+     {
+         background: linear-gradient($secondary-color, $primary-color);
+         color: $white;
+         width: 75%; 
+         border: transparent;
+         border-radius: 50px; 
+         font-size: 1.2em;
+         position: absolute;
+         top: 85em;
+         right: 15em;
+         height: 3.5em;
+         padding: 1em 5em 1em 5em;
+         transform: scale(1);
+ 
+         &:hover 
+         {
+             transform: scale(1.05);
+             opacity: 0.8;
+             box-shadow: 5px 5px 20px $primary-color;
+             cursor: pointer;
+         }
+     }
+     .menu .menu-2
+     {
+     position: absolute;
+     top: 90em;
+     right: 14em;
+     }
+ }
+ 
+
 /* Desktop */
 
 /* Ecrans entre 1025 px et 1350 px */
@@ -193,13 +233,14 @@
         color: $white;
         border: transparent;
         border-radius: 50px; 
-        font-size: 1.2em;
+        font-size: 1.1em;
         position: absolute;
-        top: 81em;
-        right: 3.5em;
+        top: 88em;
+        right: 1.6em;
         height: 3.5em;
-        width: 70%;
+        width: 85%;
         padding: 1em 5em 1em 5em;
+        justify-content: center;
         transform: scale(1);
 
         &:hover 
@@ -213,7 +254,7 @@
     .menu .menu-2
     {
     position: absolute;
-    top: 86em;
-    right: 3.5em;
+    top: 93em;
+    right: 1.9em;
     } 
 }
