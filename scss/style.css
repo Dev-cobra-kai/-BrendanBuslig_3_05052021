@@ -242,6 +242,7 @@
 
 /* Bouton commander */
 .btn-commander {
+  max-width: 3000px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
@@ -250,9 +251,9 @@
   font-size: 1.2em;
   position: absolute;
   top: 44em;
-  right: 19em;
+  right: 14em;
   height: 3.5em;
-  width: 50%;
+  width: 60%;
   padding: 1em 5em 1em 5em;
   color: white;
   -webkit-transform: scale(1);
@@ -271,7 +272,7 @@
 .menu .menu-2 {
   position: absolute;
   top: 49em;
-  right: 19em;
+  right: 14em;
 }
 
 /* Média Queries */
@@ -280,18 +281,20 @@
 /* Bouton commander */
 @media screen and (min-width: 1600px) and (max-width: 3000px) {
   .btn-commander {
+    max-width: 3000px;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
-    color: white;
-    width: 75%;
-    border: transparent;
     border-radius: 50px;
+    justify-items: center;
+    border: transparent;
     font-size: 1.2em;
     position: absolute;
-    top: 85em;
-    right: 15em;
+    top: 44em;
+    right: 14em;
     height: 3.5em;
+    width: 80%;
     padding: 1em 5em 1em 5em;
+    color: white;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -305,7 +308,7 @@
   }
   .menu .menu-2 {
     position: absolute;
-    top: 90em;
+    top: 49em;
     right: 14em;
   }
 }
@@ -1120,6 +1123,7 @@ footer a {
   display: flex;
   padding-top: 2em;
   padding-bottom: 9em;
+  max-width: 3000px;
 }
 
 .menu .titre {
@@ -1204,92 +1208,6 @@ footer a {
 }
 
 /* Média Queries */
-/* Grand Ecran */
-/* Ecrans entre 1600 px et 3000 px */
-/* Menu */
-@media screen and (min-width: 1600px) and (max-width: 3000px) {
-  .menu {
-    background-color: #F2F2F2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 2em;
-    padding-bottom: 9em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    justify-self: center;
-  }
-  .menu .titre {
-    width: 100%;
-    position: absolute;
-    top: 22em;
-  }
-  .menu .titre h1 {
-    background-color: #F2F2F2;
-    padding: 0.7em;
-    border-radius: 2em 2em 0 0;
-    font-size: 1.6em;
-    padding-left: 1em;
-    padding-top: 1.2em;
-  }
-  .menu .titre .coeur {
-    position: absolute;
-    top: 2em;
-    right: 0;
-  }
-  .menu .les-cartes {
-    padding: 1em;
-    margin: 0;
-  }
-  .menu .les-cartes h2 {
-    padding-bottom: 1em;
-    padding-top: 1em;
-    border-bottom: 5px solid #99E2D0;
-    padding-bottom: 5px;
-    margin-bottom: 1em;
-    width: 2.5em;
-    font-size: large;
-  }
-  .menu .les-cartes .carte {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: white;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 1em;
-    -webkit-box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
-            box-shadow: 0 0.3em 0.7em 0.1em #DCDCDC;
-    cursor: pointer;
-    width: auto;
-  }
-  .menu .les-cartes .carte .contenu-carte {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .menu .les-cartes .carte .contenu-carte .texte {
-    padding-right: 0;
-  }
-  .menu .les-cartes .carte .contenu-carte .texte h3 {
-    margin-bottom: 0.5em;
-  }
-  .menu .les-cartes .carte .contenu-carte .texte p {
-    font-size: 1em;
-  }
-}
-
 /* Desktop */
 /* Ecrans entre 1025 px et 1350 px */
 /* Menu */
@@ -1699,7 +1617,7 @@ footer a {
 }
 
 #fonctionnement .navigateur:hover {
-  background-color: #DCDCDC;
+  background-color: #E6E6FA;
   cursor: pointer;
   /* Logo boutique */
 }
